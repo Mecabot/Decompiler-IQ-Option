@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/baseAssetHandler" android:tag="layout/asset_spinner_handle_0" android:layout_width="@dimen/dp100" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@a/frameAssetHandler" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageSwitcher android:id="@a/iconSwitcher" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:layout_marginLeft="@dimen/dp10" android:layout_marginRight="@dimen/dp5" android:inAnimation="@anim/long_fade_in" android:outAnimation="@anim/long_fade_out">
+            <ImageView android:id="@a/assetIcon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+            <com.iqoption.view.timer.TimerView android:layout_gravity="center_vertical" android:id="@a/timerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </ImageSwitcher>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/titleContainer" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/sp12" android:textColor="@color/white" android:ellipsize="end" android:id="@a/assetTitle" android:paddingBottom="@dimen/dp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_33" android:id="@a/assetType" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textAllCaps="true"/>
+        </LinearLayout>
+        <View android:id="@a/divinerCloseButton1" android:background="@color/black_66" android:visibility="gone" android:layout_width="@dimen/separator" android:layout_height="match_parent"/>
+        <ImageView android:id="@a/closeSpinner" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp8" android:visibility="gone" android:layout_width="@dimen/dp30" android:layout_height="match_parent" app:srcCompat="@drawable/ic_top_bar_close"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@a/arrowSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rotation="90" app:srcCompat="@drawable/bg_l2_down_color_picker"/>
+    <View android:layout_gravity="right" android:background="@color/black_66" android:layout_width="@dimen/separator" android:layout_height="match_parent"/>
+</FrameLayout>

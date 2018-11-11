@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="@color/white_50">
+    <item android:id="@android:id/mask">
+        <shape android:shape="oval">
+            <solid android:color="?android:attr/colorPrimary"/>
+        </shape>
+        <color android:color="@color/white"/>
+    </item>
+    <item>
+        <inset android:drawable="@drawable/ic_arrow_back_selectable" android:insetLeft="@dimen/actionBarBackIconInset" android:insetRight="@dimen/actionBarBackIconInset" android:insetTop="@dimen/actionBarBackIconInset" android:insetBottom="@dimen/actionBarBackIconInset"/>
+    </item>
+</ripple>

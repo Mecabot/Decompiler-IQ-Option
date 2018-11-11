@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="#f0148340">
+    <item android:id="@android:id/mask" android:drawable="@drawable/bg_kyc_start_button"/>
+    <item>
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/bg_kyc_start_button_pressed"/>
+            <item android:state_enabled="false" android:drawable="@drawable/bg_kyc_start_button_disabled"/>
+            <item android:drawable="@drawable/bg_kyc_start_button"/>
+        </selector>
+    </item>
+</ripple>

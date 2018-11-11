@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@a/dialpadRoot" android:tag="layout/numpad_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@a/line1Dialpad" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:id="@+id/one" android:text="1" style="@style/numpadKey"/>
+        <TextView android:id="@+id/two" android:text="2" style="@style/numpadKey"/>
+        <TextView android:id="@+id/three" android:text="3" style="@style/numpadKey"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@a/line2Dialpad" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:id="@+id/four" android:text="4" style="@style/numpadKey"/>
+        <TextView android:id="@+id/five" android:text="5" style="@style/numpadKey"/>
+        <TextView android:id="@a/six" android:text="6" style="@style/numpadKey"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@a/line3Dialpad" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:id="@a/seven" android:text="7" style="@style/numpadKey"/>
+        <TextView android:id="@a/eight" android:text="8" style="@style/numpadKey"/>
+        <TextView android:id="@a/nine" android:text="9" style="@style/numpadKey"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@a/line4Dialpad" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:id="@a/customButton" style="@style/numpadKey"/>
+        <LinearLayout android:orientation="vertical" android:id="@a/zero" android:paddingTop="@dimen/dp13" style="@style/numpadKey">
+            <TextView android:textSize="28sp" android:textColor="@color/enabled_white_100_50" android:id="@a/zeroValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="sans-serif-light"/>
+            <TextView android:textSize="16dp" android:textColor="@color/grey_blur_50" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@a/sign" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/back" style="@style/numpadKey">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_back_key"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

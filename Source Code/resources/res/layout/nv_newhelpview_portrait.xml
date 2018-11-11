@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:filterTouchesWhenObscured="true" android:importantForAccessibility="no">
+    <View android:id="@+id/help_background" android:background="?attr/netverify_helpBackground" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no"/>
+    <ImageView android:id="@+id/ic_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:layout_centerHorizontal="true" app:srcCompat="@drawable/nv_slide_up"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/smallHelpView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/nv_helpview_full_padding_side" android:layout_marginRight="@dimen/nv_helpview_full_padding_side" android:layout_below="@+id/ic_toggle">
+        <TextView android:textSize="@dimen/nv_helpview_doctype_title_text" android:textStyle="bold" android:textColor="?attr/netverify_helpTitle" android:gravity="center_horizontal" android:id="@+id/help_tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp"/>
+        <TextView android:textSize="@dimen/nv_helpview_progress_info_text" android:textColor="?attr/netverify_helpProgressString" android:gravity="center_horizontal" android:id="@+id/help_tv_steps" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp"/>
+        <TextView android:textSize="@dimen/nv_helpview_scan_instructions_text" android:textColor="?attr/netverify_helpInstructions" android:gravity="center_horizontal" android:id="@+id/help_tv_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fullHelpView" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1" android:layout_below="@+id/ic_toggle">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="@dimen/nv_helpview_animation_layout_height">
+            <ImageView android:id="@+id/iv_help_overlay_hor" android:layout_width="283dp" android:layout_height="wrap_content" android:tint="?attr/netverify_helpImage" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_help_overlay_vert" android:layout_width="283dp" android:layout_height="wrap_content" android:tint="?attr/netverify_helpImage" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_help_doc" android:layout_width="260dp" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_help_overlay_body" android:layout_width="260dp" android:layout_height="wrap_content" android:scaleType="centerInside" android:tint="?attr/netverify_helpImage" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/nv_helpview_full_padding_side" android:layout_marginRight="@dimen/nv_helpview_full_padding_side" android:layout_weight="@dimen/nv_helpview_description_layout_height">
+            <TextView android:textSize="@dimen/nv_helpview_scan_instructions_text" android:textColor="?attr/netverify_helpInstructions" android:gravity="center" android:id="@+id/help_tv_description_long" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+            <Button android:theme="@style/Netverify.Helpview.Button" android:textSize="@dimen/nv_helpview_fallback_button_text" android:gravity="center" android:id="@+id/helpview_fallback_button" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

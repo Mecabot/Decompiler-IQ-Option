@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqoption.charttools.constructor.widget.WidthPicker xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/content" android:tag="layout/indicator_constructor_input_line_width_0" android:background="@c/grey_blue_05" android:layout_width="match_parent" android:layout_height="@dimen/dp52" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16"/>

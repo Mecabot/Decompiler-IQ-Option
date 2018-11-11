@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="@dimen/dp10" android:width="@dimen/dp15" android:viewportWidth="15" android:viewportHeight="10">
+    <path android:name="checkbox" android:fillColor="#ffffff" android:pathData="M14.588.256A.835.835 0 0 0 13.953 0a.91.91 0 0 0-.63.27L6.174 7.414a.31.31 0 0 1-.425 0L1.527 3.207A.895.895 0 0 0 .262 4.473l5.362 5.312c.041.042.085.082.13.12.05.057.12.091.195.095h.03a.275.275 0 0 0 .195-.095 1.62 1.62 0 0 0 .13-.12l8.27-8.284a.91.91 0 0 0 .27-.63.87.87 0 0 0-.256-.615z" android:trimPathStart="0" android:trimPathEnd="1"/>
+</vector>

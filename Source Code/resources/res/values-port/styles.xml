@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tradingHistoryItemGroupSingleTitleStyle">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/tradingHistoryItemHorizontalPadding</item>
+        <item name="android:paddingRight">@dimen/tradingHistoryItemHorizontalPadding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:layout_marginTop">@dimen/dp8</item>
+    </style>
+    <style name="tradingHistorySearchItemLayoutStyle">
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+        <item name="android:layout_height">@dimen/dp67</item>
+        <item name="android:layout_marginTop">@dimen/dp0</item>
+    </style>
+    <style name="tradingHistorySummaryLayoutStyle">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/tradingHistoryItemHorizontalPadding</item>
+        <item name="android:paddingRight">@dimen/tradingHistoryItemHorizontalPadding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp24</item>
+    </style>
+    <style name="tradingHistoryTitleLayoutStyle">
+        <item name="android:gravity">clip_horizontal</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:paddingLeft">@dimen/tradingHistoryItemHorizontalPadding</item>
+        <item name="android:paddingRight">@dimen/tradingHistoryItemHorizontalPadding</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/toolbar_title_offset</item>
+        <item name="android:layout_marginRight">@dimen/toolbar_title_offset</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>

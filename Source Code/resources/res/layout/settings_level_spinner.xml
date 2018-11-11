@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/settings_spinner_state" android:paddingLeft="@dimen/dp8" android:paddingRight="@dimen/dp8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/gray_color" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/name" android:background="@null" android:paddingLeft="@dimen/dp8" android:paddingRight="@dimen/dp8" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:customFont="DINAlternateBold.ttf"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/arrow" android:background="@null" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:layout_marginRight="@dimen/dp8" android:src="@drawable/settings_hate_menu_arrow_up" android:scaleType="fitCenter" android:adjustViewBounds="true" android:rotation="0"/>
+    </LinearLayout>
+</FrameLayout>

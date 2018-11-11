@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" android:layout_marginLeft="@dimen/dp10" android:minHeight="?android:attr/actionBarSize">
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:gravity="left" android:id="@+id/time" android:paddingLeft="@dimen/dp8" android:layout_weight="2" app:customFont="DINAlternateBold.ttf" style="@style/TradingHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:id="@a/activeType" android:layout_weight="1" app:customFont="DINAlternateBold.ttf" style="@style/TradingHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:id="@+id/active" android:layout_weight="2" app:customFont="DINAlternateBold.ttf" style="@style/TradingHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:id="@a/strike" android:layout_weight="2" app:customFont="DINAlternateBold.ttf" style="@style/TradingHistoryText"/>
+    <ImageView android:id="@a/optionType" android:background="@null" android:layout_width="@dimen/dp26" android:layout_height="@dimen/dp26" android:layout_marginRight="@dimen/dp10" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:id="@a/expValue" android:layout_weight="2" app:customFont="DINAlternateBold.ttf" style="@style/TradingHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:id="@a/investment" android:layout_weight="1" app:customFont="PTSansNarrowBold.ttf" style="@style/TradingHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:id="@a/income" android:layout_weight="1" app:customFont="PTSansNarrowBold.ttf" style="@style/TradingHistoryText"/>
+</LinearLayout>

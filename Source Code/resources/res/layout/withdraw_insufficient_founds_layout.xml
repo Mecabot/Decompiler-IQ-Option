@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/withdraw_insufficient_founds_layout_0" android:paddingTop="@dimen/dp44" android:paddingBottom="@dimen/dp44" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@a/withdrawInsufficientFoundsIcon" android:layout_width="@dimen/dp51" android:layout_height="@dimen/dp51" app:srcCompat="@drawable/ic_blocked"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:layout_marginStart="@dimen/dp16">
+        <TextView android:textSize="@dimen/sp18" android:textColor="@color/dark_blue" android:id="@a/withdrawInsufficientFoundsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_enough_money" android:fontFamily="@font/medium"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="@color/withdraw_grey_text" android:id="@a/withdrawInsufficientFoundsDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp6" android:lineSpacingExtra="@dimen/sp5"/>
+    </LinearLayout>
+</LinearLayout>

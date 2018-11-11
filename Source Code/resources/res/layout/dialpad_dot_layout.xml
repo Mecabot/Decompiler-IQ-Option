@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:id="@a/dotDisabled" android:background="@drawable/dot_disabled" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1px"/>
+    <View android:id="@a/dotEnabled" android:background="@drawable/dot_enabled" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1dp"/>
+    <View android:id="@a/dotSuccess" android:background="@drawable/dot_success" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@a/dotError" android:background="@drawable/dot_error" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1dp"/>
+</merge>

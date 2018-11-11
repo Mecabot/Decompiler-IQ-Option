@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="@dimen/dp24" android:width="@dimen/dp24" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:pathData="M0 0h24v24H0z" android:fillType="1"/>
+    <group android:translateX="8" android:translateY="8">
+        <path android:fillColor="#fff" android:pathData="M 4 0 C 6.20913899932 0 8 1.79086100068 8 4 C 8 6.20913899932 6.20913899932 8 4 8 C 1.79086100068 8 0 6.20913899932 0 4 C 0 1.79086100068 1.79086100068 0 4 0 Z" android:fillAlpha="0.1" android:fillType="1"/>
+        <path android:name="c" android:fillColor="#000" android:pathData="M 4 2 C 5.10456949966 2 6 2.89543050034 6 4 C 6 5.10456949966 5.10456949966 6 4 6 C 2.89543050034 6 2 5.10456949966 2 4 C 2 2.89543050034 2.89543050034 2 4 2 Z" android:fillType="1"/>
+        <path android:name="c" android:fillColor="#fff" android:pathData="M 4 2 C 5.10456949966 2 6 2.89543050034 6 4 C 6 5.10456949966 5.10456949966 6 4 6 C 2.89543050034 6 2 5.10456949966 2 4 C 2 2.89543050034 2.89543050034 2 4 2 Z" android:fillType="1"/>
+        <path android:name="c" android:fillColor="#fff" android:pathData="M 4 2 C 5.10456949966 2 6 2.89543050034 6 4 C 6 5.10456949966 5.10456949966 6 4 6 C 2.89543050034 6 2 5.10456949966 2 4 C 2 2.89543050034 2.89543050034 2 4 2 Z" android:fillType="1"/>
+    </group>
+</vector>

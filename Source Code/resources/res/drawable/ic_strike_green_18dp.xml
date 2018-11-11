@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="@dimen/dp18" android:width="@dimen/dp18" android:viewportWidth="18" android:viewportHeight="18">
+    <path android:pathData="M0 0h18v18H0z" android:fillType="1"/>
+    <group android:translateX="2" android:translateY="2">
+        <path android:name="b" android:fillColor="#000" android:pathData="M 7 0 C 10.8659932488 0 14 3.13400675118 14 7 C 14 10.8659932488 10.8659932488 14 7 14 C 3.13400675118 14 0 10.8659932488 0 7 C 0 3.13400675118 3.13400675118 0 7 0 Z" android:fillType="1"/>
+        <path android:name="b" android:fillColor="@color/green" android:pathData="M 7 0 C 10.8659932488 0 14 3.13400675118 14 7 C 14 10.8659932488 10.8659932488 14 7 14 C 3.13400675118 14 0 10.8659932488 0 7 C 0 3.13400675118 3.13400675118 0 7 0 Z" android:fillType="1"/>
+        <path android:name="b" android:fillColor="@color/green" android:pathData="M 7 0 C 10.8659932488 0 14 3.13400675118 14 7 C 14 10.8659932488 10.8659932488 14 7 14 C 3.13400675118 14 0 10.8659932488 0 7 C 0 3.13400675118 3.13400675118 0 7 0 Z" android:fillType="1"/>
+        <path android:pathData="M 7 0.5 C 10.5898508739 0.5 13.5 3.4101491261 13.5 7 C 13.5 10.5898508739 10.5898508739 13.5 7 13.5 C 3.4101491261 13.5 0.5 10.5898508739 0.5 7 C 0.5 3.4101491261 3.4101491261 0.5 7 0.5 Z" android:strokeColor="#fff" android:strokeWidth="1" android:fillType="1"/>
+    </group>
+    <path android:pathData="M5 5h8v8H5z" android:fillType="1"/>
+    <path android:fillColor="#fff" android:pathData="M9.416 6.824l2.266 3.399a.5 .5 0 0 1-.416 .777 H6.734a.5 .5 0 0 1-.416-.777l2.266-3.399a.5 .5 0 0 1 .832 0z" android:fillType="1"/>
+</vector>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:id="@a/content_container" android:tag="layout/fragment_balance_selection_0" android:background="#20000000" android:clickable="false" android:layout_width="@dimen/iq_smart_fragment_width" android:layout_height="match_parent">
+    <FrameLayout android:paddingTop="@dimen/dp10" android:layout_width="match_parent" android:layout_height="@dimen/dp50">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/sp16" android:textColor="#ffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/choose_balance_type" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp14" android:textColor="#93a8c2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/you_can_switch_between_practice_and_real_balance" android:alpha="0.7" android:fontFamily="sans-serif-light" app:capitalize="characters"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:tag="binding_1" android:padding="@dimen/dp13" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp4" android:scaleType="centerCrop" app:srcCompat="@drawable/ic_close"/>
+    </FrameLayout>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="70"/>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp15" android:paddingRight="@dimen/dp15" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp17" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@a/practiceBalanceText" android:paddingRight="@dimen/dp24" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/practice_balance" android:layout_weight="1" android:alpha="0.8" android:fontFamily="sans-serif-medium"/>
+        <View style="@style/BalanceSelectionDivider"/>
+        <TextView android:textSize="@dimen/sp17" android:textColor="#ffffff" android:gravity="center" android:id="@a/realBalance" android:paddingLeft="@dimen/dp24" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/real_balance" android:layout_weight="1" android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp15" android:paddingRight="@dimen/dp15" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="80">
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <View style="@style/BalanceSelectionDivider"/>
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="384">
+        <TableLayout android:gravity="center_horizontal" android:paddingLeft="@dimen/dp15" android:paddingRight="@dimen/dp24" android:layout_width="0dp" android:layout_height="wrap_content" android:stretchColumns="1,4" android:layout_weight="1">
+            <TableRow android:layout_weight="0">
+                <ImageView android:src="@drawable/dot_balance_dialog" style="@style/BalanceSelectionPracticeItemDot"/>
+                <TextView android:text="@string/initial_balance_1000_demo_funds" style="@style/BalanceSelectionPracticeItemText"/>
+            </TableRow>
+            <TableRow android:layout_weight="1">
+                <View android:layout_height="match_parent" android:layout_span="2"/>
+            </TableRow>
+            <TableRow android:layout_weight="0">
+                <ImageView android:src="@drawable/dot_balance_dialog" style="@style/BalanceSelectionPracticeItemDot"/>
+                <TextView android:text="@string/we_guarantee" style="@style/BalanceSelectionPracticeItemText"/>
+            </TableRow>
+            <TableRow android:layout_weight="1">
+                <View android:layout_height="match_parent" android:layout_span="2"/>
+            </TableRow>
+            <TableRow android:layout_weight="0">
+                <ImageView android:src="@drawable/dot_balance_dialog" style="@style/BalanceSelectionPracticeItemDot"/>
+                <TextView android:text="@string/you_will_not_be_able_to_withdraw_demo_funds" style="@style/BalanceSelectionPracticeItemText"/>
+            </TableRow>
+            <TableRow android:layout_weight="1">
+                <View android:layout_height="match_parent" android:layout_span="2"/>
+            </TableRow>
+        </TableLayout>
+        <View android:layout_height="match_parent" style="@style/BalanceSelectionDivider"/>
+        <TableLayout android:gravity="center_horizontal" android:paddingLeft="@dimen/dp24" android:paddingRight="@dimen/dp15" android:layout_width="0dp" android:layout_height="wrap_content" android:stretchColumns="1,4" android:layout_weight="1">
+            <TableRow android:layout_weight="0">
+                <ImageView android:src="@drawable/dot_balance_dialog" style="@style/BalanceSelectionRealItemDot"/>
+                <TextView android:text="@string/iq_option_operates" style="@style/BalanceSelectionRealItemText"/>
+            </TableRow>
+            <TableRow android:layout_weight="1">
+                <View android:layout_height="match_parent" android:layout_span="2"/>
+            </TableRow>
+            <TableRow android:layout_weight="0">
+                <ImageView android:src="@drawable/dot_balance_dialog" style="@style/BalanceSelectionRealItemDot"/>
+                <TextView android:text="@string/min_deposit_is_10" style="@style/BalanceSelectionRealItemText"/>
+            </TableRow>
+            <TableRow android:layout_weight="1">
+                <View android:layout_height="match_parent" android:layout_span="2"/>
+            </TableRow>
+            <TableRow android:layout_weight="0">
+                <ImageView android:src="@drawable/dot_balance_dialog" style="@style/BalanceSelectionRealItemDot"/>
+                <TextView android:text="@string/all_profit_can_be_fast_withdrawn" style="@style/BalanceSelectionRealItemText"/>
+            </TableRow>
+            <TableRow android:layout_weight="1">
+                <View android:layout_height="match_parent" android:layout_span="2"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp15" android:paddingRight="@dimen/dp15" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="58">
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <View style="@style/BalanceSelectionDivider"/>
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@a/practiceButton" android:tag="binding_2" android:background="@drawable/practice_button" android:layout_width="0dp" android:layout_height="@dimen/dp46" android:layout_marginLeft="@dimen/dp15" android:layout_marginRight="@dimen/dp24" android:layout_weight="1">
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp20" android:textColor="@color/selectable_white_100_70" android:gravity="center_horizontal" android:id="@a/practiceText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/practice_button" android:maxLines="1" android:drawablePadding="@dimen/dp5" android:layout_centerHorizontal="true" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp10" android:textColor="@color/selectable_white_50_30" android:gravity="top|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/with_demo_funds" android:layout_below="@a/practiceText" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-medium" app:capitalize="characters"/>
+        </RelativeLayout>
+        <View style="@style/BalanceSelectionDivider"/>
+        <RelativeLayout android:gravity="center" android:id="@a/depositNowButton" android:tag="binding_3" android:background="@drawable/deposit_now_button" android:paddingLeft="@dimen/dp6" android:paddingRight="@dimen/dp6" android:layout_width="0dp" android:layout_height="@dimen/dp46" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp15" android:layout_weight="1">
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp20" android:textColor="@color/selectable_white_100_70" android:layout_gravity="center_vertical" android:id="@a/depositNowText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deposit" android:maxLines="1" android:drawablePadding="@dimen/dp5" android:layout_centerHorizontal="true" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp10" android:textColor="@color/selectable_white_50_30" android:gravity="top|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/and_become_a_trader" android:layout_below="@a/depositNowText" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-medium" app:capitalize="characters"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="107"/>
+</LinearLayout>

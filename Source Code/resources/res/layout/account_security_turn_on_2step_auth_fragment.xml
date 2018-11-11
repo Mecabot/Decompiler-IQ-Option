@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/account_security_turn_on_2step_auth_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="@string/two_factor_text" style="@style/AccountSecurityPageTitle"/>
+    <TextView android:textSize="@dimen/sp16" android:textColor="#ccffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@a/twoStepAuthText" android:paddingLeft="@dimen/dp20" android:paddingRight="@dimen/dp20" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp50" android:text="@string/each_time_you_sign_in" android:fontFamily="sans-serif-light"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp50">
+        <TextView android:textSize="@dimen/sp18" android:textColor="#ffffff" android:gravity="right|center_vertical|center_horizontal|center|end" android:layout_gravity="center_vertical" android:id="@a/twoStepAuthSwitchText" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="@dimen/dp50" android:layout_marginRight="@dimen/dp5" android:text="@string/turn_on" android:fontFamily="sans-serif-light" android:layout_marginEnd="@dimen/dp5"/>
+        <com.iqoption.view.ProgressSwitchView android:layout_gravity="center_vertical" android:id="@a/twoStepAuthSwitch" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp13" android:textColor="#ccffffff" android:gravity="center" android:layout_gravity="center" android:id="@a/twoStepAuthPhone" android:paddingLeft="@dimen/dp20" android:paddingRight="@dimen/dp20" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/via_phone_number" android:fontFamily="sans-serif-light"/>
+</LinearLayout>

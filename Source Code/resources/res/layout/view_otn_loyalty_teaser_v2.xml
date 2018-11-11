@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ImageView android:layout_gravity="center_vertical" android:id="@a/btc" android:layout_width="@dimen/dp55" android:layout_height="@dimen/dp55" app:srcCompat="@drawable/ic_btc_32"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@a/dsh" android:layout_width="@dimen/dp55" android:layout_height="@dimen/dp55" app:srcCompat="@drawable/ic_dash_32"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@a/ltc" android:layout_width="@dimen/dp55" android:layout_height="@dimen/dp55" app:srcCompat="@drawable/ic_ltc_32"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@a/eth" android:layout_width="@dimen/dp55" android:layout_height="@dimen/dp55" app:srcCompat="@drawable/ic_ethereum"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@a/monero" android:layout_width="@dimen/dp55" android:layout_height="@dimen/dp55" app:srcCompat="@drawable/ic_monero"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/light" android:layout_width="@dimen/dp110" android:layout_height="@dimen/dp110" android:src="@drawable/rectangle"/>
+    <ImageView android:layout_gravity="center" android:id="@a/otn" android:layout_width="@dimen/dp65" android:layout_height="@dimen/dp65" app:srcCompat="@drawable/ic_otn"/>
+</merge>

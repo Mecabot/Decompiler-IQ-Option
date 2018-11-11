@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/currency_btn_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="@a/deposit_currency_item_height">
+    <LinearLayout android:orientation="horizontal" android:id="@a/currency" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp22" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@a/currencyIcon" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="" android:singleLine="true" android:includeFontPadding="false" app:textStyle="bold"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="#ffffff" android:gravity="left" android:layout_gravity="center_vertical" android:id="@a/currencyValue" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@a/currencyDiviner" android:visibility="visible" style="@style/WelcomeMenuHorizontalDivider"/>
+</FrameLayout>

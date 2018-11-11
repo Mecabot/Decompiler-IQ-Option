@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="@dimen/dp8" android:paddingTop="@dimen/dp6" android:paddingRight="@dimen/dp8" android:paddingBottom="@dimen/dp6" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@a/optionResult" android:visibility="visible" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@a/optionType" android:background="@null" android:layout_width="@dimen/dp8" android:layout_height="@dimen/dp8" android:src="@drawable/arrow_red" android:adjustViewBounds="true"/>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@android:color/white" android:id="@a/level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp2" android:maxLines="1"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="#999999" android:gravity="left" android:id="@a/investment" android:layout_width="0dp" android:layout_height="wrap_content" android:text="invest" android:maxLines="1" android:layout_weight="1"/>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="#999999" android:gravity="right" android:id="@a/income" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$20" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

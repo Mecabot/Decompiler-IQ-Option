@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_withdraw_0" android:background="@color/withdraw_white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/toolbar_layout"/>
+        <android.support.v4.widget.NestedScrollView android:id="@a/withdrawContent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@a/withdrawMethodsContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <FrameLayout android:id="@a/withdrawFieldsContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <FrameLayout android:id="@a/withdrawHistoryContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <FrameLayout android:id="@a/withdrawProgress" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:padding="@dimen/dp5" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" style="?android:attr/progressBarStyleLarge"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@a/withdrawOtherContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

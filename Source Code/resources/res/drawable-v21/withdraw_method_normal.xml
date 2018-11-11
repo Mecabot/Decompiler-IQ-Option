@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="?attr/colorControlHighlight">
+    <item android:id="@android:id/mask" android:left="@dimen/dp1" android:top="@dimen/dp2" android:right="@dimen/dp1" android:bottom="@dimen/dp2">
+        <shape android:shape="rectangle">
+            <solid android:color="#000000"/>
+            <corners android:radius="@dimen/withdraw_method_corners"/>
+        </shape>
+    </item>
+</ripple>

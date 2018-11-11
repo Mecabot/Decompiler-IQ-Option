@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/content" android:tag="layout/indicator_constructor_group_title_item_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp16" android:layout_marginEnd="@dimen/dp16">
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sp4" android:letterSpacing="0.01"/>
+    <ImageView android:id="@+id/btnExpand" android:padding="@dimen/dp3" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:layout_marginStart="@dimen/dp3" app:srcCompat="@e/indicator_img_button_closeable_info" app:tint="@color/grey_blue"/>
+</LinearLayout>

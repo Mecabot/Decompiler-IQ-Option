@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="@color/orange">
+    <item android:id="@android:id/mask" android:drawable="@drawable/ic_close_security"/>
+    <item>
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/ic_close_security_pressed"/>
+            <item android:state_pressed="false" android:drawable="@drawable/ic_close_security"/>
+        </selector>
+    </item>
+</ripple>

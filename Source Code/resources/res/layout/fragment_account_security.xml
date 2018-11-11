@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/accountSecurityRoot" android:tag="layout/fragment_account_security_0" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@a/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@a/securityTitle" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp19" android:textColor="@color/account_security_count_down_time_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_settings" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@a/exitButton" android:tag="binding_1" android:padding="13dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" app:srcCompat="@drawable/ic_arrow_back"/>
+            <View android:layout_gravity="bottom" android:background="@color/grey_blur_15" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@a/securityTabs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+            <ImageView android:id="@a/mailIcon" android:tag="binding_2" style="@style/SecurityTabStyle"/>
+            <ImageView android:id="@a/phoneIcon" android:tag="binding_3" style="@style/SecurityTabStyle"/>
+            <ImageView android:id="@a/smsIcon" android:tag="binding_4" style="@style/SecurityTabStyle"/>
+            <ImageView android:id="@a/touchIdIcon" android:tag="binding_5" style="@style/SecurityTabStyle"/>
+        </LinearLayout>
+        <com.iqoption.view.SmoothViewPager android:id="@a/viewPager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@a/dots" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@a/dot1" style="@style/SecurityDotStyle"/>
+            <ImageView android:id="@a/dot2" style="@style/SecurityDotStyle"/>
+            <ImageView android:id="@a/dot3" style="@style/SecurityDotStyle"/>
+            <ImageView android:id="@a/dot4" style="@style/SecurityDotStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@a/iqBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/iq_bg"/>
+</FrameLayout>

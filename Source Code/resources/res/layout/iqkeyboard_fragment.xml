@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/everything" android:tag="layout/iqkeyboard_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/content" android:background="@drawable/bg_card_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp60" android:layout_marginRight="@dimen/dp130" android:layout_marginBottom="@dimen/dp42">
+        <RelativeLayout android:id="@a/linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.iqoption.core.ui.widget.MaxSizeLinearLayout android:orientation="vertical" android:id="@a/leftContainer" android:visibility="visible" android:layout_width="@dimen/dp140" android:layout_height="match_parent" app:maxHeight="@dimen/dp310">
+                <com.iqoption.view.RobotoEditText android:textSize="@dimen/sp20" android:textColor="@android:color/white" android:gravity="left|center_vertical|center_horizontal|center" android:id="@a/amountKeyboard" android:background="@null" android:paddingLeft="@dimen/dp15" android:paddingRight="@dimen/dp15" android:layout_width="match_parent" android:layout_height="0dp" android:text="0" android:maxLines="1" android:layout_weight="1" android:inputType="numberSigned"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <TextView android:id="@+id/one" android:tag="binding_1" android:layout_marginRight="1px" android:text="1" style="@style/KbrdTextViewDark"/>
+                    <TextView android:id="@+id/two" android:tag="binding_2" android:layout_marginRight="1px" android:text="2" style="@style/KbrdTextViewDark"/>
+                    <TextView android:id="@+id/three" android:tag="binding_3" android:text="3" style="@style/KbrdTextViewDark"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <TextView android:id="@+id/four" android:tag="binding_4" android:layout_marginTop="1px" android:layout_marginRight="1px" android:text="4" style="@style/KbrdTextViewDark"/>
+                    <TextView android:id="@+id/five" android:tag="binding_5" android:layout_marginTop="1px" android:layout_marginRight="1px" android:text="5" style="@style/KbrdTextViewDark"/>
+                    <TextView android:id="@a/six" android:tag="binding_6" android:layout_marginTop="1px" android:text="6" style="@style/KbrdTextViewDark"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <TextView android:id="@a/seven" android:tag="binding_7" android:layout_marginTop="1px" android:layout_marginRight="1px" android:text="7" style="@style/KbrdTextViewDark"/>
+                    <TextView android:id="@a/eight" android:tag="binding_8" android:layout_marginTop="1px" android:layout_marginRight="1px" android:text="8" style="@style/KbrdTextViewDark"/>
+                    <TextView android:id="@a/nine" android:tag="binding_9" android:layout_marginTop="1px" android:text="9" style="@style/KbrdTextViewDark"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <TextView android:textStyle="bold" android:id="@a/point" android:tag="binding_10" android:layout_marginTop="1px" android:layout_marginRight="1px" android:text="." style="@style/KbrdTextViewDark"/>
+                    <TextView android:id="@a/zero" android:tag="binding_11" android:layout_marginTop="1px" android:layout_marginRight="1px" android:text="0" style="@style/KbrdTextViewDark"/>
+                    <FrameLayout android:id="@a/backspace" android:tag="binding_12" android:layout_marginTop="1px" style="@style/KbrdTextViewDark">
+                        <ImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="17dp" app:srcCompat="@drawable/ic_keyboard_del"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@a/coefficientContainer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:paddingLeft="@dimen/dp15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/coefficient" android:textAllCaps="true"/>
+                    <com.iqoption.view.RobotoEditText android:textSize="@dimen/sp14" android:textColor="@android:color/white" android:id="@a/coefficient" android:background="@null" android:paddingLeft="@dimen/dp15" android:paddingRight="@dimen/dp15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2.00" android:maxLines="1" android:inputType="numberSigned"/>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <ImageView android:id="@a/division" android:tag="binding_13" android:background="@color/grey_blur_10" android:padding="@dimen/dp15" android:layout_width="@dimen/dp70" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_division_keyboard"/>
+                    <ImageView android:id="@a/multiplication" android:tag="binding_14" android:background="@color/grey_blur_10" android:padding="@dimen/dp15" android:layout_width="@dimen/dp70" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_multiplication_keyboard"/>
+                    <View android:background="@color/bg_second_level" android:layout_width="1px" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </com.iqoption.core.ui.widget.MaxSizeLinearLayout>
+            <com.iqoption.core.ui.widget.MaxSizeView android:id="@a/space" android:background="@drawable/tournament_diviner_title" android:layout_width="1px" android:layout_height="match_parent" android:layout_toRightOf="@a/leftContainer" android:layout_toEndOf="@a/leftContainer" app:maxHeightView="@dimen/dp310"/>
+            <com.iqoption.core.ui.widget.MaxSizeLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@a/rightContainer" android:layout_width="@dimen/dp90" android:layout_height="match_parent" android:layout_toRightOf="@a/space" app:maxHeight="@dimen/dp310">
+                <RelativeLayout android:gravity="center" android:id="@a/allBalanceContainer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:gravity="center" android:id="@a/balanceTitle" android:paddingLeft="@dimen/dp10" android:paddingRight="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/all_balance" android:maxLines="1" android:textAllCaps="true"/>
+                    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@color/white" android:gravity="center" android:id="@a/balanceValue" android:paddingLeft="@dimen/dp10" android:paddingRight="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:maxLines="1" android:layout_below="@a/balanceTitle"/>
+                </RelativeLayout>
+                <View android:background="@drawable/tournament_diviner_title" android:layout_width="match_parent" android:layout_height="1px"/>
+                <RelativeLayout android:gravity="center" android:id="@+id/presetAmount" android:tag="binding_15" android:background="?attr/selectableItemBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="center" android:id="@a/titlePresetAmount" android:paddingLeft="@dimen/dp10" android:paddingRight="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/presets" android:maxLines="1" android:textAllCaps="true"/>
+                    <ImageView android:id="@a/arrowPresetAmount" android:layout_width="@dimen/dp12" android:layout_height="@dimen/dp12" android:layout_below="@a/titlePresetAmount" android:layout_centerHorizontal="true" android:rotation="90" app:srcCompat="@drawable/ic_arrow_right"/>
+                </RelativeLayout>
+                <View android:background="@drawable/tournament_diviner_title" android:layout_width="match_parent" android:layout_height="1px"/>
+                <FrameLayout android:id="@a/listContainer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4">
+                    <android.support.v7.widget.RecyclerView android:id="@a/preset" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+                <View android:background="@drawable/tournament_diviner_title" android:layout_width="match_parent" android:layout_height="1px"/>
+                <RelativeLayout android:gravity="center" android:id="@a/lastAmount" android:tag="binding_16" android:background="?attr/selectableItemBackground" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@a/arrowLastAmount" android:layout_width="@dimen/dp12" android:layout_height="@dimen/dp12" android:layout_centerHorizontal="true" android:rotation="270" app:srcCompat="@drawable/ic_arrow_right"/>
+                    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="center" android:id="@a/titleLastAmount" android:paddingLeft="@dimen/dp10" android:paddingRight="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/last_amount" android:maxLines="1" android:layout_below="@a/arrowLastAmount" android:textAllCaps="true"/>
+                </RelativeLayout>
+                <View android:background="@drawable/tournament_diviner_title" android:layout_width="match_parent" android:layout_height="1px"/>
+                <ImageView android:id="@a/hideKeyboard" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp10" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:srcCompat="@drawable/ic_keyboard"/>
+            </com.iqoption.core.ui.widget.MaxSizeLinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

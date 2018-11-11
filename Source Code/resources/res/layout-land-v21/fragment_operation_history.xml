@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout-land/fragment_operation_history_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/toolbar" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="@dimen/dp56" app:layout_constraintTop_toTopOf="0">
+        <include android:id="@+id/back" layout="@layout/back_arrow"/>
+        <TextView android:textSize="@dimen/sp20" android:textStyle="normal" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/operation_history" android:layout_weight="1" android:fontFamily="sans-serif-medium" android:layout_marginStart="@dimen/dp40"/>
+        <TextView android:textSize="@dimen/sp16" android:textStyle="normal" android:textColor="@color/green" android:gravity="center" android:id="@+id/search_button" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/search" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16" android:letterSpacing="0.03"/>
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginStart="@dimen/dp80" android:layout_marginEnd="@dimen/dp80">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@a/general_container" android:background="@drawable/grey_blur_05_rect" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp14" android:textStyle="normal" android:textColor="@color/grey_blur" android:padding="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/basic" android:fontFamily="sans-serif"/>
+                <LinearLayout android:orientation="vertical" android:id="@a/operation" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp16" android:textStyle="normal" android:textColor="@color/white_86" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/operation" android:fontFamily="sans-serif"/>
+                    <TextView android:textSize="@dimen/sp14" android:textStyle="normal" android:textColor="@color/grey_blur" android:id="@a/operation_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:fontFamily="sans-serif"/>
+                </LinearLayout>
+                <View android:background="@color/bg_second_level" android:layout_width="match_parent" android:layout_height="@dimen/dp1"/>
+                <LinearLayout android:orientation="vertical" android:id="@a/status" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp16" android:textStyle="normal" android:textColor="@color/white_86" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status" android:fontFamily="sans-serif"/>
+                    <TextView android:textSize="@dimen/sp14" android:textStyle="normal" android:textColor="@color/grey_blur" android:id="@a/status_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:fontFamily="sans-serif"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/grey_blur_05_rect" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp28" android:layout_marginBottom="@dimen/dp28">
+                <TextView android:textSize="@dimen/dp14" android:textStyle="normal" android:textColor="@color/grey_blur" android:padding="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@i/period" android:fontFamily="sans-serif"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/date" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp16" android:textStyle="normal" android:textColor="@color/white_86" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date" android:fontFamily="sans-serif"/>
+                    <TextView android:textSize="@dimen/sp14" android:textStyle="normal" android:textColor="@color/grey_blur" android:id="@a/date_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:fontFamily="sans-serif"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

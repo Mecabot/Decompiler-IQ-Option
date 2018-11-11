@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <EditText android:textSize="@dimen/sp17" android:textColor="@color/withdraw_grey_text" android:textColorHint="@color/grey_blur_50" android:gravity="center_vertical" android:id="@a/withdrawFieldEditText" android:background="@drawable/withdraw_edittext_bg" android:padding="@dimen/sp14" android:paddingBottom="@dimen/dp2" android:nextFocusDown="@a/countryCode" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    <TextView android:textSize="@dimen/sp14" android:textColor="@color/red" android:layout_gravity="end" android:id="@a/withdrawFieldError" android:paddingTop="@dimen/dp2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/portfolio_app_bar_0" android:background="@color/dark_blue" android:layout_width="match_parent" android:layout_height="@dimen/dp56" android:baselineAligned="false">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@a/portfolioTitleLayout" android:tag="binding_1" android:paddingLeft="@dimen/dp16" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/dp16">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp20" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/portfolio" android:includeFontPadding="false" app:robotoStyle="1"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp14" android:textColor="@color/grey_blur" android:id="@a/filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_assets" android:includeFontPadding="false" app:capitalize="sentences"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp1" app:srcCompat="@drawable/ic_arrow_down_grey_blur_17dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@a/calculationLayout" android:tag="binding_2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="@dimen/dp16" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingEnd="@dimen/dp16">
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@a/totalPnl" android:layout_width="match_parent" android:layout_height="wrap_content" app:robotoStyle="2"/>
+            <TextView android:textSize="@dimen/sp14" android:gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@a/totalPnlPercent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@a/calculationModeIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_l2_down_color_picker"/>
+    </FrameLayout>
+</LinearLayout>

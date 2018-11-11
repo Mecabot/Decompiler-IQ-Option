@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:left="12dp" android:right="12dp">
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/deposit_page_radio_button_unchecked"/>
+            <item android:state_checked="true" android:drawable="@drawable/deposit_page_radio_button_checked"/>
+            <item android:state_focused="true" android:drawable="@drawable/deposit_page_radio_button_checked"/>
+            <item android:drawable="@drawable/deposit_page_radio_button_unchecked"/>
+        </selector>
+    </item>
+</layer-list>

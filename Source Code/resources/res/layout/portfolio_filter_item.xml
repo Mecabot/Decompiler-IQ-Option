@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/portfolio_filter_item_0" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp48">
+    <ImageView android:id="@+id/icon" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24"/>
+    <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp33" android:includeFontPadding="false" android:layout_weight="1" app:capitalize="7"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/white_70" android:id="@a/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false"/>
+</LinearLayout>

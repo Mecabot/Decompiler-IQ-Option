@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/depositCardViewRoot" android:tag="layout/deposit_card_view_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <com.iqoption.view.RobotoTextView android:textSize="12sp" android:textColor="#404041" android:id="@a/inTotalTextView" android:layout_width="460dp" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/in_total_card_processing"/>
+        <com.iqoption.view.RobotoTextView android:textSize="12sp" android:textColor="@color/black_50" android:id="@a/description3dsTextView" android:visibility="visible" android:layout_width="460dp" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/check_with_your_bank_3d_secure"/>
+        <FrameLayout android:id="@a/cardsFrame" android:tag="binding_1" android:layout_width="430dp" android:layout_height="200dp" android:layout_marginTop="15dp">
+            <include android:id="@a/backCardSide" layout="@layout/deposit_card_back_side"/>
+            <include android:id="@a/frontCardSide" layout="@layout/deposit_card_front_side"/>
+        </FrameLayout>
+        <com.iqoption.view.ConfirmButtonView android:id="@a/payButton" android:focusable="true" android:clickable="true" android:layout_width="250dp" android:layout_height="45dp" android:layout_marginTop="25dp" android:layout_marginBottom="25dp" app:buttonBackground="@e/deposit_button_selector" app:buttonFontFamily="sans-serif-medium" app:buttonText="@string/pay" app:buttonTextAllCaps="true" app:buttonTextColor="@color/selectable_white_100_70" app:buttonTextSize="17sp" app:buttonTextStyle="1" app:buttonTranslationZ="1dp"/>
+        <TableLayout android:id="@a/cardProtectedFrame" android:background="@drawable/deposit_card_security_white_border" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="430dp" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1">
+            <TableRow>
+                <ImageView android:layout_gravity="center_vertical" android:paddingRight="20dp" android:src="@drawable/deposit_icons_pci_dss"/>
+                <TextView android:textSize="13sp" android:textColor="#404041" android:gravity="center_vertical" android:id="@a/depositCardPciDssTextView" android:text="@string/card_details_are_protected_pci_dss" android:fontFamily="sans-serif-medium"/>
+            </TableRow>
+            <TableRow android:layout_marginTop="10dp">
+                <ImageView android:layout_gravity="center_vertical" android:paddingRight="20dp" android:src="@drawable/deposit_icons_digicert"/>
+                <TextView android:textSize="13sp" android:textColor="#404041" android:gravity="center_vertical" android:id="@a/depositCardSslTextView" android:text="@string/secure_credit_card_payment_ssl" android:fontFamily="sans-serif-medium"/>
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="20dp">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="70dp" android:layout_height="30dp" android:src="@drawable/verified_by_visa"/>
+            <android.support.v7.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="77dp" android:layout_height="27dp" android:layout_marginLeft="14dp" app:srcCompat="@drawable/ic_deposit_mc_secure_code"/>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginLeft="14dp" android:src="@drawable/deposit_icons_3d_secure"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@a/depositCardTopFrame" android:background="@color/transparent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

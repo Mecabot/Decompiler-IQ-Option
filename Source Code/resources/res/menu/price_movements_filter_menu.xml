@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:checkableBehavior="single">
+        <item android:id="@a/menu_all_signals" android:checked="true" android:title="All Signals"/>
+        <item android:id="@a/menu_price_movements" android:title="Price Movements"/>
+        <item android:id="@a/menu_week_breakout" android:title="Week Breakout"/>
+        <item android:id="@a/menu_month_breakout" android:title="Month Breakout"/>
+        <item android:id="@a/menu_year_breakout" android:title="Year Breakout"/>
+    </group>
+</menu>

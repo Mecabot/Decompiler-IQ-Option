@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days">
+        <item>@string/n1_one_day</item>
+        <item>@string/n1_few_days</item>
+        <item>@string/n1_other_days</item>
+    </plurals>
+    <plurals name="hours">
+        <item>@string/n1_one_hour</item>
+        <item>@string/n1_few_hours</item>
+        <item>@string/n1_other_hours</item>
+    </plurals>
+    <plurals name="items">
+        <item>@string/item_n1</item>
+        <item>@string/few_items_n1</item>
+        <item>@string/plural_items_n1</item>
+    </plurals>
+    <plurals name="members">
+        <item>@string/member_singular</item>
+        <item>@string/member_few</item>
+        <item>@string/member_plural</item>
+    </plurals>
+    <plurals name="minutes">
+        <item>@string/one_minute_n1</item>
+        <item>@string/few_minutes_n1</item>
+        <item>@string/other_minutes_n1</item>
+    </plurals>
+    <plurals name="months">
+        <item>@string/n1_one_month</item>
+        <item>@string/n1_few_months</item>
+        <item>@string/n1_other_months</item>
+    </plurals>
+    <plurals name="n_lives">
+        <item>@string/n_one_life</item>
+        <item>@string/n_two_life</item>
+        <item>@string/n_few_life</item>
+        <item>@string/n_many_life</item>
+        <item>@string/n_other_life</item>
+    </plurals>
+    <plurals name="new_video">
+        <item>@string/new_singular</item>
+        <item>@string/new_plural</item>
+    </plurals>
+    <plurals name="photos">
+        <item>@string/n1_photo_singular</item>
+        <item>@string/n1_photos_few</item>
+        <item>@string/n1_photos_plural</item>
+    </plurals>
+    <plurals name="seconds">
+        <item>@string/one_second_n1</item>
+        <item>@string/few_seconds_n1</item>
+        <item>@string/other_seconds_n1</item>
+    </plurals>
+    <plurals name="sessions">
+        <item>@string/one_session_n1</item>
+        <item>@string/few_sessions_n1</item>
+        <item>@string/other_sessions_n1</item>
+    </plurals>
+    <plurals name="typing">
+        <item>@string/name_is_typing</item>
+        <item>@string/num_people_are_typing_few</item>
+        <item>@string/num_people_are_typing</item>
+    </plurals>
+    <plurals name="weeks">
+        <item>@string/n1_one_week</item>
+        <item>@string/n1_few_weeks</item>
+        <item>@string/n1_other_weeks</item>
+    </plurals>
+    <plurals name="years_old">
+        <item>@string/one_year_old_n1</item>
+        <item>@string/few_years_old_n1</item>
+        <item>@string/other_years_old_n1</item>
+    </plurals>
+    <plurals name="years_with_iq">
+        <item>@string/one_year_with_iq_n1</item>
+        <item>@string/few_years_with_iq_n1</item>
+        <item>@string/other_years_with_iq_n1</item>
+    </plurals>
+</resources>

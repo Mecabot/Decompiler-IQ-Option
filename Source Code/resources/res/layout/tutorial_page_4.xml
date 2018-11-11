@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp24" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp60" android:layout_marginBottom="@dimen/dp24" android:text="@string/get_started_now" app:customFont="DINAlternateBold.ttf"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/sp24" android:textColor="@android:color/white" android:id="@a/openRealAccount" android:background="@drawable/call_button_state_blue" android:padding="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp12" android:text="@string/open_real_account"/>
+        <Button android:textSize="@dimen/sp24" android:textColor="@color/blue" android:id="@a/tryFreeDemo" android:background="@drawable/btn_login_white" android:padding="@dimen/dp8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/free_1000" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

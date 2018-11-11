@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@a/itemProContainer" android:tag="layout/left_menu_item_pro_trader_0" android:paddingTop="@dimen/dp6" android:paddingBottom="@dimen/dp6" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground" android:paddingStart="@dimen/dp13" android:paddingEnd="@dimen/dp6">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/sp12" android:textColor="@color/white" android:id="@a/itemProTitle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:id="@a/itemProText" android:paddingTop="@dimen/dp5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:id="@a/itemProRightArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp8" app:srcCompat="@drawable/ic_arrow_right_new"/>
+    <ImageView android:layout_gravity="top" android:id="@a/itemProClose" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/dp4" android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" app:srcCompat="@drawable/ic_close_10_greyblur"/>
+</LinearLayout>

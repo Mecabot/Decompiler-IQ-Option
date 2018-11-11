@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="@dimen/dp10" android:width="@dimen/dp5" android:viewportWidth="5" android:viewportHeight="10">
+    <path android:fillColor="@color/kyc_start_button" android:pathData="M0.556,0L0,0.625 3.889,5 0,9.375 0.556,10l3.888,-4.375L5,5l-0.556,-0.625z" android:strokeAlpha="0.3" android:fillAlpha="0.3"/>
+</vector>

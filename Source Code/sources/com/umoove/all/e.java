@@ -1,0 +1,95 @@
+package com.umoove.all;
+
+import android.graphics.PointF;
+
+/* compiled from: UMEyeData */
+public class e {
+    public int a;
+    public int b;
+    public PointF ejj = new PointF();
+    public PointF ejk = new PointF();
+    public PointF ejl = new PointF();
+    public PointF ejm = new PointF();
+    public PointF ejn = new PointF();
+    public PointF ejo = new PointF();
+    public PointF ejp = new PointF();
+    public float g;
+    public int j;
+    public float l;
+    public float m;
+
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("");
+        stringBuilder.append("EstimatedPosition L [");
+        stringBuilder.append(this.ejl.x);
+        stringBuilder.append(",");
+        stringBuilder.append(this.ejl.y);
+        stringBuilder.append("], R [");
+        stringBuilder.append(this.ejm.x);
+        stringBuilder.append(",");
+        stringBuilder.append(this.ejm.y);
+        stringBuilder.append("] \r\n");
+        String stringBuilder2 = stringBuilder.toString();
+        stringBuilder = new StringBuilder();
+        stringBuilder.append(stringBuilder2);
+        stringBuilder.append("Position Reliability L ");
+        stringBuilder.append(this.a);
+        stringBuilder.append(", R ");
+        stringBuilder.append(this.b);
+        stringBuilder.append("\r\n");
+        stringBuilder2 = stringBuilder.toString();
+        stringBuilder = new StringBuilder();
+        stringBuilder.append(stringBuilder2);
+        stringBuilder.append("IrisMovement L [");
+        stringBuilder.append(this.ejn.x);
+        stringBuilder.append(",");
+        stringBuilder.append(this.ejn.y);
+        stringBuilder.append("], R [");
+        stringBuilder.append(this.ejo.x);
+        stringBuilder.append(",");
+        stringBuilder.append(this.ejo.y);
+        stringBuilder.append("]\r\n");
+        stringBuilder2 = stringBuilder.toString();
+        stringBuilder = new StringBuilder();
+        stringBuilder.append(stringBuilder2);
+        stringBuilder.append("Movement Reliability L [");
+        stringBuilder.append(this.ejj.x);
+        stringBuilder.append(",");
+        stringBuilder.append(this.ejj.y);
+        stringBuilder.append("], R [");
+        stringBuilder.append(this.ejk.x);
+        stringBuilder.append(",");
+        stringBuilder.append(this.ejk.y);
+        stringBuilder.append("] \r\n");
+        stringBuilder2 = stringBuilder.toString();
+        stringBuilder = new StringBuilder();
+        stringBuilder.append(stringBuilder2);
+        stringBuilder.append("Eye Line Angle: ");
+        stringBuilder.append(this.g);
+        stringBuilder.append(" \r\n");
+        stringBuilder2 = stringBuilder.toString();
+        stringBuilder = new StringBuilder();
+        stringBuilder.append(stringBuilder2);
+        stringBuilder.append("Eye Movement Type: ");
+        stringBuilder.append(this.j);
+        stringBuilder.append(" \r\n");
+        stringBuilder2 = stringBuilder.toString();
+        stringBuilder = new StringBuilder();
+        stringBuilder.append(stringBuilder2);
+        stringBuilder.append("Eye Movement Vector [");
+        stringBuilder.append(this.ejp.x);
+        stringBuilder.append(" , ");
+        stringBuilder.append(this.ejp.y);
+        stringBuilder.append("] \r\n");
+        stringBuilder2 = stringBuilder.toString();
+        stringBuilder = new StringBuilder();
+        stringBuilder.append(stringBuilder2);
+        stringBuilder.append("oevrallQuality Left: ");
+        stringBuilder.append(this.l);
+        stringBuilder.append(" Right: ");
+        stringBuilder.append(this.m);
+        stringBuilder.append(" \r\n");
+        return stringBuilder.toString();
+    }
+}

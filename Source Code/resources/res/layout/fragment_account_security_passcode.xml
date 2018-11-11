@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/pageRoot" android:tag="layout/fragment_account_security_passcode_0" android:background="@drawable/iq_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@a/main_content" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:orientation="vertical" android:id="@a/passcodeTitleLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="280">
+            <TextSwitcher android:textColor="#ffffff" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@a/passcodeTitleText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp56" android:layout_marginRight="@dimen/dp56" android:minHeight="@dimen/sp23"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@a/passcodeVerificationTitleLayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Space android:layout_width="match_parent" android:layout_height="32dp" android:minHeight="@dimen/dp14"/>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/dp50" android:layout_marginLeft="@dimen/dp12" app:srcCompat="@drawable/ic_touchid"/>
+            <Space android:layout_width="match_parent" android:layout_height="@dimen/dp32" android:minHeight="@dimen/dp14"/>
+            <TextView android:textSize="@dimen/sp23" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp5" android:layout_marginRight="@dimen/dp5" android:text="@string/passcode_verification" android:fontFamily="sans-serif-medium"/>
+            <Space android:layout_width="match_parent" android:layout_height="@dimen/dp10" android:minHeight="@dimen/dp14"/>
+            <TextView android:textSize="@dimen/sp17" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@a/enterPasscodeOrUseTouchIdText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp5" android:layout_marginRight="@dimen/dp5" android:text="@string/enter_passcode_or_use_touchid" android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:minHeight="@dimen/dp14" android:layout_weight="70"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@a/dots" android:tag="binding_2" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@a/dot1" layout="@layout/dialpad_dot"/>
+            <include android:id="@a/dot2" layout="@layout/dialpad_dot"/>
+            <include android:id="@a/dot3" layout="@layout/dialpad_dot"/>
+            <include android:id="@a/dot4" layout="@layout/dialpad_dot"/>
+            <include android:id="@a/dot5" layout="@layout/dialpad_dot"/>
+            <include android:id="@a/dot6" layout="@layout/dialpad_dot"/>
+        </LinearLayout>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:minHeight="@dimen/dp14" android:layout_weight="70"/>
+        <include android:id="@a/dialpad" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/dialpad"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="120"/>
+        <TextView android:textSize="@dimen/sp18" android:textColor="@color/selectable_white_100_70" android:layout_gravity="center" android:id="@a/cancelPasscodeButton" android:tag="binding_3" android:padding="13dp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:text="@string/cancel" android:fontFamily="sans-serif-light"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="45"/>
+    </LinearLayout>
+</FrameLayout>

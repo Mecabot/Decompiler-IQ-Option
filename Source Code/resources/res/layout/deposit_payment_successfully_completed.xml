@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:tag="layout/deposit_payment_successfully_completed_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatImageView android:id="@a/progressIcon" android:visibility="visible" android:layout_width="100dp" android:layout_height="100dp" android:scaleType="fitXY" android:tint="#2ca541"/>
+    <TextView android:textSize="16sp" android:textColor="#404041" android:gravity="center" android:id="@+id/depositTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/the_operation_has_been_completed_successfully" android:fontFamily="sans-serif"/>
+    <TextView android:textSize="17sp" android:textColor="@color/white" android:id="@+id/startTradingButton" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="200dp" android:layout_height="45dp" android:layout_marginTop="25dp" android:text="@h/start_trading" android:textAllCaps="true" android:fontFamily="sans-serif-medium" style="@style/DepositButtonStyle"/>
+</LinearLayout>

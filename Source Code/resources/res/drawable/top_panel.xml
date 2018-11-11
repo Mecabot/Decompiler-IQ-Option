@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:left="@dimen/separator" android:top="@dimen/separator">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bg_second_level"/>
+            <corners android:bottomRightRadius="@dimen/dp6"/>
+        </shape>
+    </item>
+</layer-list>

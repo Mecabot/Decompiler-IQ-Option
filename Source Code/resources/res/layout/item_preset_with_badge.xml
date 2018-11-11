@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:tag="layout/item_preset_with_badge_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:tag="binding_1" android:background="@e/bg_preset_badge" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@+id/presetAmountLayout" layout="@g/layout_preset_amount"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/sp12" android:textColor="@color/grey_blue" android:id="@+id/presetBadge" android:paddingTop="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@h/vip" android:textAllCaps="true" android:fontFamily="@font/medium"/>
+</LinearLayout>

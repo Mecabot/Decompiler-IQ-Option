@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:tag="layout/crypto_confirm_dialog_view_0" android:background="@drawable/black_10_rounded_rect" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/btnCancel" android:tag="binding_1" android:paddingTop="@dimen/dp8" android:paddingBottom="@dimen/dp8" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="center" app:srcCompat="@drawable/ic_collapsing_arrow_down"/>
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginRight="@dimen/dp8" android:text="@string/purchase_confirmation" android:textAllCaps="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp6" android:layout_marginTop="@dimen/dp8" android:layout_marginRight="@dimen/dp6">
+            <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/price" android:layout_weight="1" android:textAllCaps="true"/>
+            <com.iqoption.view.NumberAnimateRobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:gravity="right" android:id="@a/assetPrice" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp6" android:layout_marginTop="@dimen/dp4" android:layout_marginRight="@dimen/dp6">
+            <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/invest" android:layout_weight="1" android:textAllCaps="true"/>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:gravity="right" android:id="@a/investValue" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp6" android:layout_marginTop="@dimen/dp4" android:layout_marginRight="@dimen/dp6">
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/quantity" android:layout_weight="1" android:textAllCaps="true"/>
+            <com.iqoption.view.NumberAnimateRobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:gravity="right" android:id="@a/quantityValue" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+        </LinearLayout>
+        <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp11" android:textColor="@color/white" android:gravity="center" android:id="@+id/btnConfirm" android:layout_width="match_parent" android:layout_height="@dimen/dp36" android:layout_marginTop="@dimen/dp28" android:textAllCaps="false" app:capitalize="7" style="@style/IQButton"/>
+    </LinearLayout>
+</merge>

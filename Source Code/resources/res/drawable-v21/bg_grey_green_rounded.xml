@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="?android:attr/colorControlHighlight">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black"/>
+            <corners android:radius="@d/preset_corner_radius_light"/>
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item android:state_selected="true">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@d/preset_corner_radius_light"/>
+                    <solid android:color="@color/white"/>
+                    <stroke android:width="@dimen/dp1" android:color="@color/green"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@d/preset_corner_radius_light"/>
+                    <solid android:color="@color/white"/>
+                    <stroke android:width="@dimen/dp1" android:color="@c/deposit_grey_divider"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

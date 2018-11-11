@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@a/cards" android:background="@drawable/bg_cards_switcher" android:paddingLeft="@dimen/dp10" android:paddingTop="@dimen/dp6" android:paddingRight="@dimen/dp10" android:paddingBottom="@dimen/dp6" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@a/card_image" android:layout_width="wrap_content" android:layout_height="@dimen/dp16" android:adjustViewBounds="true"/>
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@a/card_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp10" android:text="**** XXXXX *****" android:maxLines="1" android:layout_weight="1"/>
+    <ImageView android:layout_gravity="center" android:id="@a/card_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tournament_panel_header_arrow"/>
+</LinearLayout>

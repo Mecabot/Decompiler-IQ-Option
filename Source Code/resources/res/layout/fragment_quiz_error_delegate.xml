@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_quiz_error_delegate_0" android:paddingTop="@dimen/dp50" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never">
+        <android.support.constraint.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp12" android:textColor="@color/red" android:id="@+id/error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp11" android:paddingStart="@dimen/dp10" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="@dimen/sp12" android:textStyle="normal" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp11" android:text="@h/we_hate_to_say_it_but_we_are_experiencing_technical_difficulties" android:lineSpacingExtra="8sp" android:fontFamily="sans-serif-medium" android:paddingStart="@dimen/dp10" android:paddingEnd="@dimen/dp10" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/error"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refund_value" android:textAllCaps="true"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:id="@a/refundAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" app:customFont="PTSansNarrowBold.ttf"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="#ffffff" android:id="@a/refundMin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:customFont="DINAlternateBold.ttf"/>
+        <SeekBar android:id="@a/refundSeek" android:paddingTop="@dimen/dp15" android:layout_width="0dp" android:layout_height="@dimen/dp30" android:layout_marginLeft="@dimen/dp4" android:layout_marginTop="@dimen/_dp12" android:layout_marginRight="@dimen/dp4" android:thumb="@drawable/seek_bar_thumb" android:layout_weight="1"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="#ffffff" android:id="@a/refundMax" android:layout_width="wrap_content" android:layout_height="wrap_content" app:customFont="DINAlternateBold.ttf"/>
+    </LinearLayout>
+</LinearLayout>

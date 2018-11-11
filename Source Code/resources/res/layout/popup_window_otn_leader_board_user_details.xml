@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/popupContainer" android:tag="layout/popup_window_otn_leader_board_user_details_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout android:layout_gravity="center_vertical" android:background="@drawable/left_board_fragment_popup_window_bg" android:layout_width="@dimen/dp210" android:layout_height="wrap_content"/>
+</FrameLayout>

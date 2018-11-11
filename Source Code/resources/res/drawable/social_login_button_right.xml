@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/transparent"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="@color/login_screen_button_bg_start_color" android:endColor="@color/login_screen_button_bg_end_color" android:angle="0" android:type="linear"/>
+            <corners android:topRightRadius="@dimen/dp12" android:bottomRightRadius="@dimen/dp12"/>
+        </shape>
+    </item>
+</selector>

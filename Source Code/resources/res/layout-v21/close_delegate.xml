@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/close_delegate_0" android:background="@drawable/top_panel" android:layout_width="match_parent" android:layout_height="@dimen/dp34" android:elevation="@dimen/dp12">
+    <com.iqoption.core.ui.widget.MaxSizeLinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true" app:maxWidth="@dimen/dp600">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@a/expirationContainer" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp7" android:layout_weight="0.22">
+            <TextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@a/expTime" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@i/n_a" android:maxLines="2" android:drawablePadding="@dimen/dp5"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.28">
+            <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:ellipsize="end" android:id="@a/countTitle" android:paddingRight="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/positions" android:maxLines="1" android:textAllCaps="true"/>
+            <TextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:id="@a/countPosition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@i/n_a" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.34">
+            <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:ellipsize="end" android:id="@a/investTitle" android:paddingRight="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invest" android:maxLines="1" android:textAllCaps="true"/>
+            <TextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:id="@a/invest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@i/n_a" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.37">
+            <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:id="@a/closeProfitTilte" android:paddingRight="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p_l" android:maxLines="1" android:textAllCaps="true"/>
+            <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:id="@a/closeProfit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@i/n_a" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:id="@a/closeProfitPercent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@i/n_a" android:maxLines="1"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@a/closeContainer" android:background="@drawable/short_option_sell_drawable_transparent" android:layout_width="@dimen/dp80" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp7" android:layout_marginTop="@dimen/dp6" android:layout_marginRight="@dimen/dp7" android:layout_marginBottom="@dimen/dp6">
+            <TextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@a/close" android:padding="@dimen/dp0" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/close_all" android:maxLines="1" android:textAllCaps="true" style="@style/IQButton.Gray.Border"/>
+            <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@+id/progress" android:visibility="gone" android:layout_width="@dimen/dp22" android:layout_height="@dimen/dp22" style="?android:attr/progressBarStyleSmall"/>
+        </FrameLayout>
+        <FrameLayout android:id="@a/btnWithdraw" android:paddingLeft="@dimen/dp0" android:paddingTop="@dimen/dp6" android:paddingBottom="@dimen/dp6" android:visibility="gone" android:layout_width="@dimen/dp35" android:layout_height="@dimen/dp35" android:tint="@color/white">
+            <ImageView android:id="@a/btnWithdrawLabel" android:tag="binding_2" android:layout_width="@dimen/dp23" android:layout_height="@dimen/dp23" android:layout_marginRight="@dimen/dp7" android:scaleType="center" android:tint="@color/white" style="@style/IQButton.Gray"/>
+            <ProgressBar android:layout_gravity="center" android:id="@a/btnWithdrawProgress" android:visibility="gone" android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16"/>
+        </FrameLayout>
+    </com.iqoption.core.ui.widget.MaxSizeLinearLayout>
+</FrameLayout>

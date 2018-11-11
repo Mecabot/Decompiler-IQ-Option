@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:tag="layout/news_and_updates_item_0" android:layout_width="@dimen/dp470" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp16" android:paddingBottom="@dimen/dp16" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/dp12" android:paddingEnd="@dimen/dp12">
+        <TextView android:textSize="@dimen/dp16" android:textColor="@color/grey_blur_50" android:id="@a/newsAndUpdatesTitle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:id="@a/newsAndUpdatesDescription" android:paddingTop="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sp3"/>
+    </LinearLayout>
+    <android.support.v7.widget.SwitchCompat android:theme="@style/GreenSwitch" android:id="@a/newsAndUpdatesSwitch" android:padding="@dimen/dp12" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground"/>
+</LinearLayout>

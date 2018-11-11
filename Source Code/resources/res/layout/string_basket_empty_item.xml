@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/sp14" android:textColor="@color/grey_blue_70" android:gravity="center" android:id="@+id/text" android:tag="layout/string_basket_empty_item_0" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/you_have_no_templates" android:paddingStart="@dimen/dp24" android:paddingEnd="@dimen/dp24"/>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/dialog_warning_0" android:background="@color/closed_deals_dialog_bg" android:paddingLeft="@dimen/dp50" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+        <ImageView android:id="@a/closeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp8" android:layout_alignParentRight="true" android:contentDescription="@string/close_popup_content_description" android:layout_marginEnd="@dimen/dp8" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_close_new" style="@style/IQActionButton"/>
+    </RelativeLayout>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.3"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_warning"/>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.4"/>
+    <TextView android:textSize="@dimen/sp22" android:textColor="@color/white" android:id="@a/titleWarning" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp80" android:text="@string/default_title_warning_dialog"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/grey_blur" android:id="@a/descrWarning" android:paddingTop="@dimen/dp14" android:paddingBottom="@dimen/dp14" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginRight="@dimen/dp80" android:text="@string/default_descr_warning_dialog" android:layout_weight="1" android:lineSpacingExtra="@dimen/sp6" android:letterSpacing="0.01"/>
+</LinearLayout>

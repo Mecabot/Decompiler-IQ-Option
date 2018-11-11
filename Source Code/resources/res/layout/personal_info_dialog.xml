@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/personal_info_dialog_0" android:background="@color/bg_menu_screens" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <FrameLayout android:orientation="horizontal" android:background="@color/headerbar" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/backButton" android:background="@drawable/back_button_state" android:padding="@dimen/dp5" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" android:layout_marginLeft="@dimen/dp8" android:scaleType="fitCenter"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp22" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@a/personalName" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@a/personalId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textAllCaps="true"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp14" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@a/savePersonalInfo" android:background="@drawable/call_button_state" android:paddingLeft="@dimen/dp20" android:paddingRight="@dimen/dp20" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="@dimen/dp8" android:text="@i/save" android:textAllCaps="true"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@a/kycStatusLayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="70dp" android:layout_marginTop="@dimen/dp10" android:layout_marginBottom="@dimen/dp2">
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:id="@a/kycStatus" android:background="@drawable/edittext_background" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="9">
+            <ImageView android:layout_gravity="center_vertical" android:id="@a/kycStatusIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp15" app:srcCompat="@drawable/ic_profile_kyc_time"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp15" android:layout_marginRight="@dimen/dp5" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textColor="@color/profile_kyc_status" android:id="@a/kycDocumentStatus" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@a/kycDaysLeft" android:background="@drawable/bg_profile_kyc_error" android:paddingLeft="@dimen/dp2" android:paddingTop="@dimen/dp1" android:paddingRight="@dimen/dp2" android:paddingBottom="@dimen/dp2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp7"/>
+            </LinearLayout>
+            <com.iqoption.view.ConfirmButtonView android:gravity="center" android:layout_gravity="center_vertical" android:id="@a/kycButton" android:tag="binding_1" android:paddingLeft="@dimen/dp2" android:paddingRight="@dimen/dp15" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" app:buttonText="@h/continue_" app:buttonTextColor="@color/kyc_start_button" app:buttonTextSize="16sp"/>
+        </LinearLayout>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white_transparent" android:paddingTop="@dimen/dp8" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.iqoption.view.SelectionButton android:gravity="center" android:id="@a/infoTab" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/info" android:layout_weight="3" android:textAllCaps="true" app:selectedTextColor="@android:color/white" app:unselectedTextColor="@color/selectable_orange_dark"/>
+        <com.iqoption.view.SelectionButton android:gravity="center" android:id="@a/passTab" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/password" android:layout_weight="3" android:textAllCaps="true" app:selectedTextColor="@android:color/white" app:unselectedTextColor="@color/selectable_orange_dark"/>
+        <FrameLayout android:id="@a/docTabContainer" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+            <com.iqoption.view.SelectionButton android:gravity="center" android:id="@a/docsTab" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/documents" android:textAllCaps="true" app:selectedTextColor="@android:color/white" app:unselectedTextColor="@color/selectable_orange_dark"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@a/iconAlertDocs" android:visibility="visible" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:layout_marginRight="@dimen/dp4" android:src="@drawable/alert_not_shadow"/>
+        </FrameLayout>
+        <FrameLayout android:id="@a/cardsTabContainer" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+            <com.iqoption.view.SelectionButton android:gravity="center" android:id="@a/cardsTab" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cards" android:textAllCaps="true" app:selectedTextColor="@android:color/white" app:unselectedTextColor="@color/selectable_orange_dark"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@a/iconAlertCards" android:visibility="gone" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:layout_marginRight="@dimen/dp4" android:src="@drawable/alert_not_shadow"/>
+        </FrameLayout>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@a/personalViewPager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:overScrollMode="never"/>
+</LinearLayout>

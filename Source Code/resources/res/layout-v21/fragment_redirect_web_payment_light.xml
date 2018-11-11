@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_redirect_web_payment_light_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@c/deposit_grey" android:layout_width="match_parent" android:layout_height="@dimen/actionBarHeight">
+        <ImageView android:id="@+id/toolbarBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16" app:srcCompat="@e/ic_close_grey"/>
+        <TextView android:textSize="@dimen/sp20" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@h/deposit1" android:fontFamily="@font/medium" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16" android:letterSpacing="0.01"/>
+    </LinearLayout>
+    <View android:background="@c/deposit_grey_divider" android:layout_width="match_parent" android:layout_height="@dimen/dp1"/>
+    <WebView android:id="@+id/paymentAuthorizationWebView" android:background="@color/transparent" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never"/>
+</LinearLayout>

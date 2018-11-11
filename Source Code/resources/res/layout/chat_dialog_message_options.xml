@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/outside" android:tag="layout/chat_dialog_message_options_0" android:background="@color/black_40" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:soundEffectsEnabled="false">
+    <com.iqoption.core.ui.widget.MaxSizeCardViewLayout android:layout_gravity="center" android:id="@+id/frame" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp40" android:soundEffectsEnabled="false" app:cardBackgroundColor="@color/chat_dialog_bg_tint" app:cardCornerRadius="@dimen/dp2" app:cardElevation="24dp" app:maxWidthCardView="@dimen/dp280">
+        <LinearLayout android:orientation="vertical" android:id="@a/optionsLayout" android:paddingBottom="@dimen/dp8" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp20" android:textColor="@color/chat_dialog_message_options_title" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24" android:layout_marginBottom="@dimen/dp20" android:text="@string/message" android:lineSpacingExtra="@dimen/sp8" android:fontFamily="@font/medium" android:layout_marginStart="@dimen/dp24"/>
+        </LinearLayout>
+    </com.iqoption.core.ui.widget.MaxSizeCardViewLayout>
+</FrameLayout>

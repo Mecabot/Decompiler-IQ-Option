@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:filterTouchesWhenObscured="true" android:importantForAccessibility="no">
+    <View android:id="@+id/help_background" android:background="?attr/dv_helpBackground" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/smallHelpView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/dv_helpview_doctype_title_text" android:textStyle="bold" android:textColor="?attr/dv_helpTitle" android:gravity="center" android:id="@+id/help_tv_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30dp" android:layout_marginBottom="4dp"/>
+    </LinearLayout>
+</RelativeLayout>

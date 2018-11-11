@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/content_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textColor="@android:color/black" android:id="@+id/passportNumberTextfield" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:inputType="text"/>
+            <TextView android:textStyle="italic" android:textColor="@color/jumio_grey400" android:gravity="center" android:id="@+id/ppNumberHint" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp" android:text="passport number" android:layout_alignTop="@+id/passportNumberTextfield" android:layout_alignBottom="@+id/passportNumberTextfield" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textColor="@android:color/black" android:id="@+id/dobEntryField" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="date"/>
+            <TextView android:textStyle="italic" android:textColor="@color/jumio_grey400" android:gravity="center" android:id="@+id/hintDob" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp" android:text="date of birth" android:layout_alignTop="@+id/dobEntryField" android:layout_alignBottom="@+id/dobEntryField" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textColor="@android:color/black" android:id="@+id/doeEntryField" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="date"/>
+            <TextView android:textStyle="italic" android:textColor="@color/jumio_grey400" android:gravity="center" android:id="@+id/hintDoe" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp" android:text="date of expiry" android:layout_alignTop="@+id/doeEntryField" android:layout_alignBottom="@+id/doeEntryField" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" style="?android:attr/buttonBarStyle">
+            <Button android:textColor="?attr/jumio_dialogNegativeButtonTextColor" android:id="@+id/bacEntryCancelButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_weight="0.5" style="?android:attr/buttonBarButtonStyle"/>
+            <Button android:textColor="?attr/jumio_dialogPositiveButtonTextColor" android:id="@+id/bacEntryOkButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@android:string/ok" android:layout_weight="0.5" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

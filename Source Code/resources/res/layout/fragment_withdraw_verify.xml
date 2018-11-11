@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@a/withdrawVerifyContainer" android:tag="layout/fragment_withdraw_verify_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp16">
+    <com.iqoption.view.drumview.recyclerviewpager.RecyclerViewPager android:id="@a/withdrawVerifyPager" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    <com.rd.PageIndicatorView android:id="@a/withdrawVerifyIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" app:piv_animationType="6" app:piv_dynamicCount="true" app:piv_interactiveAnimation="true" app:piv_padding="@dimen/dp12" app:piv_radius="@dimen/dp4" app:piv_selectedColor="@color/withdraw_green" app:piv_unselectedColor="@color/white"/>
+</LinearLayout>

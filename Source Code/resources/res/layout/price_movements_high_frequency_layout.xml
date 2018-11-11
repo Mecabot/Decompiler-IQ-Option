@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/price_movements_high_frequency_layout_0" android:layout_width="match_parent" android:layout_height="@dimen/dp68">
+    <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp12" android:textColor="@color/grey_blur_20" android:gravity="center" android:id="@a/noSignalsView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/empty_signals_list" app:textLines="2"/>
+    <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@a/rightNowLayout" android:focusable="false" android:visibility="visible" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp52" android:layout_marginTop="@dimen/dp4" android:layout_marginBottom="@dimen/dp12" app:layoutManager="LinearLayoutManager"/>
+</FrameLayout>

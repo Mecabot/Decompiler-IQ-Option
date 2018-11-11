@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/item_payment_method_title_light_0" android:background="@c/deposit_grey" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+    <TextView android:textSize="@dimen/sp14" android:textColor="@c/deposit_dark_grey" android:layout_gravity="bottom" android:id="@+id/depositMethodsTitle" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium" android:paddingStart="@d/deposit_padding" android:paddingEnd="@d/deposit_padding"/>
+</FrameLayout>

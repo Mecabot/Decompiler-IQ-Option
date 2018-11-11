@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_deposit_perform_light_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_1" android:background="@c/deposit_grey" android:layout_width="match_parent" android:layout_height="@dimen/actionBarHeight">
+        <ImageView android:id="@+id/toolbarBack" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp4" app:srcCompat="@e/ic_back_grey"/>
+        <include android:id="@+id/toolbarTitleLayout" layout="@g/layout_perform_toolbar_title_light"/>
+    </LinearLayout>
+    <View android:background="@c/deposit_grey_divider" android:layout_width="match_parent" android:layout_height="@dimen/dp1"/>
+    <ScrollView android:id="@+id/depositPerformLightScroll" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:tag="binding_2" android:paddingTop="@dimen/dp1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/topFocusableView" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="0dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/depositAmountContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp14" android:textColor="@c/deposit_dark_grey" android:id="@+id/depositAmountTitle" android:paddingTop="@dimen/dp24" android:paddingBottom="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@h/amount" android:lineSpacingExtra="4sp" android:fontFamily="@font/medium" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16" android:letterSpacing="0.01"/>
+                <LinearLayout android:orientation="horizontal" android:tag="binding_3" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="@dimen/sp16" android:textColor="@color/black" android:textColorHint="@color/grey_blue_70" android:layout_gravity="center" android:id="@+id/depositAmountEdit" android:background="@null" android:nextFocusDown="@+id/depositFields" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp54" android:cursorVisible="true" android:maxLines="1" android:maxLength="@integer/max_currency_input_length" android:layout_weight="1" android:lineSpacingExtra="4sp" android:inputType="phone" android:imeOptions="actionUnspecified|actionGo|actionSend|actionDone|flagNoExtractUi" android:fontFamily="@font/medium" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16"/>
+                    <include android:layout_gravity="center_vertical" android:id="@+id/currencySelector" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@g/layout_currency_selector_light"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/sp14" android:textColor="@c/deposit_dark_grey" android:id="@+id/depositAmountKycError" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4sp" android:fontFamily="@font/medium" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16" android:letterSpacing="0.01"/>
+                <android.support.v7.widget.RecyclerView android:id="@+id/depositPresetsList" android:paddingTop="@dimen/dp12" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp14" android:textColor="#434444" android:gravity="center" android:layout_gravity="center" android:id="@+id/depositNoData" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@h/no_available" android:lineSpacingExtra="6sp"/>
+            <FrameLayout android:id="@+id/depositFields" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <include layout="@g/layout_deposit_protected_light"/>
+            <TextView android:textSize="@dimen/sp10" android:textColor="@c/deposit_dark_grey" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/depositTerms" android:paddingTop="@dimen/dp8" android:paddingBottom="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sp4" android:paddingStart="@dimen/dp36" android:paddingEnd="@dimen/dp36" android:letterSpacing="0.02"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/depositButtonBinding" layout="@g/layout_deposit_button_light"/>
+</LinearLayout>

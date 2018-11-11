@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/operation_history_multi_selection_0" android:background="@drawable/grey_blur_btn" android:layout_width="match_parent" android:layout_height="@dimen/dp48" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16">
+    <CheckBox android:layout_gravity="center_vertical" android:id="@a/checker" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="@dimen/sp16" android:textStyle="normal" android:textColor="@color/white_86" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dp20"/>
+</LinearLayout>

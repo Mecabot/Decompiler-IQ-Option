@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/bg_put_arrow_rounded_rect"/>
+    <item android:drawable="@drawable/ic_put_arrow" android:left="@dimen/dp7" android:top="@dimen/dp7" android:right="@dimen/dp7" android:bottom="@dimen/dp7"/>
+</layer-list>

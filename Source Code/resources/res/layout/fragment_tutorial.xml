@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_tutorial_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewStub android:id="@a/tutorialLeftDialogStub" android:layout="@layout/tutorial_left_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@a/tutorialRightDialogStub" android:layout="@layout/tutorial_right_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@a/tutorialPointerImageView" android:layout_width="@dimen/dp44" android:layout_height="@dimen/dp44" android:src="@drawable/pointer_right"/>
+</AbsoluteLayout>

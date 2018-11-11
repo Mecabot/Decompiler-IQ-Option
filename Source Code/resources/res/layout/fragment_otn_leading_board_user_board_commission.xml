@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_otn_leading_board_user_board_commission_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp12" android:textStyle="normal" android:textColor="@color/grey_blur" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp3" android:text="@string/this_week_commission" android:includeFontPadding="false" android:fontFamily="sans-serif"/>
+    <TextView android:textSize="@dimen/sp14" android:textStyle="normal" android:textColor="@color/green" android:id="@a/commissionValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="sans-serif"/>
+</LinearLayout>

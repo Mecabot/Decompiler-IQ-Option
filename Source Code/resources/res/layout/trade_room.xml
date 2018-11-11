@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iqoption.core.ui.widget.gl.GLGraphSurfaceView android:id="@a/glGraphView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@a/buttonTools" android:background="@drawable/bg_button_tools" android:visibility="visible" android:clickable="true" android:layout_width="@dimen/dp50" android:layout_height="@dimen/time_scale_bar_height" android:layout_marginLeft="@dimen/dp50" android:scaleType="centerInside" app:srcCompat="@drawable/ic_icon_instrument"/>
+    <com.iqoption.view.ChartTypeView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@a/buttonChartType" android:layout_width="@dimen/dp50" android:layout_height="@dimen/time_scale_bar_height" android:layout_marginLeft="@dimen/dp100"/>
+    <fragment android:name="com.iqoption.view.toppanel.TopPanelFragment" android:id="@a/shortOpenOption" android:layout_width="match_parent" android:layout_height="@dimen/dp70" android:layout_marginLeft="@dimen/dp50" android:layout_marginTop="@dimen/dp50" android:layout_marginRight="@dimen/dp130"/>
+    <com.iqoption.view.LocalToast android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@a/localToast" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp60" android:layout_marginRight="@dimen/dp130" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp2" app:cardElevation="@dimen/dp12"/>
+    <fragment android:name="com.iqoption.fragment.rightpanel.RightPanelFragment" android:layout_gravity="right" android:id="@a/instrumentFragment" android:layout_width="@a/right_panel_width" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp50"/>
+    <include layout="@layout/bad_connection_layout"/>
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:background="@color/bg_second_level" android:layout_width="match_parent" android:layout_height="@dimen/dp50">
+        <com.iqoption.view.MultiAssetSpinner android:orientation="horizontal" android:id="@a/multiAssetSpinner" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="@dimen/dp50"/>
+        <include android:id="@a/balanceCell" android:layout_width="wrap_content" android:layout_height="match_parent" layout="@layout/balance_cell"/>
+    </LinearLayout>
+    <fragment android:name="com.iqoption.fragment.leftpanel.LeftPanelFragment" android:id="@a/leftPanel" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

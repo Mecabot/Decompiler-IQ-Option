@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/dialog_closed_deals_header_cfd_0" android:paddingLeft="@dimen/dp20" android:paddingTop="@dimen/dp20" android:paddingRight="@dimen/dp20" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/asset_type" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/investment" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/multiply" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/total_invest" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:id="@a/assetType" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:id="@a/investment" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:id="@+id/multiply" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:id="@a/total" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+    </LinearLayout>
+</LinearLayout>

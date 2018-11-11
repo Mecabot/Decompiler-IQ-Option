@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/popup_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_chooser_dialog" android:layout_width="@dimen/dp320" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <TextView android:textSize="@dimen/sp14" android:textColor="#f58220" android:gravity="center" android:id="@a/camera" android:background="@drawable/btn_bg_top_dialog" android:padding="@dimen/dp16" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/take_a_photo"/>
+        <View android:background="@drawable/dark_dialog_horizontal_divider2" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="#f58220" android:gravity="center" android:id="@a/galery" android:background="@drawable/btn_bg_rectangle_dialog" android:padding="@dimen/dp16" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/choose_from_gallery"/>
+        <View android:background="@drawable/dark_dialog_horizontal_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="#ffffff" android:gravity="center" android:id="@a/cancel" android:background="@drawable/btn_bg_one_dialog" android:padding="@dimen/dp16" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/exp_spinner_button" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@a/baseContainer" android:paddingLeft="@dimen/dp9" android:paddingRight="@dimen/dp9" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@a/timeContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time" android:maxLines="1" android:textAllCaps="true"/>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@color/white" android:gravity="right" android:id="@a/expTime" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1" android:textAllCaps="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@a/strikeContainer" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp6">
+            <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:id="@a/titleStrike" android:paddingRight="@dimen/dp6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str" android:maxLines="1" android:textAllCaps="true"/>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="right" android:id="@a/strike" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp13" android:textColor="@color/white" android:gravity="right" android:id="@a/strike2" android:paddingLeft="@dimen/dp2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/picker" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/bg_l2_down_color_picker"/>
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/dp30" android:paddingTop="@dimen/dp20" android:paddingRight="@dimen/dp30" android:paddingBottom="@dimen/dp20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/dp4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp8" android:layout_weight="0.5"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp8" android:text="@i/color" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@i/width" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp32" android:layout_marginBottom="@dimen/dp18">
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp8" android:layout_weight="0.5"/>
+        <com.iqoption.view.ColorPickerView android:id="@a/colorEdit" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp8" android:layout_weight="1" app:defaultSelectedItem="0" app:direction="top_to_bottom" app:roundItem="@dimen/dp4" app:sizeItem="@dimen/dp14"/>
+        <com.iqoption.view.WidthPickerView android:id="@a/widthEdit" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:defaultSelectedItem="0" app:direction="top_to_bottom" app:sizeItem="@dimen/dp28"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/dp8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp8" android:layout_weight="0.5"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@i/apply_to" android:maxLines="1" android:layout_weight="2" android:textAllCaps="true"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp32">
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp8" android:layout_weight="0.5"/>
+        <android.support.v7.widget.AppCompatSpinner2 android:id="@a/listIndicators" android:background="@drawable/bg_l1_down_color_picker" android:layout_width="0dp" android:layout_height="@dimen/dp32" android:foreground="@drawable/bg_l2_down_color_picker" android:minHeight="@dimen/dp32" android:popupBackground="@drawable/bg_tools_dialog" android:layout_weight="2" android:foregroundGravity="bottom|right|center_vertical|center_horizontal|center" android:spinnerMode="dropdown"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+    </LinearLayout>
+</LinearLayout>

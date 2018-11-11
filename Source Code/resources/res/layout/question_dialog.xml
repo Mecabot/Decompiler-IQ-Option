@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_gradient_from_dark_to_ligth" android:layout_width="@dimen/dp320" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <TextView android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/questionText" android:padding="@dimen/dp20" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/are_you_sure_you_want_to_delete_file"/>
+    <View android:background="@drawable/dark_dialog_horizontal_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp14" android:textColor="@android:color/white" android:gravity="center" android:id="@a/cancel" android:background="@drawable/btn_bg_cancel_dialog" android:padding="@dimen/dp16" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1"/>
+        <View android:background="@drawable/dark_dialog_horizontal_divider" android:layout_width="1px" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="#f58220" android:gravity="center" android:id="@+id/confirm" android:background="@drawable/btn_bg_confirm_dialog" android:padding="@dimen/dp16" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@i/confirm" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

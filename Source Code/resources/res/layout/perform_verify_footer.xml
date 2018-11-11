@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/perform_verify_footer_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp180">
+    <View android:background="@drawable/line_divider_grey_blur_10" android:layout_width="match_parent" android:layout_height="@dimen/separator"/>
+    <LinearLayout android:orientation="vertical" android:id="@a/performVerifyContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/line_divider_grey_blur_10" android:showDividers="middle"/>
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:layout_gravity="center" android:id="@a/performVerifyError" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@h/unknown_error_occurred"/>
+    <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@a/performVerifyProgress" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" style="?android:attr/progressBarStyleLarge"/>
+</FrameLayout>

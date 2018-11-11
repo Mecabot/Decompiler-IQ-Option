@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/deposit_page_amount_item_0" android:layout_width="match_parent" android:layout_height="34dp" android:animateLayoutChanges="true">
+    <TextView android:textSize="@a/deposit_page_amount_item_text_size" android:textColor="@color/deposit_page_green" android:gravity="center" android:layout_gravity="center" android:id="@a/amountTextView" android:background="@drawable/deposit_page_amount_item_white_border" android:paddingLeft="@a/deposit_page_amount_item_padding" android:paddingRight="@a/deposit_page_amount_item_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="sans-serif-medium"/>
+    <android.support.v7.widget.AppCompatImageView android:layout_gravity="end" android:id="@a/vipBadge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_vip_badge"/>
+    <View android:id="@a/depositPageAmountItemTopFrame" android:background="@color/deposit_page_frame_orange_filling_start" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@a/depositPageAmountItemTopFrameBorder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/deposit_page_amount_item_orange_top_border"/>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView2 xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/withdrawMethodContainer" android:tag="layout/fragment_withdraw_verify_page_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/withdraw_method_normal" android:layout_marginStart="@dimen/dp16" android:layout_marginEnd="@dimen/dp16" app:cardCornerRadius="@dimen/withdraw_method_corners" app:cardElevation="@dimen/withdraw_method_elevation">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="binding_1" android:background="@color/white" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp10" android:paddingEnd="@dimen/dp20">
+        <ImageView android:layout_gravity="top" android:id="@a/withdrawVerifyIcon" android:layout_width="@dimen/dp34" android:layout_height="@dimen/dp34" android:layout_marginTop="@dimen/dp24" app:srcCompat="@drawable/ic_verify_warning"/>
+        <LinearLayout android:orientation="vertical" android:tag="binding_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dp10">
+            <TextView android:textSize="@dimen/sp16" android:textColor="@color/dark_blue" android:id="@a/withdrawVerifyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium"/>
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/dark_blue" android:id="@a/withdrawVerifyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:lineSpacingExtra="@dimen/sp5"/>
+            <include android:layout_gravity="end" android:id="@a/withdrawVerifyButtonContainerBottom" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp16" layout="@layout/withdraw_verify_button"/>
+        </LinearLayout>
+        <include android:id="@a/withdrawVerifyButtonContainerRight" layout="@layout/withdraw_verify_button"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView2>

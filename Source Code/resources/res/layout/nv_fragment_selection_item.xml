@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="4dp" app:cardElevation="2dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:orientation="horizontal" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/item_scan_option_button_icon" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="15dp"/>
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="?attr/netverify_scanOptionsItemForeground" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/item_scan_option_button_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

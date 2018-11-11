@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/accountSecurityRoot" android:tag="layout/fragment_push_settings_0" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@a/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp19" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/push_settings" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@a/exitButton" android:tag="binding_1" android:padding="@dimen/dp13" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" app:srcCompat="@drawable/ic_arrow_back"/>
+            <View android:layout_gravity="bottom" android:background="@color/grey_blur_15" android:layout_width="match_parent" android:layout_height="@dimen/dp1"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView android:id="@a/push_settings_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@a/alert_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@a/alert_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp15" android:scaleType="centerInside"/>
+                <TextView android:textSize="@dimen/sp20" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp10" android:text="@string/enable_notifications" android:fontFamily="sans-serif"/>
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur_60" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp15" android:text="@string/oops_looks_like_you_have_notifications_turned_off" android:fontFamily="sans-serif"/>
+                <TextView android:textSize="@dimen/sp17" android:textColor="@color/white" android:gravity="center" android:id="@a/button_enable" android:background="@drawable/bg_rectangle_rounded_green" android:paddingLeft="@dimen/dp30" android:paddingRight="@dimen/dp30" android:layout_width="wrap_content" android:layout_height="@dimen/dp50" android:minWidth="@dimen/dp180" android:text="@string/go_to_settings" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

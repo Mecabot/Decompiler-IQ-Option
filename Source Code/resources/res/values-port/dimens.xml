@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionBarBackIconInset">@dimen/dp16</dimen>
+    <dimen name="actionBarHeight">@dimen/dp56</dimen>
+    <dimen name="iq_smart_fragment_width">0px</dimen>
+    <dimen name="support_screen_title_size">@dimen/sp14</dimen>
+    <dimen name="tpsl_dialog_edit_control_padding">@dimen/dp60</dimen>
+    <dimen name="tradingHistoryCalendarItemWidth">@dimen/dp30</dimen>
+    <dimen name="tradingHistoryNotDataTextPadding">@dimen/dp30</dimen>
+    <dimen name="tradingHistoryNotDataTextPaddingTop">@dimen/dp28</dimen>
+</resources>

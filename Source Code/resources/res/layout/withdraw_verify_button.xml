@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/withdraw_verify_button_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/withdraw_green" android:id="@a/withdrawVerifyButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verify" android:fontFamily="@font/medium" android:layout_marginStart="@dimen/dp16"/>
+    <ImageView android:id="@a/withdrawVerifyButtonIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp4" app:srcCompat="@drawable/ic_next_green"/>
+</LinearLayout>

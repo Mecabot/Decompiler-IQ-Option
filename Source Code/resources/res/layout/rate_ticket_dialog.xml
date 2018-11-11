@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_gradient_from_dark_to_ligth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <TextView android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:gravity="center" android:paddingLeft="@dimen/dp20" android:paddingTop="@dimen/dp20" android:paddingRight="@dimen/dp20" android:layout_width="@dimen/dp320" android:layout_height="wrap_content" android:text="@string/rate_the_quality_of_the_support_team"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="@dimen/dp20" android:paddingBottom="@dimen/dp20" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@a/star1" android:layout_width="@dimen/dp30" android:layout_height="match_parent" android:src="@drawable/rate_star_off"/>
+        <ImageView android:id="@a/star2" android:layout_width="@dimen/dp30" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+        <ImageView android:id="@a/star3" android:layout_width="@dimen/dp30" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+        <ImageView android:id="@a/star4" android:layout_width="@dimen/dp30" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+        <ImageView android:id="@a/star5" android:layout_width="@dimen/dp30" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+    </LinearLayout>
+    <EditText android:textSize="@dimen/sp14" android:textColor="@color/gray_color" android:textColorHint="#999999" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@a/comment" android:background="@drawable/edittext_bg_rate" android:padding="@dimen/dp8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp50" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="@dimen/dp16" android:hint="@string/specify_why_you_have_given_a_poor_rating" android:scrollHorizontally="false" android:inputType="textNoSuggestions" android:imeOptions="actionUnspecified|actionGo|actionSend|actionDone|flagNoExtractUi" android:layout_marginEnd="20dp"/>
+    <View android:background="@drawable/dark_dialog_horizontal_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp14" android:textColor="@android:color/white" android:gravity="center" android:id="@a/cancel" android:background="@drawable/btn_bg_cancel_dialog" android:padding="@dimen/dp16" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1"/>
+        <View android:background="@drawable/dark_dialog_horizontal_divider" android:layout_width="1px" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/sp14" android:textColor="#f58220" android:gravity="center" android:id="@+id/confirm" android:background="@drawable/btn_bg_confirm_dialog" android:padding="@dimen/dp16" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/send"/>
+            <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@a/rateProgress" android:visibility="gone" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" style="?android:attr/progressBarStyleLarge"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

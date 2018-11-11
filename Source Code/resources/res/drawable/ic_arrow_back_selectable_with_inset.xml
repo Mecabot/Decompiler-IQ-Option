@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/ic_arrow_back_selectable" android:insetLeft="@dimen/actionBarBackIconInset" android:insetRight="@dimen/actionBarBackIconInset" android:insetTop="@dimen/actionBarBackIconInset" android:insetBottom="@dimen/actionBarBackIconInset"/>

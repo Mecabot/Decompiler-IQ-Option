@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/sp18" android:textColor="@color/enabled_white_100_70" android:id="@a/dialpad_key_number" android:tag="layout/dialpad_key_zero_0" android:text="0" android:fontFamily="sans-serif-ligh" style="@style/DialpadKeyStyle"/>

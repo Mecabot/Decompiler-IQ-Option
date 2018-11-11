@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_verify_cards_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/verify_toolbar_layout"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView android:id="@a/verifyCardsRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="ifContentScrolls"/>
+        <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:layout_gravity="center" android:id="@a/verifyCardsErrorTextView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@a/verifyCardsProgress" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" style="?android:attr/progressBarStyleLarge"/>
+    </FrameLayout>
+</LinearLayout>

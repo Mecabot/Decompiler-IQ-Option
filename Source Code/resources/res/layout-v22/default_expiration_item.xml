@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/dp44">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_expiration_item" android:paddingLeft="@dimen/dp10" android:paddingRight="@dimen/dp10" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="1px">
+        <com.iqoption.view.timer.TimerView android:layout_gravity="center_vertical" android:id="@a/timerView" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/time" android:paddingLeft="@dimen/dp10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:autoSizeTextType="1" android:autoSizeMinTextSize="@dimen/sp8" android:autoSizeMaxTextSize="@dimen/sp14"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@drawable/line_divider_grey_blur_10" android:layout_width="match_parent" android:layout_height="1px"/>
+</FrameLayout>

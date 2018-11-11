@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/push_settings_group_item_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp450" android:layout_height="wrap_content">
+        <View android:layout_gravity="top|center_vertical|center_horizontal|center" android:background="@color/grey_blur_15" android:layout_width="match_parent" android:layout_height="@dimen/dp1"/>
+        <LinearLayout android:orientation="vertical" android:id="@a/switch_text" android:padding="@dimen/dp12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp100">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/white" android:id="@a/item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="@dimen/sp13" android:textColor="@color/grey_blur_70" android:id="@a/item_description" android:paddingTop="@dimen/dp5" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@a/item_switch_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp100" style="?android:attr/progressBarStyleSmall"/>
+        <android.support.v7.widget.SwitchCompat android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@a/item_switch" android:padding="@dimen/dp12" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground"/>
+    </FrameLayout>
+</FrameLayout>

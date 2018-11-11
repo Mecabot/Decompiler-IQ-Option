@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/high_frequency_panel_item_0" android:background="@drawable/high_frequency_panel_item_background" android:layout_width="match_parent" android:layout_height="@dimen/dp30" android:layout_marginBottom="@dimen/dp5">
+    <TableLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp12" android:stretchColumns="0">
+        <TableRow>
+            <TextView android:textSize="@dimen/sp8" android:textColor="@color/white" android:ellipsize="end" android:id="@a/signalActive" android:paddingRight="@dimen/dp2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_span="2" android:maxLines="1" android:textAllCaps="true" android:fontFamily="sans-serif"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp8" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@a/signalValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:maxLines="1" android:layout_weight="1" android:fontFamily="sans-serif"/>
+        </TableRow>
+    </TableLayout>
+    <View android:layout_gravity="left" android:id="@a/signalColorLine" android:layout_width="@dimen/dp1" android:layout_height="match_parent"/>
+</FrameLayout>

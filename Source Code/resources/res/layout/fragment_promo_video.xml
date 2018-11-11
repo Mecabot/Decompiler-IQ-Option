@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/touchLayout" android:tag="layout/fragment_promo_video_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:soundEffectsEnabled="false">
+    <View android:id="@a/dimmer" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+    <FrameLayout android:id="@a/videoLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0">
+        <com.iqoption.view.TextureVideoView android:layout_gravity="center" android:id="@a/videoPlayer" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true"/>
+        <ProgressBar android:layout_gravity="center" android:id="@a/loader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" android:layout_marginLeft="@dimen/dp10" android:minHeight="?android:attr/actionBarSize">
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:gravity="left" android:id="@+id/time" android:paddingLeft="@dimen/dp8" app:customFont="DINAlternateBold.ttf" style="@style/PaymentHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:id="@a/operationType" app:customFont="DINAlternateBold.ttf" style="@style/PaymentHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:id="@a/paymentMethod" app:customFont="DINAlternateBold.ttf" style="@style/PaymentHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:id="@a/sum" app:customFont="PTSansNarrowBold.ttf" style="@style/PaymentHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:id="@a/state" app:customFont="DINAlternateBold.ttf" style="@style/PaymentHistoryText"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_withdrawal_crypto_pager_0" android:background="@color/withdrawal_crypto_veil" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:layout_gravity="bottom" android:id="@a/pager" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp36" android:overScrollMode="never"/>
+    <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@a/dots" android:paddingTop="@dimen/dp16" android:paddingBottom="@dimen/withdrawal_crypto_dots_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

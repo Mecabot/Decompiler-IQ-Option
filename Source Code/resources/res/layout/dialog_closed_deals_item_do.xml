@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/dialog_closed_deals_item_do_0" android:background="@drawable/bg_deals_item" android:paddingLeft="@dimen/dp10" android:paddingTop="@dimen/dp11" android:paddingRight="@dimen/dp10" android:paddingBottom="@dimen/dp11" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@a/strike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textAllCaps="true"/>
+        <ImageView android:id="@a/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp1" android:layout_marginStart="@dimen/dp1"/>
+    </LinearLayout>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/investAmount" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:gravity="center_vertical" android:id="@a/winAmount" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:gravity="center_vertical" android:id="@a/status" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+</LinearLayout>

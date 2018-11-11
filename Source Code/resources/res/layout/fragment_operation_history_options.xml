@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_operation_history_options_0" android:background="@color/bg_second_level" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/toolbar" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="@dimen/dp56">
+        <include android:id="@+id/back" layout="@layout/back_arrow"/>
+        <TextView android:textSize="@dimen/sp20" android:textStyle="normal" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@a/toolbar_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="sans-serif-medium" android:paddingEnd="@dimen/dp16"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp14" android:textStyle="normal" android:textColor="@color/grey_blur" android:id="@a/count_title" android:background="@color/grey_blur_05" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16"/>
+    <android.support.v7.widget.RecyclerView android:id="@a/option_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:overScrollMode="never"/>
+</LinearLayout>

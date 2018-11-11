@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/keyboard_tpsl_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@a/keyboardLayout" android:background="#131826" android:layout_width="@dimen/dp228" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+            <ImageSwitcher android:id="@a/sign" android:paddingTop="@dimen/dp2" android:layout_width="@dimen/dp16" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp16" android:inAnimation="@anim/long_fade_in" android:outAnimation="@anim/long_fade_out">
+                <ImageView android:layout_gravity="center" android:id="@a/signPlus" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_plus_keyboard"/>
+                <ImageView android:layout_gravity="center" android:id="@a/signMinus" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_minus_keyboard"/>
+            </ImageSwitcher>
+            <com.iqoption.view.RobotoEditText android:theme="@style/GreenAccentColorView" android:textSize="@dimen/sp22" android:textColor="@android:color/white" android:textColorHint="@color/grey_blur_50" android:gravity="left|center_vertical|center_horizontal|center" android:id="@a/amountKeyboard" android:background="@null" android:paddingLeft="@dimen/dp4" android:layout_width="0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="1" android:inputType="numberDecimal"/>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:gravity="center" android:id="@+id/done" android:background="?attr/selectableItemBackgroundBorderless" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@h/done" android:maxLines="1"/>
+        </LinearLayout>
+        <com.iqoption.widget.NumPad android:id="@a/numPad" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:changeSignButton="true" app:typeCustomButton="2"/>
+    </LinearLayout>
+</FrameLayout>

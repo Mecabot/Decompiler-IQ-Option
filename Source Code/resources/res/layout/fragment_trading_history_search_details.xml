@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_trading_history_search_details_0" android:background="@color/dark_blue" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="@dimen/actionBarHeight">
+        <include android:id="@+id/back" layout="@layout/back_arrow"/>
+        <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp20" android:textStyle="normal" android:textColor="@color/white" android:id="@+id/title" android:text="@string/deal_details" android:fontFamily="@font/medium" app:capitalize="sentences" style="@style/tradingHistoryTitleLayoutStyle"/>
+    </LinearLayout>
+    <ScrollView android:fillViewport="true" style="@style/tradingHistoryContentLayoutStyle">
+        <LinearLayout android:orientation="vertical" android:background="@color/grey_blur_05" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/active" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/assetName" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/open_time" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/openTime" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@a/openPriceLayout" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/open_price" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/openPrice" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false" android:drawablePadding="@dimen/dp4" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/close_time" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/closeTime" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/close_price" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/closeValue" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@a/investmentLayout" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="0dp" android:layout_height="match_parent" android:text="@h/amount" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/investment" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@a/optPriceLayout" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/opt_price" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/optPrice" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@a/qttyLayout" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/quantity_acronym" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/qtty" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@a/multiplyLayout" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/multiply" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/multiply" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@a/commissionLayout" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/commission" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@a/commissionValue" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@a/swapLayout" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/overnight_fee" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@a/swapValue" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/profit" android:includeFontPadding="false" android:layout_weight="1"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@a/profitValue" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

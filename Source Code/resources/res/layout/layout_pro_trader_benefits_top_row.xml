@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:tag="layout/layout_pro_trader_benefits_top_row_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp28" android:paddingBottom="@dimen/dp18" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="@integer/pro_benefits_first_weight" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16">
+        <ImageView android:id="@a/proBenefitsAvatar" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" app:srcCompat="@drawable/ic_avatar_placeholder"/>
+        <TextView android:textSize="@dimen/sp12" android:textColor="@color/grey_blur_60" android:id="@a/proBenefitsCurrentType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp10"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur_60" android:gravity="center" android:background="@drawable/bg_pro_benefits_transparent_top" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp4" android:text="@string/retail" android:layout_weight="@integer/pro_benefits_second_weight"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp4" android:layout_weight="@integer/pro_benefits_third_weight">
+        <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp4" android:text="@string/professional"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_pro_badge"/>
+    </LinearLayout>
+</TableRow>

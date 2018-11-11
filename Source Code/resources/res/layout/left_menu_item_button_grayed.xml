@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/left_menu_item_button_grayed_0" android:background="@drawable/left_menu_item_button_grayed_border" android:layout_marginBottom="@a/left_menu_item_button_grayed_bottom_padding" style="@style/LeftMenuItemButton">
+    <com.iqoption.view.RobotoTextView android:textColor="@color/selectable_gray_menu" android:layout_gravity="center" android:id="@a/itemLabel" style="@style/LeftMenuItemButtonText"/>
+</FrameLayout>

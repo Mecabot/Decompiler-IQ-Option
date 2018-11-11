@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_locale_asset_search_country_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/outside" android:background="@color/black_40" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@a/sheet" android:paddingTop="@dimen/dp40" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/dp312" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@a/searchCountryToolbar" android:background="@color/bg_second_level" android:layout_width="match_parent" android:layout_height="@dimen/dp56">
+            <TextView android:id="@a/searchCountryTitle" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@i/area" android:layout_weight="1" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" style="@style/WelcomeTitle"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@a/searchCountryClose" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/dp12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/dp8" app:srcCompat="@drawable/ic_close"/>
+        </LinearLayout>
+        <FrameLayout android:background="@color/bg_second_level" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

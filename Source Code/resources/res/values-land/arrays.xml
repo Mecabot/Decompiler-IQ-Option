@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="spec_templates_item_button_text_colors">
+        <item>@color/grey_blue_30</item>
+        <item>@color/green_50</item>
+        <item>@color/green</item>
+    </array>
+    <array name="templates_item_button_text_colors">
+        <item>@color/grey_blur_30</item>
+        <item>@color/green_50</item>
+        <item>@color/green</item>
+    </array>
+</resources>

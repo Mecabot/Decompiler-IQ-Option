@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/card" android:tag="layout/popup_window_currency_selection_0" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/dark_blue" app:cardElevation="@dimen/dp8" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+    <android.support.v7.widget.RecyclerView android:id="@a/currencyList" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+</android.support.v7.widget.CardView>

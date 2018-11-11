@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/left_menu_item_notification_0" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp12" android:minHeight="@dimen/dp50">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/grey_blur_10" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@a/itemIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp13" android:layout_marginRight="@dimen/dp13" app:srcCompat="@drawable/ic_wtf_24dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:id="@a/itemLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="@dimen/sp12" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/issues_with_verification"/>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp13" app:srcCompat="@drawable/ic_arrow_right_new"/>
+    </LinearLayout>
+</FrameLayout>

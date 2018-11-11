@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/ic_ring_checkmark_static">
+    <target android:name="ring_path" android:animation="@anim/ic_checkmark_ring_animation1"/>
+    <target android:name="check_path" android:animation="@anim/ic_checkmark_ring_animation2"/>
+</animated-vector>

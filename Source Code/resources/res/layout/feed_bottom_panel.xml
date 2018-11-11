@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <Space android:id="@a/button_space" android:tag="layout/feed_bottom_panel_0" android:layout_width="match_parent" android:layout_height="@dimen/dp16" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@a/topics_container"/>
+    <LinearLayout android:orientation="vertical" android:id="@a/button_layout" android:tag="layout/feed_bottom_panel_1" android:background="@drawable/buy_feed_bg" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@a/button_space">
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp14" android:id="@a/button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sp2" android:textAllCaps="true" android:fontFamily="@font/medium" android:paddingEnd="@dimen/dp16"/>
+            <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/grey_blur" android:id="@a/price_and_gain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sp2" android:fontFamily="@font/medium"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:tag="layout/feed_bottom_panel_2" android:layout_width="match_parent" android:layout_height="@dimen/dp48" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@a/button_layout">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@a/like_animation" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" android:layout_marginBottom="2.5dp" android:layout_marginStart="@dimen/dp8" android:layout_marginEnd="@dimen/_dp8" app:lottie_fileName="lottie/feed/like.json" app:lottie_loop="false"/>
+        <TextView android:textSize="@dimen/sp12" android:textStyle="normal" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@a/like_counter" android:layout_width="wrap_content" android:layout_height="match_parent" android:textAllCaps="true" android:fontFamily="@font/medium"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp14" android:layout_height="@dimen/dp14" android:layout_marginEnd="@dimen/dp4" app:srcCompat="@drawable/ic_search"/>
+        <TextView android:textSize="@dimen/sp12" android:textStyle="normal" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@a/views_count" android:layout_width="wrap_content" android:layout_height="match_parent" android:fontFamily="@font/medium" android:layout_marginEnd="@dimen/dp16"/>
+    </LinearLayout>
+</merge>

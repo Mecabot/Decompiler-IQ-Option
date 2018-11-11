@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@a/empty" android:background="#40000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_background" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp18" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@a/termsHeader" android:layout_width="match_parent" android:layout_height="@dimen/dp48" android:layout_marginLeft="@dimen/dp16" android:singleLine="true" android:textAllCaps="true" app:customFont="DINAlternateBold.ttf"/>
+        <WebView android:id="@a/terms" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_trading_history_search_result_0" android:background="@color/dark_blue" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="@dimen/actionBarHeight">
+        <include android:id="@+id/back" layout="@layout/back_arrow"/>
+        <LinearLayout android:orientation="vertical" android:id="@a/titleLayout" style="@style/tradingHistoryTitleLayoutStyle">
+            <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp18" android:textStyle="normal" android:textColor="@color/white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trading_history" android:fontFamily="@font/medium" app:capitalize="sentences"/>
+            <TextView android:textSize="@dimen/sp14" android:textStyle="normal" android:textColor="@color/grey_blur" android:ellipsize="end" android:id="@a/subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/regular"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true" style="@style/tradingHistoryContentLayoutStyle">
+        <android.support.v7.widget.RecyclerView android:id="@a/positions" android:paddingTop="@dimen/dp12" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@a/notDataAvailable" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_history_result"/>
+            <TextView android:textSize="@dimen/sp20" android:textColor="@color/white" android:gravity="center" android:paddingLeft="@dimen/tradingHistoryNotDataTextPadding" android:paddingTop="@dimen/tradingHistoryNotDataTextPaddingTop" android:paddingRight="@dimen/tradingHistoryNotDataTextPadding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/we_have_not_found_anything" android:maxLines="1" android:fontFamily="@font/medium"/>
+            <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center" android:paddingLeft="@dimen/tradingHistoryNotDataTextPadding" android:paddingTop="@dimen/dp8" android:paddingRight="@dimen/tradingHistoryNotDataTextPadding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/try_changing_your_trade_search_settings_to_get_the_data_needed" android:maxLines="2" android:lineSpacingExtra="@dimen/sp6" android:fontFamily="@font/regular"/>
+        </LinearLayout>
+        <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@a/loader" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="@dimen/dp42" android:layout_height="@dimen/dp42" android:indeterminate="true" style="?android:attr/progressBarStyleLarge"/>
+    </FrameLayout>
+</LinearLayout>

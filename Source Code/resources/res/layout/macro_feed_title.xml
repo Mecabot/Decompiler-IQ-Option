@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/macro_feed_title_0" android:layout_width="match_parent" android:layout_height="@dimen/dp48" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16">
+    <ImageView android:id="@a/service_icon" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24"/>
+    <TextView android:textSize="@dimen/sp13" android:textStyle="normal" android:textColor="@color/white" android:ellipsize="end" android:id="@a/service_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10"/>
+    <TextView android:textSize="@dimen/sp11" android:textStyle="normal" android:textColor="#6b758e" android:gravity="end" android:id="@a/time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+</LinearLayout>

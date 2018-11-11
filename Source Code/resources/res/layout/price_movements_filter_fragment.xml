@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/price_movements_filter_fragment_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_rectangle_rounded_popup" android:layout_width="@dimen/dp200" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:paddingLeft="@dimen/dp15" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/signals" android:textAllCaps="true" android:fontFamily="sans-serif"/>
+        <View android:background="@color/black_33" android:layout_width="match_parent" android:layout_height="1px"/>
+        <ListView android:id="@a/filterList" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/filter_list_divider" android:dividerHeight="1px"/>
+    </LinearLayout>
+</FrameLayout>

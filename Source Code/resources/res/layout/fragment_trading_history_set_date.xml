@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_trading_history_set_date_0" android:background="@color/dark_blue" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="@dimen/actionBarHeight">
+        <include android:id="@+id/back" layout="@layout/back_arrow"/>
+        <TextView android:textSize="@dimen/sp18" android:textStyle="normal" android:textColor="@color/white" android:id="@+id/title" android:text="@i/period" android:fontFamily="sans-serif-medium" style="@style/tradingHistoryTitleLayoutStyle"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/grey_blur_05_top_rounded_4_rect" style="@style/tradingHistoryContentLayoutStyle">
+        <RadioGroup android:orientation="vertical" android:id="@a/presetDataGroup" android:background="@color/grey_blur_05" android:padding="@dimen/dp8" android:layout_width="@dimen/dp137" android:layout_height="match_parent">
+            <RadioButton android:id="@a/today" android:button="@color/transparent" android:text="@string/today" style="@style/tradingHistoryIQButtonCalendar"/>
+            <RadioButton android:id="@a/yestarday" android:layout_marginTop="@dimen/dp8" android:button="@color/transparent" android:text="@string/yesterday" style="@style/tradingHistoryIQButtonCalendar"/>
+            <RadioButton android:id="@a/lastSevenDay" android:layout_marginTop="@dimen/dp8" android:button="@color/transparent" android:text="@string/last_7_days" style="@style/tradingHistoryIQButtonCalendar"/>
+            <RadioButton android:id="@a/last30days" android:layout_marginTop="@dimen/dp8" android:button="@color/transparent" android:text="@string/last_30_days" style="@style/tradingHistoryIQButtonCalendar"/>
+            <RadioButton android:id="@a/threeMonths" android:layout_marginTop="@dimen/dp8" android:button="@color/transparent" android:text="@string/month_3" style="@style/tradingHistoryIQButtonCalendar"/>
+        </RadioGroup>
+        <com.iqoption.view.materialcalendar.MaterialCalendarView android:id="@a/calendarView" android:paddingTop="@dimen/dp8" android:layout_width="match_parent" android:layout_height="match_parent" app:mcv_arrowColor="@color/grey_blur" app:mcv_calendarMode="0" app:mcv_showOtherDates="2" app:mcv_tileHeight="@dimen/tradingHistoryCalendarItemHeight" app:mcv_tileWidth="@dimen/tradingHistoryCalendarItemWidth"/>
+    </LinearLayout>
+</LinearLayout>

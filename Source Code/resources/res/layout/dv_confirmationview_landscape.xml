@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/confirmation_layout_base" android:background="?attr/dv_confirmationBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.jumio.commons.view.ScaleableImageView android:id="@+id/confirmationImage" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:adjustViewBounds="true" android:layout_weight="2"/>
+    <RelativeLayout android:id="@+id/buttonLayout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:gravity="center_vertical" android:id="@+id/confirmationSnackBar" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Please verify that this image is sharp and all written information is readable" android:layout_above="@+id/confirmationPositiveTextView" android:layout_alignParentTop="true" style="?attr/dv_confirmationHintStyle"/>
+        <TextView android:gravity="center" android:id="@+id/confirmationPositiveTextView" android:layout_width="match_parent" android:layout_height="56dp" android:text="IMAGE IS FINE" android:layout_above="@+id/confirmationNegativeTextView" android:filterTouchesWhenObscured="true" style="?attr/dv_confirmationPositiveStyle"/>
+        <TextView android:gravity="center" android:id="@+id/confirmationNegativeTextView" android:layout_width="match_parent" android:layout_height="56dp" android:text="RETAKE" android:layout_alignParentBottom="true" android:filterTouchesWhenObscured="true" style="?attr/dv_confirmationNegativeStyle"/>
+    </RelativeLayout>
+</LinearLayout>

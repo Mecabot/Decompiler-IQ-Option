@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:background="@color/dark_blur_33" android:paddingLeft="@a/registration_menu_margin" android:paddingTop="@dimen/dp16" android:paddingRight="@a/registration_menu_margin" android:paddingBottom="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1">
+    <TableRow>
+        <TextView android:text="@string/you_get_access_to" android:textAllCaps="true" style="@style/YouGetAccessColumn1"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="1." style="@style/YouGetAccessColumn0"/>
+        <com.iqoption.view.text.FormattedTextView android:text="@string/you_get_access_to_item_1" app:capitalize="sentences" style="@style/YouGetAccessColumn1"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="2." style="@style/YouGetAccessColumn0"/>
+        <com.iqoption.view.text.FormattedTextView android:text="@string/you_get_access_to_item_2" app:capitalize="sentences" style="@style/YouGetAccessColumn1"/>
+    </TableRow>
+</TableLayout>

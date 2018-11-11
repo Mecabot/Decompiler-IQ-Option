@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/bg_balance_item" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp13" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@a/base_balance_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v4.widget.Space android:layout_width="@dimen/dp48" android:layout_height="wrap_content"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@a/iconCurrency" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:scaleType="fitXY"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/dp8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_60" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="true" android:textAllCaps="true" android:fontFamily="@font/medium"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@color/white" android:id="@a/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="true" android:fontFamily="@font/medium"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@color/white_60" android:id="@a/balanceExchange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="true" android:fontFamily="@font/medium"/>
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@a/withdrawalBtn" android:layout_width="@dimen/dp36" android:layout_height="@dimen/dp36" android:layout_marginLeft="@dimen/dp8" android:layout_marginRight="@dimen/dp4">
+                <ImageView android:background="@drawable/circle_grey_blur_03" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center" app:srcCompat="@drawable/ic_balance_withdrawal"/>
+                <ProgressBar android:layout_gravity="center" android:id="@a/withdrawProgress" android:visibility="gone" android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16"/>
+            </FrameLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@a/depositBtn" android:background="@drawable/circle_grey_blur_03" android:layout_width="@dimen/dp36" android:layout_height="@dimen/dp36" android:layout_marginLeft="@dimen/dp4" android:layout_marginRight="@dimen/dp8" android:scaleType="center" app:srcCompat="@drawable/ic_balance_deposit"/>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="@color/grey_blur_10" android:layout_width="match_parent" android:layout_height="@dimen/separator" android:layout_marginLeft="@dimen/dp48"/>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <com.iqoption.view.rounded.RoundedImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/banner_popup_facebook_bg" android:adjustViewBounds="true" app:scale="1" app:topLeftCorner="@dimen/dp8" app:topRightCorner="@dimen/dp8"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/dp20" android:paddingRight="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@a/rateStarShadow" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" android:src="@drawable/banner_popup_icon_like"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingRight="@dimen/dp20" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/sp12" android:textColor="@android:color/white" android:gravity="left" android:layout_gravity="center" android:paddingLeft="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/follow_us_text" android:textAllCaps="true"/>
+            <TextView android:textSize="@dimen/sp12" android:textColor="#152438" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@a/oqoptionCom" android:paddingLeft="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.facebook.share.widget.LikeView android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@a/likeUsButton" android:background="@drawable/btn_green_background" android:layout_width="wrap_content" android:layout_height="@dimen/dp30" android:text="@string/like_us"/>
+    </LinearLayout>
+</FrameLayout>

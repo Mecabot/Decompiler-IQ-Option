@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout-land/portfolio_delegate_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@a/background" android:background="@color/dark_blue" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <ImageView android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp4" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/ic_arrow_back" style="@style/IQActionButton"/>
+    <ImageView android:id="@a/collapser" android:tag="binding_1" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp26" android:rotation="180" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/ic_minimize_arrow_white_24dp"/>
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@a/startGuideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/portfolio_title_horizontal_offset_start"/>
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@a/endGuideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="@dimen/portfolio_title_horizontal_offset_end"/>
+    <android.support.design.widget.CoordinatorLayout android:id="@+id/content" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@a/startGuideline" app:layout_constraintRight_toLeftOf="@a/endGuideline" app:layout_constraintTop_toTopOf="0">
+        <android.support.design.widget.AppBarLayout android:id="@a/appbarLayout" android:tag="binding_2" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="@dimen/dp0">
+            <FrameLayout android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1">
+                <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/dp56" android:layout_marginLeft="@dimen/dp16" android:layout_marginRight="@dimen/dp16" layout="@layout/portfolio_title"/>
+            </FrameLayout>
+            <include android:id="@a/balances" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1" layout="@layout/portfolio_balances"/>
+            <FrameLayout android:id="@a/appbarWithTabs" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.design.widget.TabLayout android:id="@a/tabs" android:layout_width="match_parent" android:layout_height="@dimen/dp48" android:layout_marginTop="@dimen/dp56" app:tabIndicatorColor="@color/white" app:tabMode="1" app:tabSelectedTextColor="@color/white" app:tabTextAppearance="@style/IQTextAppearance.Tab" app:tabTextColor="@color/grey_blur"/>
+                <include android:id="@a/appbar" android:layout_width="match_parent" android:layout_height="@dimen/dp56" layout="@layout/portfolio_app_bar"/>
+            </FrameLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager android:id="@a/pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>

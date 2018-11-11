@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@a/terms" android:tag="layout/deposit_terms_layout_0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp36">
+    <android.support.v7.widget.AppCompatCheckBox android:theme="@style/GreenGreyCheckBox" android:id="@a/termsCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="13sp" android:textColor="#6d6e70" android:id="@a/termsText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:layout_marginStart="@dimen/dp5"/>
+</LinearLayout>

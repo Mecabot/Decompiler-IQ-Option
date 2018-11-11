@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/deposit_page_content_no_bonus_old_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@a/depositPageContentRoot" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp24" android:layout_marginBottom="@dimen/dp16" android:maxWidth="@dimen/dp400" android:animateLayoutChanges="true">
+        <TextView android:textSize="@dimen/sp12" android:textColor="@c/deposit_dark_grey" android:id="@a/paymentMethodTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@h/payment_method" android:textAllCaps="true" android:fontFamily="@font/medium"/>
+        <com.iqoption.deposit.old.PayMethodSelector android:id="@a/paymentMethodSelector" android:background="@drawable/deposit_payment_method_spinner_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:layout_marginBottom="@dimen/dp4" android:minHeight="@dimen/dp30" app:cornerRadius="@dimen/dp5"/>
+        <TextView android:textSize="@dimen/sp12" android:textColor="@color/deposit_selectable_red_100_99" android:id="@a/paymentMethodError" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium"/>
+        <LinearLayout android:orientation="vertical" android:id="@a/paymentBottomContainer" android:tag="binding_1" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@a/depositAmountLine" layout="@layout/deposit_old_amount_line"/>
+            <TextView android:textSize="@dimen/sp12" android:textColor="@color/deposit_selectable_red_100_99" android:id="@a/depositAmountError" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/medium"/>
+            <include android:id="@a/deposit3dContainer" layout="@layout/deposit_old_3ds"/>
+            <android.support.v7.widget.RecyclerView android:id="@a/depositsContainer" android:layout_width="@a/deposit_page_payment_method_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16"/>
+            <com.iqoption.view.ConfirmButtonView android:id="@a/depositButton" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/dp36" android:layout_marginTop="@dimen/dp16" app:buttonBackground="@e/deposit_button_selector" app:buttonFontFamily="@string/medium" app:buttonText="@string/deposit" app:buttonTextColor="@color/selectable_white_100_70" app:buttonTextSize="@dimen/sp14"/>
+            <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <include android:id="@a/terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" layout="@layout/deposit_terms_layout"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/veil" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

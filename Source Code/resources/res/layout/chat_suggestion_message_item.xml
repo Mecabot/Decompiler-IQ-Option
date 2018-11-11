@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textColor="?attr/colorAccent" android:id="@a/suggestion" android:tag="layout/chat_suggestion_message_item_0" android:background="@drawable/chat_suggestion_bg" android:layout_width="@dimen/dp254" android:layout_height="@dimen/dp48" android:layout_marginStart="@dimen/dp52" android:layout_marginEnd="@dimen/dp58" style="@style/IQTextButton"/>

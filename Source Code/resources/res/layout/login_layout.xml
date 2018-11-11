@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:id="@a/loginLayout" android:background="@drawable/welcome_menu_shadow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <include layout="@layout/welcome_blur_bg_layout"/>
+    <LinearLayout android:orientation="vertical" android:id="@a/contentSignin" android:visibility="visible" android:layout_width="@dimen/dp320" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/sp24" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@a/loginTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp22" android:layout_marginTop="@dimen/dp42" android:layout_marginRight="@dimen/dp22" android:layout_marginBottom="@dimen/dp42" android:text="@string/login" android:textAllCaps="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@a/loginFields" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View style="@style/WelcomeMenuHorizontalDivider"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@a/registration_menu_item_height">
+                <ImageView android:id="@a/emailEditSigninIcon" android:src="@drawable/icon_mail_white" style="@style/RegistrationMenuItemIcon"/>
+                <EditText android:id="@a/emailSigninEdit" android:hint="@string/email" style="@style/RegistrationMenuItemEmailText"/>
+            </LinearLayout>
+            <View style="@style/WelcomeMenuHorizontalDivider"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@a/registration_menu_item_height">
+                <ImageView android:id="@a/passwordEditSigninIcon" android:src="@drawable/icon_password_white" style="@style/RegistrationMenuItemIcon"/>
+                <EditText android:id="@a/passwordSigninEdit" android:hint="@string/password" style="@style/RegistrationMenuItemPasswordText"/>
+                <TextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@a/forgotPassword" android:background="@null" android:padding="@dimen/dp14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgot_password"/>
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="@a/registration_menu_item_height">
+                <Button android:textSize="@dimen/sp14" android:textColor="@drawable/welcome_continue_btn_text_color" android:id="@a/loginButton" android:tag="loginBtn" android:background="@drawable/welcome_continue_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/login" android:textAllCaps="true"/>
+                <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@a/signinProgress" android:visibility="invisible" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" style="?android:attr/progressBarStyleLarge"/>
+            </FrameLayout>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@color/white_66" android:gravity="center" android:id="@a/socialTitle" android:background="#42000b29" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp26" android:text="@string/or_you_can_sign_in_with" android:singleLine="true" android:textAllCaps="true"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@a/loginSocialLayout" android:layout_width="match_parent" android:layout_height="@a/registration_menu_item_height">
+                <FrameLayout android:id="@a/googleLogin" android:background="@drawable/welcome_btn_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@null" android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:layout_marginLeft="@dimen/dp16" android:src="@drawable/welcome_social_icon_g" android:scaleType="fitXY"/>
+                    <TextView android:textSize="@dimen/sp16" android:textColor="#ffffff" android:gravity="center" android:paddingLeft="@dimen/dp30" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/google" android:textAllCaps="true"/>
+                </FrameLayout>
+                <View style="@style/WelcomeMenuVerticalDivider"/>
+                <FrameLayout android:id="@a/facebookLogin" android:background="@drawable/welcome_btn_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@null" android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:layout_marginLeft="@dimen/dp16" android:src="@drawable/welcome_social_icon_f" android:scaleType="fitXY" android:layout_marginStart="@dimen/dp16"/>
+                    <TextView android:textSize="@dimen/sp16" android:textColor="#ffffff" android:gravity="center" android:paddingLeft="@dimen/dp30" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/facebook" android:textAllCaps="true" android:paddingStart="@dimen/dp30"/>
+                </FrameLayout>
+            </LinearLayout>
+            <View android:id="@a/socialDiviner" style="@style/WelcomeMenuHorizontalDivider"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

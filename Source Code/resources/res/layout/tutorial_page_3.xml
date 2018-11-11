@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp24" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp12" android:text="@string/why_binary_options" app:customFont="DINAlternateBold.ttf"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dp24" android:layout_weight="1">
+        <LinearLayout android:layout_gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:paddingLeft="@dimen/dp32" android:paddingRight="@dimen/dp32" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp4">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@a/firstMark" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:layout_marginRight="@dimen/dp8" android:src="@drawable/tutorial_mark"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:layout_gravity="top" android:id="@a/firstWhy" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/revenue_and_risks_are_determined" android:layout_weight="1" app:customFont="DINAlternateBold.ttf"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp4">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@a/secondMark" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:layout_marginRight="@dimen/dp8" android:src="@drawable/tutorial_mark"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@a/secondWhy" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/trade_fast_positions_close_in_1_minute" android:layout_weight="1" app:customFont="DINAlternateBold.ttf"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp4">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@a/thirdMark" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:layout_marginRight="@dimen/dp8" android:src="@drawable/tutorial_mark"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@a/thirdWhy" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/revenue_guaranteed" android:layout_weight="1" app:customFont="DINAlternateBold.ttf"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp4">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@a/fourthMark" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:layout_marginRight="@dimen/dp8" android:src="@drawable/tutorial_mark"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@a/fourthWhy" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/no_spreads_and_no_commissions" android:layout_weight="1" app:customFont="DINAlternateBold.ttf"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp4">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@a/fifthMark" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:layout_marginRight="@dimen/dp8" android:src="@drawable/tutorial_mark"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@a/fifthWhy" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/perfect_for_beginners_and_professionals_alike" android:layout_weight="1" app:customFont="DINAlternateBold.ttf"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

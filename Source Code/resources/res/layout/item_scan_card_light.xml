@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/scanCardContainer" android:tag="layout/item_scan_card_light_0" android:padding="@dimen/dp16" android:layout_width="match_parent" android:layout_height="@dimen/dp52">
+    <ImageView android:id="@+id/scanCardIcon" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:layout_marginRight="@dimen/dp32" android:scaleType="centerInside" android:layout_marginEnd="@dimen/dp32"/>
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/scanCardTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp32" android:layout_weight="1" android:lineSpacingExtra="@dimen/sp8"/>
+</LinearLayout>

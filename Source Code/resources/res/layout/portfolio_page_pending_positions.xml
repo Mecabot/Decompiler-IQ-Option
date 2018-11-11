@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/portfolio_page_pending_positions_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView android:id="@+id/list" android:paddingTop="@dimen/dp8" android:paddingBottom="@dimen/dp8" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/progressBar" android:visibility="gone" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" android:layout_marginTop="@dimen/dp32"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/errorLayout" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp32">
+        <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/we_cannot_upload_your_pending_positions_at_the_moment" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="@dimen/sp14" android:id="@a/btnReload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:minWidth="@dimen/dp96" android:text="@string/reload" style="@style/IQButton.Gray"/>
+    </LinearLayout>
+</FrameLayout>

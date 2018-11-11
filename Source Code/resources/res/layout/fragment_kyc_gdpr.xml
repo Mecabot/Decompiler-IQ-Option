@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:tag="layout/fragment_kyc_gdpr_0" android:background="@drawable/bg_kyc_gradient" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@a/kycToolbarLayout" layout="@layout/kyc_toolbar_layout"/>
+    <TextView android:textSize="@dimen/sp18" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@a/kycGdprTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:layout_marginStart="@dimen/kyc_horizontal_margin" android:layout_marginEnd="@dimen/kyc_horizontal_margin"/>
+    <FrameLayout android:background="@drawable/frame_grey" android:padding="@dimen/dp10" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="30dp" android:layout_weight="1" android:layout_marginStart="@dimen/dp30" android:layout_marginEnd="@dimen/dp30">
+        <WebView android:id="@a/kycGdprWebView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/kyc_horizontal_margin" android:layout_marginEnd="@dimen/kyc_horizontal_margin">
+        <CheckBox android:id="@a/kycGdprCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_marginEnd="@dimen/dp6"/>
+        <TextView android:textSize="@dimen/sp17" android:textColor="@color/grey_blur" android:id="@a/kycGdprCheckBoxText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:lineSpacingExtra="@dimen/sp3" android:paddingStart="@dimen/dp10"/>
+    </LinearLayout>
+    <include android:id="@a/nextButton" android:layout_width="match_parent" android:layout_height="@dimen/kyc_continue_button_height" android:layout_marginLeft="@dimen/kyc_horizontal_margin" android:layout_marginTop="30dp" android:layout_marginRight="@dimen/kyc_horizontal_margin" android:layout_marginBottom="20dp" layout="@layout/kyc_continue_button"/>
+</LinearLayout>

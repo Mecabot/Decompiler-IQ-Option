@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/right_panel_delegate_crypto_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iqoption.view.CryptoAssetPager android:id="@a/assetPager" android:layout_width="match_parent" android:layout_height="@dimen/dp86"/>
+    <FrameLayout android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@a/assetPager">
+        <include android:id="@a/main" layout="@layout/right_panel_delegate_crypto_main"/>
+        <include android:id="@a/loading" layout="@layout/right_panel_delegate_crypto_loading"/>
+        <include android:id="@a/success" layout="@layout/right_panel_delegate_crypto_success"/>
+        <include android:id="@a/closed" layout="@layout/right_panel_delegate_crypto_closed"/>
+    </FrameLayout>
+    <include android:id="@+id/confirm" layout="@layout/right_panel_delegate_crypto_confirmation"/>
+</RelativeLayout>

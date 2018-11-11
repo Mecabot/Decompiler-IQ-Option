@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bam_additional_cc_number_text">16sp</dimen>
+    <dimen name="dv_helpview_doctype_title_text">19sp</dimen>
+    <dimen name="dv_helpview_scan_instructions_text">14sp</dimen>
+    <dimen name="dv_upload_container_padding_top">24dp</dimen>
+    <dimen name="dv_upload_description_text">14sp</dimen>
+    <dimen name="dv_upload_progress_info_text">12sp</dimen>
+    <dimen name="dv_upload_retry_button_landscape_text">12sp</dimen>
+    <dimen name="dv_upload_title_text">19sp</dimen>
+    <dimen name="nv_helpview_animation_layout_height">0.65</dimen>
+    <dimen name="nv_helpview_container_padding_top">25dp</dimen>
+    <dimen name="nv_helpview_description_layout_height">0.35</dimen>
+    <dimen name="nv_helpview_doctype_title_text">19sp</dimen>
+    <dimen name="nv_helpview_fallback_button_text">14sp</dimen>
+    <dimen name="nv_helpview_full_description_margin_top">10dp</dimen>
+    <dimen name="nv_helpview_full_padding_top">20dp</dimen>
+    <dimen name="nv_helpview_liveness_bottom_height">0.14</dimen>
+    <dimen name="nv_helpview_liveness_cell_height">0.28</dimen>
+    <dimen name="nv_helpview_liveness_image_size">78dp</dimen>
+    <dimen name="nv_helpview_liveness_spacer">2dp</dimen>
+    <dimen name="nv_helpview_liveness_top_height">0.02</dimen>
+    <dimen name="nv_helpview_scan_instructions_text">14sp</dimen>
+    <dimen name="nv_toolbar_subtitle_text">22sp</dimen>
+    <dimen name="nv_upload_container_padding_top">24dp</dimen>
+    <dimen name="nv_upload_description_text">14sp</dimen>
+    <dimen name="nv_upload_progress_info_text">12sp</dimen>
+    <dimen name="nv_upload_retry_button_landscape_text">12sp</dimen>
+    <dimen name="nv_upload_title_text">19sp</dimen>
+</resources>

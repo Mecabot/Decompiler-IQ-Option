@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="@dimen/dp230" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp12">
+    <FrameLayout android:layout_gravity="center_horizontal" android:paddingTop="@dimen/dp1" android:paddingBottom="@dimen/dp1" android:layout_width="match_parent" android:layout_height="@dimen/dp100">
+        <ImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:alpha="0.33"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp12" android:paddingTop="@dimen/dp4" android:paddingRight="@dimen/dp12" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2.5">
+                <TextView android:textSize="@dimen/sp14" android:textColor="#ffffff" android:id="@a/name_tournament" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="2"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/arrow" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/chart_type_arrow" android:scaleType="fitEnd" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:paddingLeft="@dimen/dp12" android:paddingRight="@dimen/dp12" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/sp8" android:textColor="@color/grey_blur_33" android:id="@a/win_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/win" android:layout_weight="1" android:textAllCaps="true"/>
+                <TextView android:textSize="@dimen/sp8" android:textColor="@color/grey_blur_33" android:id="@a/place_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/place" android:layout_weight="1" android:textAllCaps="true"/>
+                <TextView android:textSize="@dimen/sp8" android:textColor="@color/grey_blur_33" android:id="@a/members_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/participants" android:layout_weight="1" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="top" android:orientation="horizontal" android:paddingLeft="@dimen/dp12" android:paddingRight="@dimen/dp12" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="#ffffff" android:id="@a/amount_win" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:textAllCaps="true"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="#ffffff" android:id="@a/place" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:textAllCaps="true"/>
+                <TextView android:textSize="@dimen/sp14" android:textColor="#ffffff" android:id="@a/count_members" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@a/time_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.5">
+                <TextView android:textSize="@dimen/sp8" android:textColor="@color/red" android:gravity="center_vertical" android:id="@+id/time" android:background="#19181d29" android:paddingLeft="@dimen/dp12" android:paddingTop="@dimen/dp2" android:paddingBottom="@dimen/dp2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true"/>
+                <TextView android:textSize="@dimen/sp8" android:textColor="@color/grey_blur_33" android:gravity="center_vertical" android:id="@a/time_text" android:background="#19181d29" android:paddingLeft="@dimen/dp2" android:paddingTop="@dimen/dp2" android:paddingBottom="@dimen/dp4" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/time_left_till_the_end" android:layout_weight="1" android:textAllCaps="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@a/image_filter" android:background="@drawable/image_filter_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@a/button_container" android:background="@drawable/registration_tournament_button_state" android:layout_width="match_parent" android:layout_height="@dimen/dp38">
+        <TextView android:textSize="@dimen/sp14" android:textStyle="bold" android:textColor="#ffffff" android:layout_gravity="center" android:id="@a/button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rebuy"/>
+        <TextView android:textSize="@dimen/sp8" android:textColor="#7dffffff" android:layout_gravity="center" android:id="@a/button_descr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_tournament_balance"/>
+    </LinearLayout>
+</LinearLayout>

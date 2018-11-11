@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@a/base_balance_item" android:background="@drawable/bg_balance_item" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp13" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ViewSwitcher android:layout_gravity="center_vertical" android:id="@a/checkboxFrame" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp20" android:inAnimation="@anim/long_fade_in" android:outAnimation="@anim/long_fade_out">
+            <com.iqoption.view.AnimatedVectorSwitchView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@a/selectedCheckView" android:background="?attr/selectableItemBackgroundBorderless" android:paddingBottom="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:stateOff="@drawable/ic_checkbox_animated" app:stateOn="@drawable/ic_checkbox_animated2"/>
+            <android.support.v4.widget.ContentLoadingProgressBar android:theme="@style/WhiteProgressBar" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@a/loading_change" android:visibility="visible" android:layout_width="@dimen/dp18" android:layout_height="@dimen/dp18" style="?android:attr/progressBarStyleLarge"/>
+        </ViewSwitcher>
+        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/circle_24_purpe" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:scaleType="center" app:srcCompat="@drawable/ic_cup"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/dp8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_60" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="true" android:textAllCaps="true" android:fontFamily="@font/medium"/>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@color/purple" android:id="@a/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="true" android:fontFamily="@font/medium"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/grey_blur_10" android:layout_width="match_parent" android:layout_height="@dimen/separator" android:layout_marginLeft="@dimen/dp48"/>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/bg_menu_screens" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:orientation="horizontal" android:background="@color/headerbar" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/backButton" android:background="@drawable/back_button_state" android:padding="@dimen/dp5" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" android:layout_marginLeft="@dimen/dp8" android:scaleType="fitCenter"/>
+        <TextView android:textSize="@dimen/sp22" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@a/titleUploadManager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true"/>
+        <Button android:textSize="@dimen/sp14" android:textColor="@android:color/white" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@a/saveButton" android:background="@drawable/call_button_state" android:layout_width="@dimen/dp90" android:layout_height="match_parent" android:layout_margin="@dimen/dp8" android:text="@i/save"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/sp12" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@a/titleText" android:paddingLeft="@dimen/dp40" android:paddingTop="@dimen/dp20" android:paddingRight="@dimen/dp40" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ListView android:id="@a/listView" android:background="@drawable/white_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp40" android:layout_marginTop="@dimen/dp20" android:layout_marginRight="@dimen/dp40"/>
+</LinearLayout>

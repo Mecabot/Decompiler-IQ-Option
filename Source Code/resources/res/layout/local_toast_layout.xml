@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@a/contentLayout" android:tag="layout/local_toast_layout_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:id="@a/localToastTypeIndicator" android:layout_width="@dimen/dp4" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/nav_bg_95" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/dp6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@color/grey_blur_33" android:id="@a/localToastTitle" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/dp220"/>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@color/white_88" android:id="@a/actionText" android:tag="binding_2" android:paddingTop="@dimen/dp2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/dp220"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@a/toastActionIcon" android:padding="@dimen/dp6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

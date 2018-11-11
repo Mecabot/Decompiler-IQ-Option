@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:tag="layout/deposit_crypto_payment_method_item_0" android:layout_width="match_parent" android:layout_height="@dimen/dp35">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="@dimen/dp19" android:layout_height="@dimen/dp19" android:layout_marginLeft="@dimen/dp10" android:layout_marginRight="@dimen/dp8"/>
+    <TextView android:textSize="@dimen/sp14" android:textColor="@color/black" android:id="@+id/name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="sans-serif-medium" android:letterSpacing="-0.01"/>
+</LinearLayout>

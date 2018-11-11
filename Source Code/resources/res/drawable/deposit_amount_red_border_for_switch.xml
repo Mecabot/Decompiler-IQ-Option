@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="2dp" android:color="@color/deposit_page_red"/>
+            <solid android:color="@color/transparent"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/textfield_registartion_dialog"/>
+</layer-list>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/otn_leader_board_current_user_item_0" android:background="@drawable/otn_leader_board_current_user_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp46">
+    <FrameLayout android:layout_width="@dimen/dp42" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/dp12" android:textStyle="bold" android:textColor="@color/grey_blur" android:layout_gravity="center" android:id="@a/placeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.5" android:fontFamily="sans-serif"/>
+    </FrameLayout>
+    <ImageView android:id="@a/countryFlag" android:layout_width="@dimen/dp14" android:layout_height="@dimen/dp11" android:layout_marginRight="@dimen/dp10"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="@dimen/sp14" android:textStyle="normal" android:textColor="@color/white" android:ellipsize="end" android:id="@a/userName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp10" android:maxLines="1" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif-medium" android:letterSpacing="0.02"/>
+        <TextView android:textSize="@dimen/sp10" android:textStyle="normal" android:textColor="@color/grey_blur" android:ellipsize="end" android:id="@a/youText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp10" android:text="@string/it_you" android:maxLines="1" android:alpha="0.7" android:fontFamily="sans-serif-medium" android:letterSpacing="0.02"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp12" android:textStyle="bold" android:textColor="@color/otn" android:id="@a/userScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp10" android:layout_marginRight="@dimen/dp10" android:lineSpacingExtra="@dimen/sp3" android:fontFamily="sans-serif" android:letterSpacing="0.02"/>
+</LinearLayout>

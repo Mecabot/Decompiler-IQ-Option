@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/buy_new_dialog_view_0" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_to_close" android:textAllCaps="true" android:labelFor="@a/timeToClose"/>
+        <TextView android:textSize="@dimen/sp22" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@a/timeToClose" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.iqoption.core.ui.widget.MaxSizeLinearLayout android:tag="layout/buy_new_dialog_view_1" android:layout_width="match_parent" android:layout_height="match_parent" app:maxHeight="@dimen/dp48">
+        <com.iqoption.view.RobotoTextView android:gravity="center" android:id="@a/newOptionButton" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/buy_new" android:maxLines="1" app:textStyle="bold" style="@style/IQButton.Green"/>
+    </com.iqoption.core.ui.widget.MaxSizeLinearLayout>
+</merge>

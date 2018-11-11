@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_vip_education_0" android:background="@color/closed_deals_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/grey_blur_10" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+        <TextView android:textSize="@dimen/sp14" android:textStyle="normal" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/education" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:layout_marginStart="@dimen/dp20"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:id="@a/close_button" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/dp12" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" android:layout_marginEnd="@dimen/dp8" app:srcCompat="@drawable/ic_close_vip"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@a/content_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:overScrollMode="never" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_news_and_updates_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp19" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/news_and_updates" android:textAllCaps="true" android:fontFamily="@font/medium"/>
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@a/exitButton" android:padding="@dimen/dp13" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" app:srcCompat="@drawable/ic_arrow_back"/>
+        <View android:layout_gravity="bottom" android:background="@color/grey_blur_15" android:layout_width="match_parent" android:layout_height="@dimen/dp1"/>
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@a/newsAndUpdatesList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24" android:overScrollMode="never"/>
+</LinearLayout>

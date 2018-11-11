@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@a/dialpadRoot" android:tag="layout/dialpad_0" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2" android:layout_marginBottom="@dimen/dp2">
+    <LinearLayout android:orientation="horizontal" android:id="@a/line1Dialpad" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@+id/one" layout="@layout/dialpad_key"/>
+        <include android:id="@+id/two" layout="@layout/dialpad_key"/>
+        <include android:id="@+id/three" layout="@layout/dialpad_key"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@+id/four" layout="@layout/dialpad_key"/>
+        <include android:id="@+id/five" layout="@layout/dialpad_key"/>
+        <include android:id="@a/six" layout="@layout/dialpad_key"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@a/seven" layout="@layout/dialpad_key"/>
+        <include android:id="@a/eight" layout="@layout/dialpad_key"/>
+        <include android:id="@a/nine" layout="@layout/dialpad_key"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@a/fingerPrintKey" android:focusable="false" android:visibility="invisible" android:clickable="false" layout="@layout/dialpad_key_touchid"/>
+        <include android:id="@a/zero" layout="@layout/dialpad_key_zero"/>
+        <include android:id="@a/backKey" layout="@layout/dialpad_key_back"/>
+    </LinearLayout>
+</LinearLayout>

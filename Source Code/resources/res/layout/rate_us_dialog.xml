@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/screen" android:tag="layout/rate_us_dialog_0" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@a/contentLayout" android:background="@drawable/bg_gradient_from_dark_to_ligth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <TextView android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:gravity="center" android:paddingLeft="@dimen/dp30" android:paddingTop="@dimen/dp20" android:paddingRight="@dimen/dp30" android:layout_width="@dimen/dp320" android:layout_height="wrap_content" android:text="@string/please_rate_how_much"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="@dimen/dp20" android:paddingBottom="@dimen/dp10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@a/star1" android:layout_width="@dimen/dp42" android:layout_height="match_parent" android:src="@drawable/rate_star_off"/>
+            <ImageView android:id="@a/star2" android:layout_width="@dimen/dp42" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+            <ImageView android:id="@a/star3" android:layout_width="@dimen/dp42" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+            <ImageView android:id="@a/star4" android:layout_width="@dimen/dp42" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+            <ImageView android:id="@a/star5" android:layout_width="@dimen/dp42" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp12" android:textColor="#7f93a8c2" android:gravity="center" android:id="@a/count_star" android:paddingLeft="@dimen/dp30" android:paddingRight="@dimen/dp30" android:paddingBottom="@dimen/dp20" android:layout_width="@dimen/dp320" android:layout_height="wrap_content" android:text="@string/select_a_rating" android:textAllCaps="true"/>
+        <TextView android:textSize="@dimen/sp12" android:textColor="@android:color/white" android:gravity="center" android:id="@a/info_text_rate_us" android:paddingLeft="@dimen/dp30" android:paddingRight="@dimen/dp30" android:paddingBottom="@dimen/dp20" android:visibility="gone" android:layout_width="@dimen/dp320" android:layout_height="wrap_content" android:text="@string/share_your_experience"/>
+        <View android:background="@drawable/dark_dialog_horizontal_divider" android:layout_width="@dimen/dp320" android:layout_height="1px"/>
+        <FrameLayout android:layout_width="@dimen/dp320" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp14" android:textColor="@android:color/white" android:gravity="center" android:id="@a/cancel" android:background="@drawable/btn_bg_one_dialog" android:padding="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel"/>
+            <TextView android:textSize="@dimen/sp14" android:textColor="#f58220" android:gravity="center" android:id="@+id/next" android:background="@drawable/btn_bg_one_dialog" android:padding="@dimen/dp16" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/send"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

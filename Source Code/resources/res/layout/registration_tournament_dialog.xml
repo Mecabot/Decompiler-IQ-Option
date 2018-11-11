@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/everything" android:background="#8a000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@a/contentContainer" android:background="@drawable/bg_gradient_from_ligth_to_dark" android:layout_width="@dimen/dp370" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp14" android:textColor="@android:color/white" android:gravity="center" android:id="@a/titleDialog" android:layout_width="match_parent" android:layout_height="@dimen/dp42" android:singleLine="true" android:textAllCaps="true"/>
+            <ImageView android:layout_gravity="center" android:id="@a/closeBtn" android:padding="@dimen/dp8" android:visibility="visible" android:layout_width="@dimen/dp36" android:layout_height="@dimen/dp36" android:layout_marginRight="@dimen/dp8" android:src="@drawable/btn_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@drawable/dark_dialog_horizontal_divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="1px" android:layout_marginRight="1px"/>
+        <TextView android:textSize="@dimen/sp12" android:textColor="@color/white_66" android:gravity="center" android:id="@a/info_text" android:paddingLeft="@dimen/dp32" android:paddingTop="@dimen/dp16" android:paddingRight="@dimen/dp32" android:paddingBottom="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp18" android:textColor="@color/white" android:gravity="center" android:id="@a/cost" android:paddingBottom="@dimen/dp16" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="$1000"/>
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_33" android:gravity="center" android:id="@a/more_info" android:paddingBottom="@dimen/dp16" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp60" android:layout_marginRight="@dimen/dp60" android:layout_marginBottom="@dimen/dp16">
+            <TextView android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/button" android:background="@drawable/call_button_state" android:padding="@dimen/dp8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@+id/progress" android:visibility="gone" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" style="?android:attr/progressBarStyleLarge"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

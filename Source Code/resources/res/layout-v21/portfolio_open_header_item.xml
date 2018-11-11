@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/sp14" android:textColor="@color/grey_blue_70" android:id="@a/totalInvest" android:tag="layout/portfolio_open_header_item_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp16" android:maxLines="1" android:fontFamily="@font/medium" android:letterSpacing="0.01"/>

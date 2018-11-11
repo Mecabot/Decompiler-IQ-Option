@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <size android:height="@dimen/dp42" android:width="@dimen/dp42"/>
+                    <padding android:left="@dimen/dp8" android:top="@dimen/dp8" android:right="@dimen/dp8" android:bottom="@dimen/dp8"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <padding android:left="@dimen/dp4" android:top="@dimen/dp4" android:right="@dimen/dp4" android:bottom="@dimen/dp4"/>
+                    <stroke android:width="1dp" android:color="@color/white"/>
+                    <solid android:color="@color/green"/>
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ic_check_white_18dp"/>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <size android:height="@dimen/dp42" android:width="@dimen/dp42"/>
+                    <padding android:left="@dimen/dp8" android:top="@dimen/dp8" android:right="@dimen/dp8" android:bottom="@dimen/dp8"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <padding android:left="@dimen/dp4" android:top="@dimen/dp4" android:right="@dimen/dp4" android:bottom="@dimen/dp4"/>
+                    <stroke android:width="1dp" android:color="@color/white"/>
+                    <solid android:color="@color/black_40"/>
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ic_check_white_50_18dp"/>
+        </layer-list>
+    </item>
+</selector>

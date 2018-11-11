@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/everything" android:tag="layout/dialog_pro_trader_benefits_0" android:background="@color/black_66" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@a/proBenefitsContainer" android:tag="binding_1" android:background="@color/dark_blue" android:focusable="true" android:clickable="true" android:layout_width="@dimen/dp440" android:layout_height="wrap_content">
+        <include android:id="@a/proBenefitsToolbar" layout="@layout/layout_dialog_toolbar"/>
+        <TableLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp18">
+            <include android:id="@a/proBenefitsTopRow" layout="@layout/layout_pro_trader_benefits_top_row"/>
+            <TableRow android:gravity="center" android:background="@color/grey_blur_03" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/ProBenefitText" android:textSize="@dimen/sp12" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/negative_balance_protection" android:layout_weight="@integer/pro_benefits_first_weight" android:paddingStart="@dimen/dp20" android:paddingEnd="@dimen/dp20"/>
+                <FrameLayout android:background="@color/black_05" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="@integer/pro_benefits_second_weight">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_done_green"/>
+                </FrameLayout>
+                <ImageView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="@integer/pro_benefits_third_weight" app:srcCompat="@drawable/ic_done_green"/>
+            </TableRow>
+            <TableRow android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/ProBenefitText" android:textSize="@dimen/sp12" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/access_to_high_risk_options_instruments" android:layout_weight="@integer/pro_benefits_first_weight" android:paddingStart="@dimen/dp20" android:paddingEnd="@dimen/dp20"/>
+                <FrameLayout android:background="@color/black_05" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="@integer/pro_benefits_second_weight">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_close_grey_blur_60_14"/>
+                </FrameLayout>
+                <ImageView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="@integer/pro_benefits_third_weight" app:srcCompat="@drawable/ic_done_green"/>
+            </TableRow>
+            <TableRow android:gravity="center" android:background="@color/grey_blur_03" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/ProBenefitText" android:textSize="@dimen/sp12" android:id="@a/proBenefitsAccessToHigherLeverages" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="@integer/pro_benefits_first_weight" android:paddingStart="@dimen/dp20" android:paddingEnd="@dimen/dp20"/>
+                <FrameLayout android:background="@color/black_05" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="@integer/pro_benefits_second_weight">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_close_grey_blur_60_14"/>
+                </FrameLayout>
+                <ImageView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="@integer/pro_benefits_third_weight" app:srcCompat="@drawable/ic_done_green"/>
+            </TableRow>
+            <include android:id="@a/proBenefitsBottomRow" layout="@layout/layout_pro_trader_benefits_bottom_row"/>
+        </TableLayout>
+    </LinearLayout>
+</FrameLayout>

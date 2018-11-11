@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/left_menu_item_button_0" android:background="@drawable/left_menu_item_button_border" android:paddingLeft="@a/left_menu_item_button_horizontal_padding" android:paddingStart="@a/left_menu_item_button_horizontal_padding" style="@style/LeftMenuItemButton">
+    <android.support.v7.widget.AppCompatImageView android:id="@a/itemIcon" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <com.iqoption.view.RobotoTextView android:textColor="@color/selectable_white_100_70" android:id="@a/itemLabel" style="@style/LeftMenuItemButtonText"/>
+</LinearLayout>

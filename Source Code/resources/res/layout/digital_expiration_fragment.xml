@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/everything" android:tag="layout/digital_expiration_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@a/contentLayout" android:background="@drawable/bg_card_view" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp60" android:layout_marginRight="@dimen/dp130" android:layout_marginBottom="@dimen/dp10">
+        <LinearLayout android:orientation="vertical" android:id="@a/mainLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp30">
+                <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:gravity="center" android:id="@a/expTitle" android:layout_width="70dp" android:layout_height="match_parent" android:text="@string/time" android:textAllCaps="true" android:fontFamily="@font/medium"/>
+                <View android:background="@color/black_15" android:layout_width="1dp" android:layout_height="match_parent"/>
+                <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:gravity="center" android:id="@a/strikeTitle" android:layout_width="@dimen/dp70" android:layout_height="match_parent" android:text="@string/strike" android:layout_alignRight="@a/expTitle" android:textAllCaps="true" android:fontFamily="@font/medium"/>
+                <RelativeLayout android:layout_width="@dimen/dp100" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@a/profitTitle" android:layout_width="match_parent" android:layout_height="@dimen/dp16" android:text="@string/total_profit" android:textAllCaps="true" android:fontFamily="@font/medium"/>
+                    <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_33" android:gravity="top|center_vertical|center_horizontal|center" android:id="@a/priceTitle" android:layout_width="match_parent" android:layout_height="@dimen/dp14" android:text="@string/option_price" android:layout_alignParentBottom="true" android:textAllCaps="true" android:fontFamily="@font/medium"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <android.support.v7.widget.RecyclerView android:id="@a/expirtionList" android:layout_width="@dimen/dp70" android:layout_height="match_parent" app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+                    <View android:background="@color/black_15" android:layout_width="1dp" android:layout_height="match_parent"/>
+                    <android.support.v7.widget.RecyclerView android:id="@a/strikeList" android:layout_width="@dimen/dp170" android:layout_height="match_parent" app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+                </LinearLayout>
+                <View android:background="@drawable/keyboard_shadow" android:layout_width="@dimen/dp240" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <android.support.v7.widget.SwitchCompat android:theme="@style/PushSettingsTheme" android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_70" android:gravity="center_vertical" android:layout_gravity="end" android:id="@a/autoSelectionStrike" android:padding="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp240" android:text="@string/auto_selection_of_closest_strike" android:includeFontPadding="false" android:layout_marginEnd="@dimen/dp9" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@a/expirtionList" app:switchPadding="@dimen/dp10"/>
+            <TextView android:textSize="@dimen/sp10" android:textStyle="normal" android:textColor="@color/grey_blur" android:id="@a/spotTabsTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:text="@string/strike_auto_selection" android:textAllCaps="true" android:fontFamily="@font/regular" android:layout_marginStart="@dimen/dp10"/>
+            <android.support.design.widget.TabLayout android:id="@a/spotTabs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp38" android:layout_marginTop="@dimen/dp9" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" app:tabGravity="0" app:tabIndicatorColor="@color/white" app:tabMaxWidth="0dp" app:tabMode="1" app:tabSelectedTextColor="@color/white" app:tabTextAppearance="@style/SpotTabLayout" app:tabTextColor="@color/grey_blur">
+                <android.support.design.widget.TabItem android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/off"/>
+                <android.support.design.widget.TabItem android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/closest"/>
+                <android.support.design.widget.TabItem android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/spot"/>
+            </android.support.design.widget.TabLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

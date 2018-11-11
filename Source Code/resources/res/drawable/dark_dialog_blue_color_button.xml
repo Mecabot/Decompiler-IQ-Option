@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ma_color4"/>
+            <corners android:topRightRadius="@dimen/dp4" android:bottomRightRadius="@dimen/dp4"/>
+        </shape>
+    </item>
+    <item android:state_selected="true" android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ma_color4"/>
+            <corners android:topRightRadius="@dimen/dp4" android:bottomRightRadius="@dimen/dp4"/>
+        </shape>
+    </item>
+    <item android:state_selected="false" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ma_color4"/>
+            <corners android:topRightRadius="@dimen/dp4" android:bottomRightRadius="@dimen/dp4"/>
+        </shape>
+    </item>
+    <item android:state_selected="false" android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#343945"/>
+            <corners android:topRightRadius="@dimen/dp4" android:bottomRightRadius="@dimen/dp4"/>
+        </shape>
+    </item>
+</selector>

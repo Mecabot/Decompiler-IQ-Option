@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/countDownProgressBar" android:layout_width="match_parent" android:layout_height="match_parent" android:max="100" android:progress="100" android:indeterminate="false" android:indeterminateOnly="false" android:indeterminateDrawable="@drawable/account_security_progress_bar_circular" android:progressDrawable="@drawable/account_security_progress_bar_circular" android:minHeight="20dp" android:scaleX="-1" android:scaleY="1" android:rotation="90"/>
+    <FrameLayout android:id="@+id/countDownTimeLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/countDownTime" android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="sans-serif"/>
+    </FrameLayout>
+</merge>

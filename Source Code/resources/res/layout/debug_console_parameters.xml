@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" app:cardCornerRadius="6dp" app:cardElevation="6dp">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Switch android:textColor="@color/black" android:id="@a/debugWebSocketLog" android:padding="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Show web socket log"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <Switch android:textColor="#000000" android:id="@a/switchStaging" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Staging"/>
+                    <EditText android:textColor="#000000" android:layout_gravity="center" android:id="@a/editTextStaging" android:layout_width="match_parent" android:layout_height="wrap_content" android:imeOptions="flagNoExtractUi"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <Switch android:textColor="#000000" android:id="@a/switchAff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aff"/>
+                    <EditText android:textColor="#000000" android:layout_gravity="center" android:id="@a/editTextAff" android:layout_width="match_parent" android:layout_height="wrap_content" android:imeOptions="flagNoExtractUi"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <Switch android:textColor="#000000" android:id="@a/switchAfftrack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Afftrack"/>
+                    <EditText android:layout_gravity="center" android:id="@a/editTextAfftrack" android:layout_width="match_parent" android:layout_height="wrap_content" android:imeOptions="flagNoExtractUi"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <Button android:textColor="#000000" android:id="@a/coockies" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Apply Coockies"/>
+                    <EditText android:layout_gravity="center" android:id="@a/editTextCoockiesKey" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="key" android:layout_weight="1" android:imeOptions="flagNoExtractUi"/>
+                    <EditText android:layout_gravity="center" android:id="@a/editTextCoockiesValue" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="value" android:layout_weight="1" android:imeOptions="flagNoExtractUi"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textColor="#000000" android:id="@a/fcmToken" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FCM Token"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMediumInverse" android:textColor="?attr/editTextColor" android:gravity="center_vertical" android:layout_gravity="center" android:id="@a/fcmTokenText" android:background="?attr/editTextBackground" android:paddingLeft="@dimen/dp5" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" android:textIsSelectable="true" android:paddingStart="@dimen/dp5"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:id="@a/buttonResetDemo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Reset Demo"/>
+                    <Button android:id="@a/buttonTechnicalLog" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Technical log"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

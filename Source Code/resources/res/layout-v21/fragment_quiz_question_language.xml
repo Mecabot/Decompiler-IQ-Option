@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_quiz_question_language_0" android:background="@color/quiz_purple" android:layout_width="match_parent" android:layout_height="@dimen/dp50" android:paddingStart="@dimen/dp10">
+    <TextView android:textSize="@dimen/sp12" android:textStyle="normal" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/text" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@h/questions_will_be_in_your_language" android:includeFontPadding="false" android:layout_weight="1" android:lineSpacingExtra="@dimen/sp3" android:fontFamily="@font/regular" android:layout_marginEnd="@dimen/dp17" android:letterSpacing="0.02"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@a/close" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@b/ic_close_white_20dp" style="@style/Base.IQActionButton"/>
+</LinearLayout>

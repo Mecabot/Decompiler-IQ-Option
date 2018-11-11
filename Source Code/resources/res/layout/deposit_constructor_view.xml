@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/depositCardViewRoot" android:tag="layout/deposit_constructor_view_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@a/constructorFieldsLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <TextView android:textSize="20sp" android:textColor="@color/deposit_constructor_field_text" android:gravity="center" android:id="@a/paymentMethodName" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_alignTop="@a/guideline_top" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <View android:id="@a/depositConstructorTopFrame" android:background="@color/transparent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

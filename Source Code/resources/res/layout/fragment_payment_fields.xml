@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_payment_fields_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp32" android:paddingStart="@dimen/dp12" android:paddingEnd="@dimen/dp12">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/paymentFieldsContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="@dimen/sp14" android:textColor="@color/grey_blue" android:gravity="center" android:layout_gravity="center" android:id="@+id/paymentFieldsNoInput" android:padding="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp32" android:lineSpacingExtra="@dimen/sp6"/>
+</FrameLayout>

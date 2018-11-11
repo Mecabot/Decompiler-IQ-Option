@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:orientation="vertical" android:id="@a/social_container" android:tag="layout-land/layout_welcome_social_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp13" android:textColor="@color/grey_blur_70" android:id="@a/socialTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp72" android:layout_marginRight="@dimen/dp72" android:text="@string/or_you_can_sign_in_with" android:includeFontPadding="false" android:textAllCaps="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp64" android:layout_marginTop="@dimen/dp8" android:layout_marginRight="@dimen/dp64" android:layout_marginBottom="@dimen/dp16">
+        <LinearLayout android:orientation="horizontal" android:id="@a/facebookLogin" android:padding="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp8" android:layout_marginEnd="@dimen/dp8">
+            <ImageView android:layout_width="@dimen/dp25" android:layout_height="@dimen/dp25" android:src="@drawable/welcome_social_icon_f"/>
+            <TextView android:textSize="@dimen/sp18" android:textColor="@color/white" android:paddingLeft="@dimen/dp12" android:paddingRight="@dimen/dp12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/facebook" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@a/googleLogin" android:padding="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp25" android:layout_height="@dimen/dp25" android:src="@drawable/welcome_social_icon_g"/>
+            <TextView android:textSize="@dimen/sp18" android:textColor="@color/white" android:paddingLeft="@dimen/dp12" android:paddingRight="@dimen/dp12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/google" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

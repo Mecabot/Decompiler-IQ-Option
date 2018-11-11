@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/screen" android:tag="layout/dialog_multiplier_confirm_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@a/contentLayout" android:background="@drawable/bg_card_view" android:layout_width="@dimen/dp312" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp130">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp10" android:paddingRight="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp12" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp10" android:text="@string/please_choose_your_leverage" android:lineSpacingExtra="@dimen/sp5"/>
+            <TextView android:textSize="@dimen/sp11" android:textColor="@color/grey_blur" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp10" android:layout_marginTop="@dimen/dp10" android:text="@string/choose_leverage_description" android:lineSpacingExtra="@dimen/sp5"/>
+            <TextView android:textSize="@dimen/sp12" android:textColor="@color/green" android:id="@+id/btnConfirm" android:tag="binding_1" android:paddingLeft="@dimen/dp10" android:paddingTop="@dimen/dp16" android:paddingRight="@dimen/dp20" android:paddingBottom="@dimen/dp12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@h/ok"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

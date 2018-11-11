@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@a/previewContain" android:padding="@dimen/dp10" android:layout_width="@dimen/dp72" android:layout_height="@dimen/dp72">
+        <View android:layout_gravity="center" android:background="@drawable/bg_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.iqoption.view.rounded.RoundedImageView android:layout_gravity="center" android:id="@a/preview" android:layout_width="match_parent" android:layout_height="match_parent" app:corners="@dimen/dp2" app:scale="0"/>
+        <ImageView android:layout_gravity="center" android:id="@a/addPreview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kvc_add" android:scaleType="fitXY"/>
+        <ProgressBar android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="@dimen/dp4" android:layout_margin="@dimen/dp6" android:max="100" android:indeterminate="false" android:progressDrawable="@drawable/progress_horizontal" style="?android:attr/progressBarStyleHorizontal"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@a/delete" android:layout_toRightOf="@a/previewContain" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#000000" android:id="@a/statusHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status" android:singleLine="true"/>
+            <TextView android:id="@a/status" android:paddingLeft="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <TextView android:textColor="#c4422f" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

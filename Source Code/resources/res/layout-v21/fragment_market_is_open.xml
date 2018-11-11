@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/backLayout" android:tag="layout/fragment_market_is_open_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@a/contentLayout" android:background="@drawable/bg_card_view" android:layout_width="@dimen/dp167" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp60" android:layout_marginBottom="@dimen/dp10" android:layout_marginEnd="@dimen/dp130">
+        <LinearLayout android:orientation="vertical" android:id="@a/linearLayoutContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp11" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:text="@string/market_is_open" android:maxLines="1" android:includeFontPadding="false" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:paddingStart="@dimen/dp11" android:paddingEnd="@dimen/dp11"/>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp11" android:textStyle="normal" android:textColor="@color/grey_blur_70" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp3" android:layout_marginBottom="@dimen/dp10" android:text="@string/the_trading_session_has_started" android:fontFamily="sans-serif" android:paddingStart="@dimen/dp11" android:paddingEnd="@dimen/dp11" android:letterSpacing="-0.02"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

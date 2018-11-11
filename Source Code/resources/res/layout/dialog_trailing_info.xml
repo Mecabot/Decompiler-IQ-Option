@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/screen" android:tag="layout/dialog_trailing_info_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@a/contentLayout" android:background="@drawable/bg_card_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_70" android:id="@a/textCommission" android:padding="@dimen/dp8" android:layout_width="@dimen/dp166" android:layout_height="wrap_content" android:text="@string/this_feature_automatically_shifts_your_loss_limit" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/sp3" android:fontFamily="@font/regular"/>
+    </FrameLayout>
+</FrameLayout>

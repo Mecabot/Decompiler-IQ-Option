@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_feed">
+        <item>#4a6cc9</item>
+        <item>#c94a8f</item>
+        <item>#c94a4a</item>
+        <item>#a65e2f</item>
+        <item>#4ac1c9</item>
+        <item>#80c94a</item>
+        <item>#994ac9</item>
+        <item>#e08725</item>
+    </array>
+    <array name="quiz_leader_board_filter">
+        <item>@string/all_games</item>
+        <item>@string/last_game</item>
+    </array>
+    <array name="spec_indicator_constructor_button_apply_text_colors">
+        <item>@color/white_50</item>
+        <item>@color/white</item>
+    </array>
+    <array name="spec_indicator_constructor_button_restore_text_colors">
+        <item>@color/grey_blue_70</item>
+        <item>@color/white</item>
+    </array>
+    <array name="spec_templates_item_button_bg_colors">
+        <item>@color/grey_blue_05</item>
+        <item>@color/green_50</item>
+        <item>@color/green</item>
+    </array>
+    <array name="spec_templates_item_button_text_colors">
+        <item>@color/grey_blue_30</item>
+        <item>@color/white_50</item>
+        <item>@color/white</item>
+    </array>
+    <array name="spec_values_deposit_preset">
+        <item>0.5f</item>
+        <item>0.7f</item>
+        <item>0.05f</item>
+    </array>
+    <array name="templates_item_button_bg_colors">
+        <item>@color/grey_blur_05</item>
+        <item>@color/green_50</item>
+        <item>@color/green</item>
+    </array>
+    <array name="templates_item_button_text_colors">
+        <item>@color/grey_blur_30</item>
+        <item>@color/white_50</item>
+        <item>@color/white</item>
+    </array>
+    <array name="tools_list_item_text_colors">
+        <item>@color/grey_blur_30</item>
+        <item>@color/white_50</item>
+        <item>@color/white</item>
+    </array>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/everything" android:tag="layout/expiration_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@a/contentLayout" android:background="@drawable/bg_card_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp60" android:layout_marginRight="@dimen/dp130" android:layout_marginBottom="@dimen/dp42">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@a/binaryContainer" android:background="@color/black_20" android:layout_width="@dimen/dp110" android:layout_height="@dimen/dp30" android:layout_marginRight="0.5px">
+                <TextView android:textSize="@dimen/sp14" android:textColor="@color/green" android:layout_gravity="center_vertical" android:id="@a/binaryProfit" android:paddingRight="@dimen/dp2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="83%" android:fontFamily="@font/medium"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@a/binaryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_dp2" android:text="@string/profit" android:maxLines="1" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@a/turboContainer" android:background="@color/black_20" android:layout_width="@dimen/dp110" android:layout_height="@dimen/dp30" android:layout_marginLeft="0.5px">
+                <TextView android:textSize="@dimen/sp14" android:textColor="@color/green" android:layout_gravity="center_vertical" android:id="@a/turboProfit" android:paddingRight="@dimen/dp2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="92%" android:fontFamily="@font/medium"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@a/turboTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_dp2" android:text="@string/profit" android:maxLines="1" android:textAllCaps="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp30" android:divider="@drawable/tournament_diviner_title" android:showDividers="middle">
+            <android.support.v7.widget.RecyclerView android:id="@a/binaryExpirtions" android:layout_width="@dimen/dp110" android:layout_height="wrap_content"/>
+            <android.support.v7.widget.RecyclerView android:id="@a/turboExpirtions" android:layout_width="@dimen/dp110" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

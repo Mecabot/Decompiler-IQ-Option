@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/methodContainer" android:tag="layout/item_payment_method_light_0" android:background="@e/bg_white_green_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp54" android:paddingStart="@dimen/dp12">
+    <ImageView android:id="@+id/methodIcon" android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:layout_marginTop="@d/deposit_padding" android:layout_marginBottom="@d/deposit_padding" android:scaleType="fitCenter"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:layout_marginBottom="@dimen/dp10" android:layout_weight="1">
+        <TextView android:textSize="@dimen/sp14" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/methodName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/medium" android:paddingEnd="@dimen/dp12" android:layout_marginStart="@dimen/dp12" android:layout_marginEnd="@dimen/dp12"/>
+        <TextView android:textSize="@dimen/dp12" android:textColor="@c/deposit_dark_grey" android:id="@+id/methodDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp3" android:layout_marginStart="@dimen/dp12" android:layout_marginEnd="@dimen/dp12"/>
+    </LinearLayout>
+    <View android:id="@+id/methodChecked" android:background="@color/green" android:visibility="gone" android:layout_width="@dimen/dp3" android:layout_height="match_parent"/>
+</LinearLayout>

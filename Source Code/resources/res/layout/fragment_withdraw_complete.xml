@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_withdraw_complete_0" android:background="@color/withdraw_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@a/completeIcon" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" android:layout_marginStart="@dimen/dp8"/>
+        <TextView android:textSize="@dimen/sp26" android:textColor="#2da441" android:id="@a/completeStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp16" android:fontFamily="@font/medium"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp14" android:textColor="@color/withdraw_grey_text" android:gravity="center" android:layout_gravity="center" android:id="@a/completeDescription" android:padding="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sp4"/>
+    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

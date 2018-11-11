@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_gravity="center_vertical" android:id="@a/selector" android:background="@drawable/selector" android:layout_width="20dp" android:layout_height="20dp"/>
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/gray_color" android:gravity="left|center_vertical|center_horizontal|center" android:id="@a/deposit" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_weight="1"/>
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/blue" android:gravity="left|center_vertical|center_horizontal|center" android:id="@a/bonus" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/gray_color" android:gravity="left|center_vertical|center_horizontal|center" android:id="@a/result" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+</LinearLayout>

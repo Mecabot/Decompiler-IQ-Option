@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@a/action_made_mistake" android:orderInCategory="0" android:title="@string/i_ve_made_a_mistake" app:showAsAction="never|always|withText"/>
+</menu>

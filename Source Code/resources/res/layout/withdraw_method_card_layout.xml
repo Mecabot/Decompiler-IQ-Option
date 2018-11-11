@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/withdraw_method_card_layout_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView2 android:id="@a/withdrawMethodContainer" android:layout_width="@dimen/dp135" android:layout_height="@dimen/dp80" android:layout_margin="@dimen/dp5" android:foreground="@drawable/withdraw_method_normal" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/withdraw_method_corners" app:cardElevation="@dimen/withdraw_method_elevation">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/dp12" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@a/withdrawMethodIcon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/dark_blue" android:ellipsize="start" android:id="@a/withdrawMethodName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/medium"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView2>
+    <TextView android:textSize="@dimen/sp12" android:textColor="@color/grey_blur" android:layout_gravity="center" android:id="@a/withdrawMethodLimit" android:paddingTop="@dimen/dp6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sp6"/>
+</LinearLayout>

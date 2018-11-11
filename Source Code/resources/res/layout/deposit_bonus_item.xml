@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginBottom="1dp">
+    <RadioButton android:textSize="13sp" android:id="@a/depositAmountItem" android:background="@drawable/deposit_bonus_item_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="2dp" android:checked="false" android:button="@drawable/deposit_page_radio_button" android:text="$250" android:drawablePadding="10dp" android:fontFamily="sans-serif-medium"/>
+    <FrameLayout android:layout_gravity="end" android:id="@a/flag" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@a/deposit_bonus_item_flag_margin_right">
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="top" android:layout_width="80dp" android:layout_height="32dp" android:tint="#edaa0a" app:srcCompat="@drawable/ic_deposit_flag"/>
+        <com.iqoption.view.text.FormattedTextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:paddingLeft="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_condiitional" android:fontFamily="sans-serif" app:capitalize="words" app:textLines="2"/>
+    </FrameLayout>
+</FrameLayout>

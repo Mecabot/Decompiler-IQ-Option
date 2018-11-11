@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/gray_color" android:layout_gravity="center_vertical" android:id="@+id/text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center_vertical" android:id="@+id/progressBar" android:visibility="gone" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:layout_marginLeft="@dimen/dp8" android:layout_marginRight="@dimen/dp8" android:indeterminate="true" style="?android:attr/progressBarStyleLarge"/>
+    <android.support.v7.widget.AppCompatCheckBox android:id="@a/checkBox" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/video_education_category_item_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/image" android:background="@drawable/rect_rounded_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2" android:layout_marginBottom="@dimen/dp2" app:backgroundTint="@color/grey_blur_05"/>
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:maxLines="1" android:includeFontPadding="false"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:layout_marginBottom="@dimen/dp16">
+        <TextView android:textSize="@dimen/sp14" android:textColor="@color/grey_blur" android:id="@a/videoCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false"/>
+        <TextView android:id="@a/countDelimiter" android:background="@drawable/black_circle" android:layout_width="@dimen/dp6" android:layout_height="@dimen/dp6" android:layout_marginLeft="@dimen/dp6" android:layout_marginTop="@dimen/dp6" android:layout_marginRight="@dimen/dp6" app:backgroundTint="@color/grey_blur_60"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="@color/red" android:id="@a/newVideoCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false"/>
+    </LinearLayout>
+</LinearLayout>

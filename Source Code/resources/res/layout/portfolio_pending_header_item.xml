@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/portfolio_pending_header_item_0" android:paddingLeft="@dimen/dp16" android:paddingTop="@dimen/dp22" android:paddingRight="@dimen/dp16" android:paddingBottom="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/grey_blur" android:gravity="center_vertical" android:id="@a/totalInvest" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" app:robotoStyle="1"/>
+</FrameLayout>

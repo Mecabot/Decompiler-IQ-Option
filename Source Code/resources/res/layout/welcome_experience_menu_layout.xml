@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:id="@a/experienceMenuLayout" android:layout_width="@dimen/dp280" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/sp18" android:textColor="@color/orange" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@a/experienceLogo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp30" android:text="@string/what_is_your_trading_experience" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@a/experienceMenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_weight="2">
+        <TextView android:id="@a/neverTraded" android:background="@drawable/welcome_btn_frame_no_ripple" android:text="@string/never_traded" style="@style/WelcomeExperienceButton"/>
+        <TextView android:id="@a/usedOtherFinancialInstruments" android:text="@string/forex_and_stocks" style="@style/WelcomeExperienceButton"/>
+        <TextView android:id="@a/tradedOnTheBinaryOptions" android:text="@string/binary_options" style="@style/WelcomeExperienceButton"/>
+    </LinearLayout>
+</LinearLayout>

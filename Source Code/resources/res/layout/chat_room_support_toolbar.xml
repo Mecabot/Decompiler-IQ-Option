@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_vertical" android:orientation="vertical" android:tag="layout/chat_room_support_toolbar_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp20" android:textColor="@color/chat_toolbar_title" android:ellipsize="end" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/medium"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp14" android:textColor="@color/chat_toolbar_subtitle" android:id="@a/subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online" android:drawablePadding="@dimen/dp4" android:drawableStart="@drawable/online_indicator_10" android:layout_marginEnd="@dimen/dp8" app:capitalize="characters"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="@color/chat_toolbar_subtitle" android:id="@a/typing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/dp4"/>
+    </LinearLayout>
+</LinearLayout>

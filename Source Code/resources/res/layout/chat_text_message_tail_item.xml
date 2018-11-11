@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/chat_text_message_tail_item_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp58">
+    <ImageView android:layout_gravity="bottom" android:id="@+id/avatar" android:tag="binding_1" android:background="@drawable/chat_message_avatar_background" android:layout_width="@dimen/dp36" android:layout_height="@dimen/dp36" android:layout_marginStart="@dimen/dp8"/>
+    <LinearLayout android:orientation="vertical" android:id="@a/bubble" android:tag="binding_2" android:background="@drawable/chat_message_bubble_left_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp52">
+        <com.iqoption.chat.fragment.MessageView android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:layout_marginBottom="@dimen/dp6" android:layout_marginStart="@dimen/dp12" android:layout_marginEnd="@dimen/dp10" app:messageColor="@color/chat_message_text" app:messageSize="@dimen/sp16" app:timeColor="@color/chat_message_time" app:timeSize="@dimen/sp10"/>
+    </LinearLayout>
+</FrameLayout>

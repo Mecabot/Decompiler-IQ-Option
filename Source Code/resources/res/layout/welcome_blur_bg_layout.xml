@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqoption.view.BottomCropImage xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:id="@a/blurBackground" android:layout_width="@a/welcome_menu_width" android:layout_height="match_parent" android:src="@drawable/welcome_blur_bg"/>

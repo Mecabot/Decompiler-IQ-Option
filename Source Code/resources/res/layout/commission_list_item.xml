@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp19">
+    <TextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/activeName" android:layout_width="0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="0.5"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/fixCommission" android:layout_width="0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="0.25"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/percentCommission" android:layout_width="0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="0.25"/>
+</LinearLayout>

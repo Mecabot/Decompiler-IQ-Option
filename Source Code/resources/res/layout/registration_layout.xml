@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:id="@a/registrationLayout" android:background="@drawable/welcome_menu_shadow" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="@a/welcome_menu_width" android:layout_height="match_parent">
+        <include layout="@layout/welcome_blur_bg_layout"/>
+        <ScrollView android:id="@a/registrationScroll" android:scrollbars="none" android:layout_width="@a/welcome_menu_width" android:layout_height="match_parent" android:src="@drawable/welcome_blur_bg" android:fillViewport="true" android:layout_above="@a/registerButtonLayout" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="@a/welcome_menu_width" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp20" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@a/logoRegistration" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/dp22" android:layout_marginRight="@dimen/dp22" android:text="@string/open_real_account" android:layout_weight="1" android:textAllCaps="true"/>
+                <LinearLayout android:orientation="vertical" android:id="@a/registrationMenu" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/open_account_access_description_layout"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@a/registration_menu_item_height">
+                        <ImageView android:id="@a/emailEditIcon" android:src="@drawable/icon_mail_white" style="@style/RegistrationMenuItemIcon"/>
+                        <EditText android:id="@a/emailEdit" android:hint="@string/email" style="@style/RegistrationMenuItemEmailText"/>
+                    </LinearLayout>
+                    <View style="@style/WelcomeMenuHorizontalDivider"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@a/registration_menu_item_height">
+                        <ImageView android:id="@a/passwordEditIcon" android:src="@drawable/icon_password_white" style="@style/RegistrationMenuItemIcon"/>
+                        <EditText android:id="@a/passwordEdit" android:hint="@string/password" style="@style/RegistrationMenuItemPasswordText"/>
+                    </LinearLayout>
+                    <View style="@style/WelcomeMenuHorizontalDivider"/>
+                    <TableLayout android:id="@a/contentRegistration" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TableRow>
+                            <LinearLayout android:orientation="vertical" android:id="@a/currencyList" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                                <LinearLayout android:orientation="horizontal" android:id="@a/currencySpinner" android:background="@drawable/welcome_btn_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="@a/registration_menu_item_height">
+                                    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp22" android:textColor="@color/orange" android:gravity="center" android:layout_gravity="center_vertical" android:id="@a/currencySpinnerIcon" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" android:layout_marginLeft="@dimen/dp8" android:layout_marginRight="@dimen/dp8" android:text="$" android:singleLine="true" app:textStyle="bold"/>
+                                    <TextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:gravity="start" android:layout_gravity="center_vertical" android:id="@a/currencySpinnerTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:text="USD" android:singleLine="true" android:layout_weight="1" android:textAllCaps="true"/>
+                                    <ImageView android:layout_gravity="center_vertical" android:id="@a/currencyArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:layout_marginRight="@dimen/dp16" android:src="@drawable/welcome_arrow_selector"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <View style="@style/WelcomeMenuVerticalDivider"/>
+                            <RelativeLayout android:gravity="bottom" android:orientation="horizontal" android:id="@a/ageLayout" android:layout_width="0dp" android:layout_height="@a/registration_menu_item_height" android:layout_weight="1">
+                                <TextView android:textSize="@dimen/sp14" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@a/registration_menu_margin" android:text="@string/_18_years" android:singleLine="true" android:layout_toRightOf="@a/checkBoxAge" android:layout_alignTop="@a/checkBoxAge" android:layout_alignBottom="@a/checkBoxAge" android:layout_alignParentLeft="true" android:layout_marginStart="@a/registration_menu_margin" android:layout_toEndOf="@a/checkBoxAge" android:layout_alignParentStart="true"/>
+                                <android.support.v7.widget.AppCompatCheckBox android:theme="@style/OrangeCheckBox" android:gravity="bottom" android:layout_gravity="bottom" android:id="@a/checkBoxAge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@a/registration_menu_margin" android:layout_marginBottom="6dp" android:checked="true" android:layout_alignParentRight="true" android:layout_marginEnd="@a/registration_menu_margin" android:layout_alignParentEnd="true"/>
+                            </RelativeLayout>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <FrameLayout android:layout_gravity="center" android:id="@a/registerButtonLayout" android:layout_width="match_parent" android:layout_height="@a/registration_menu_item_height" android:layout_above="@a/openTermsOld">
+            <Button android:textSize="@dimen/sp14" android:textColor="@drawable/welcome_continue_btn_text_color" android:id="@a/register" android:tag="registerBtn" android:background="@drawable/welcome_continue_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/open_account" android:textAllCaps="false"/>
+            <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@a/registerProgress" android:visibility="invisible" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" style="?android:attr/progressBarStyleLarge"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/sp9" android:textColor="#4cffffff" android:gravity="center_horizontal" android:layout_gravity="start" android:id="@a/openTermsOld" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp42" android:layout_marginTop="@dimen/dp8" android:layout_marginRight="@dimen/dp42" android:minHeight="@a/registration_menu_item_height" android:text="@string/confirm_message_part" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

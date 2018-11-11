@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/video_education_tag_item_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:orientation="horizontal" android:id="@+id/text" android:background="@drawable/rect_rounded_8" android:paddingLeft="@dimen/dp12" android:paddingTop="@dimen/dp8" android:paddingRight="@dimen/dp12" android:paddingBottom="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="sans-serif-medium"/>
+</FrameLayout>

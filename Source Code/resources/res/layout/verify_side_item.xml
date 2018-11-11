@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/verify_side_item_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp80">
+    <RelativeLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@a/verifySideHintContainer" android:paddingTop="@dimen/dp30" android:paddingBottom="@dimen/dp30" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16">
+        <TextView android:textSize="@dimen/sp18" android:textColor="@color/white" android:id="@a/verifySideTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@a/verifySideHint" android:fontFamily="@font/medium"/>
+        <ImageView android:id="@a/verifySideHint" android:layout_width="16dp" android:layout_height="@dimen/dp16" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="8dp" app:srcCompat="@drawable/ic_info_grey_60"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/dp16" android:textColor="@color/dark_orange" android:id="@a/verifySideButton" android:background="@drawable/bg_verify_upload_orange" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/verify_upload_selector" android:text="@string/upload" android:paddingStart="@dimen/dp30" android:paddingEnd="@dimen/dp30" android:layout_marginEnd="@dimen/dp18"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@a/verifySideUploaded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp30">
+        <ImageView android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" app:srcCompat="@drawable/ic_done_green"/>
+        <TextView android:textSize="@dimen/sp16" android:textColor="#2da441" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uploaded" android:fontFamily="@font/medium" android:paddingStart="@dimen/dp6"/>
+    </LinearLayout>
+</LinearLayout>

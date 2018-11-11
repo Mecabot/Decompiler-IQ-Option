@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinatorLayout" android:tag="layout/portfolio_delegate_0" android:background="@color/dark_blue" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@a/collapsingLayout" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/portfolio_title"/>
+        <include android:id="@a/balances" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/portfolio_balances"/>
+        <FrameLayout android:id="@a/appbarWithTabs" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.TabLayout android:id="@a/tabs" android:layout_width="match_parent" android:layout_height="@dimen/dp48" android:layout_marginTop="@dimen/dp56" app:tabIndicatorColor="@color/white" app:tabMode="1" app:tabSelectedTextColor="@color/white" app:tabTextAppearance="@style/IQTextAppearance.Tab" app:tabTextColor="@color/grey_blur"/>
+            <include android:id="@a/appbar" android:layout_width="match_parent" android:layout_height="@dimen/dp56" layout="@layout/portfolio_app_bar"/>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp4" app:srcCompat="@drawable/ic_arrow_back" style="@style/IQActionButton"/>
+    <android.support.design.widget.AppBarLayout android:id="@a/appbarLayout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="@dimen/dp0">
+        <android.support.v4.widget.Space android:id="@a/balancesStub" android:layout_width="match_parent" android:layout_height="@dimen/dp178" app:layout_scrollFlags="1"/>
+        <android.support.v4.widget.Space android:id="@a/tabsStub" android:layout_width="match_parent" android:layout_height="@dimen/dp230" android:minHeight="@dimen/dp182"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager android:id="@a/pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/toolbarTitleContainer" android:tag="layout-land/layout_perform_toolbar_title_light_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp16">
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/depositPerformLightTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:lineSpacingExtra="@dimen/sp4" android:fontFamily="@font/medium" android:layout_marginEnd="@dimen/dp16"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/depositToolbarSecure" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp16">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@e/ic_protected_green"/>
+        <TextView android:textSize="@dimen/sp12" android:textColor="@c/deposit_dark_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@h/secure_method"/>
+    </LinearLayout>
+</LinearLayout>

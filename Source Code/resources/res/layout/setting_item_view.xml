@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@a/setting_label" android:text="@string/buy_in_one_click" style="@style/SettingItemLabel"/>
+    <ProgressBar android:id="@a/setting_progress" android:visibility="gone" android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:layout_marginRight="@dimen/dp8"/>
+    <android.support.v7.widget.SwitchCompat android:id="@a/setting_switch" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</merge>

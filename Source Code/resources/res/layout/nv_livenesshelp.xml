@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="@dimen/nv_helpview_liveness_top_height"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/nv_helpview_full_padding_side" android:layout_marginRight="@dimen/nv_helpview_full_padding_side" android:layout_weight="@dimen/nv_helpview_liveness_cell_height">
+        <ImageView android:gravity="center" android:id="@+id/helpview_liveness_glasses" android:layout_width="match_parent" android:layout_height="@dimen/nv_helpview_liveness_image_size" app:srcCompat="@drawable/nv_liveness_glasses"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/netverify_helpInstructions" android:gravity="center" android:id="@+id/helpview_liveness_glasses_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/nv_helpview_liveness_spacer"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/nv_helpview_full_padding_side" android:layout_marginRight="@dimen/nv_helpview_full_padding_side" android:layout_weight="@dimen/nv_helpview_liveness_cell_height">
+        <ImageView android:gravity="center" android:id="@+id/helpview_liveness_cap" android:layout_width="match_parent" android:layout_height="@dimen/nv_helpview_liveness_image_size" app:srcCompat="@drawable/nv_liveness_cap"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/netverify_helpInstructions" android:gravity="center" android:id="@+id/helpview_liveness_cap_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/nv_helpview_liveness_spacer"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/nv_helpview_full_padding_side" android:layout_marginRight="@dimen/nv_helpview_full_padding_side" android:layout_weight="@dimen/nv_helpview_liveness_cell_height">
+        <ImageView android:gravity="center" android:id="@+id/helpview_liveness_light" android:layout_width="match_parent" android:layout_height="@dimen/nv_helpview_liveness_image_size" app:srcCompat="@drawable/nv_liveness_light"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/netverify_helpInstructions" android:gravity="center" android:id="@+id/helpview_liveness_light_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/nv_helpview_liveness_spacer"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/nv_helpview_full_padding_side" android:layout_marginRight="@dimen/nv_helpview_full_padding_side" android:layout_weight="@dimen/nv_helpview_liveness_bottom_height">
+        <Button android:theme="@style/Netverify.Helpview.Button" android:textSize="@dimen/nv_helpview_fallback_button_text" android:gravity="center" android:id="@+id/helpview_fallback_button" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#373b47" android:endColor="#323741" android:angle="90"/>
+            <corners android:topLeftRadius="@dimen/dp8" android:topRightRadius="@dimen/dp8"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/dp1" android:top="@dimen/dp1" android:right="@dimen/dp1">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#242b3d" android:endColor="#252d3f" android:angle="90"/>
+            <corners android:topLeftRadius="@dimen/dp7" android:topRightRadius="@dimen/dp7"/>
+        </shape>
+    </item>
+</layer-list>

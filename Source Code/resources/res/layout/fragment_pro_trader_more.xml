@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_pro_trader_more_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp20" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_trading_instruments"/>
+        <TextView android:textSize="@dimen/sp12" android:textColor="@color/grey_blur" android:id="@a/proMoreText" android:paddingTop="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sp5"/>
+        <TableLayout android:paddingTop="@dimen/dp24" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableRow>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_done_green"/>
+                <TextView android:textAppearance="@style/ProMoreText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/access_to_high_risk_options_instruments" android:paddingStart="@dimen/dp10"/>
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_done_green"/>
+                <TextView android:textAppearance="@style/ProMoreText" android:id="@a/proMoreAccessToLeverages" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp10"/>
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_done_green"/>
+                <TextView android:textAppearance="@style/ProMoreText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trading_tournaments" android:paddingStart="@dimen/dp10"/>
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp26" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@a/proMoreLearn" android:background="@drawable/btn_darkgray_background" android:padding="@dimen/dp14" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:layout_weight="1">
+                <TextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/learn_more" android:fontFamily="@font/medium"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp4" app:srcCompat="@drawable/ic_right_arrow_white"/>
+            </LinearLayout>
+            <Space android:layout_width="@dimen/dp16" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:gravity="center" android:id="@a/proMoreApply" android:background="@drawable/btn_green_radius_8_background" android:padding="@dimen/dp14" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:text="@string/apply_now" android:layout_weight="1" android:fontFamily="@font/medium"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

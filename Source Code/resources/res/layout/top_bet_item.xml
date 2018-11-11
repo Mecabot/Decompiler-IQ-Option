@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/topbet_item_bck" android:padding="@dimen/dp4" android:layout_width="match_parent" android:layout_height="@dimen/dp20">
+    <TextView android:textSize="@dimen/sp8" android:textColor="@android:color/white" android:gravity="center" android:id="@a/topBetAsset" android:background="@drawable/topbet_asset_bck" android:paddingLeft="@dimen/dp2" android:paddingRight="@dimen/dp2" android:layout_width="@dimen/dp50" android:layout_height="match_parent" android:singleLine="true"/>
+    <TextView android:textSize="@dimen/sp10" android:textColor="@android:color/black" android:id="@a/topBetUser" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:singleLine="true" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/sp10" android:textStyle="bold" android:textColor="@color/green" android:gravity="right" android:id="@a/topBetAmount" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4"/>
+</LinearLayout>

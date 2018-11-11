@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@a/highFrequencyPanel" android:layout_width="@dimen/dp120" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@a/closeHighFrequencyPanelTopBar" android:background="@drawable/high_frequency_panel_background1" android:paddingTop="@dimen/dp10" android:paddingRight="@dimen/dp8" android:paddingBottom="@dimen/dp6" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/selectable_grey_blur_50_70" android:gravity="center_vertical" android:layout_gravity="top" android:id="@a/highFrequencyPanelTittle" android:paddingLeft="@dimen/dp10" android:paddingRight="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/move_right_now" android:textAllCaps="true"/>
+        <FrameLayout android:id="@a/highFrequencyPanelClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@a/highFrequencyPanelTittle" android:layout_alignBottom="@a/highFrequencyPanelTittle" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp10" android:layout_height="@dimen/dp10" app:srcCompat="@drawable/ic_close_high_frequency_panel"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@a/highFrequencySignalList" android:background="@drawable/high_frequency_panel_background2" android:paddingTop="@dimen/dp4" android:paddingRight="@dimen/dp10" android:paddingBottom="@dimen/dp9" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="LinearLayoutManager"/>
+</LinearLayout>

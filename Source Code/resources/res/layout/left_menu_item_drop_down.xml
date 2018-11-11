@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/left_menu_item_drop_down_0" android:background="?android:attr/selectableItemBackground" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@a/itemIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp13" android:layout_marginRight="@dimen/dp13" app:srcCompat="@drawable/settings_rotate_anim"/>
+    <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@a/itemLabel" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textAllCaps="true" style="@style/LeftMenuItemText"/>
+    <ImageView android:id="@a/dropDownIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp13" app:srcCompat="@drawable/ic_arrow_down"/>
+</LinearLayout>

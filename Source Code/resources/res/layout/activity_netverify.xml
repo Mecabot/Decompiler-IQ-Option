@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fragment_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbarContainer" android:importantForAccessibility="no"/>
+    <View android:id="@+id/loadingBackground" android:background="?attr/netverify_scanOptionsLoadingBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:id="@+id/toolbarContainer" android:background="?attr/colorPrimary" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:filterTouchesWhenObscured="true" android:alpha="0" app:theme="?attr/jumio_toolbarStyle"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/toolbarSubtitleContainer" android:background="?attr/colorPrimary" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbarContainer">
+        <TextView android:textAppearance="?attr/jumio_toolbarSubStyle" android:textSize="@dimen/nv_toolbar_subtitle_text" android:id="@+id/toolbar_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="60dp" android:text="" android:alpha="0"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/spinnerContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="45dp" android:layout_marginTop="158dp" android:layout_marginRight="45dp" android:layout_marginBottom="20dp"/>
+</RelativeLayout>

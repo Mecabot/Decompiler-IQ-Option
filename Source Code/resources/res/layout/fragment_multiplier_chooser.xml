@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_multiplier_chooser_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@a/contentLayout" android:background="@drawable/bg_card_view" android:layout_width="@dimen/dp90" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp60" android:layout_marginRight="@dimen/dp130" android:layout_marginBottom="@dimen/dp10">
+        <android.support.v7.widget.RecyclerView android:id="@a/multipliers" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

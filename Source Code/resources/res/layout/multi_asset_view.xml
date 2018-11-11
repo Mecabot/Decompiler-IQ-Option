@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/multi_asset_view_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@a/addButton" android:background="@color/black_20" android:padding="@dimen/dp10" android:layout_width="@dimen/dp38" android:layout_height="match_parent" app:srcCompat="@drawable/ic_tab_icon_plus"/>
+    <HorizontalScrollView android:id="@a/scrollContainer" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:orientation="vertical" android:tag="layout/whats_new_dialog_0" android:background="@color/closed_deals_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/grey_blur_10" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+        <TextView android:textSize="@dimen/sp19" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@a/whatsNewTittle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:layout_gravity="end" android:padding="@dimen/dp2" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@a/whatsNewClose" android:tag="binding_1" android:paddingLeft="@dimen/dp20" android:paddingRight="@dimen/dp20" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/close_popup_content_description" app:srcCompat="@drawable/ic_close_selector"/>
+        </FrameLayout>
+    </FrameLayout>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp14" android:textColor="@color/grey_blur" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@a/whatsNewDescription" android:layout_width="@dimen/dp398" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp20" android:maxLines="2" android:lineSpacingExtra="@dimen/sp7"/>
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp398" android:layout_height="@dimen/dp224">
+        <ImageView android:layout_gravity="center" android:id="@a/thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/grey_blur" android:scaleType="fitXY"/>
+        <View android:id="@a/thumbnailFilter" android:background="@color/black_66" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@a/durationContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp10" android:layout_marginBottom="@dimen/dp10">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp12" android:layout_height="@dimen/dp12" android:layout_marginLeft="@dimen/dp2" android:layout_marginRight="@dimen/dp2" app:srcCompat="@drawable/ic_time"/>
+            <TextView android:textSize="@dimen/sp14" android:textColor="#93a8c2" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@a/duration" android:paddingLeft="@dimen/dp4" android:paddingRight="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@a/playButton" android:layout_width="@dimen/dp100" android:layout_height="@dimen/dp100" app:srcCompat="@drawable/ic_whats_new_play_selector"/>
+    </FrameLayout>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

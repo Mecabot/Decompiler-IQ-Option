@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout" android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <FrameLayout android:layout_gravity="center" android:background="@drawable/retarget_dialog_bg" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/gray_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:text="@string/special_offer_2" android:textAllCaps="true"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/gray_color" android:layout_gravity="center_horizontal" android:id="@a/retargetMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" app:customFont="DINAlternateBold.ttf"/>
+                <Button android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:id="@a/deposit" android:background="@drawable/call_button_state" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" android:layout_marginLeft="@dimen/dp16" android:layout_marginTop="@dimen/dp8" android:layout_marginRight="@dimen/dp16" android:layout_marginBottom="@dimen/dp16" android:text="@string/deposit" android:textAllCaps="true"/>
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:layout_width="@dimen/dp90" android:layout_height="@dimen/dp90">
+                <com.iqoption.view.SpecialOfferDialogImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+                <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:background="@null" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:layout_marginLeft="@dimen/dp8" android:layout_marginTop="@dimen/dp8" android:src="@drawable/add_money" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_width="@dimen/dp100" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_dp10" android:layout_marginTop="@dimen/dp26" android:text="@string/super_bonus" android:rotation="-45" app:customFont="DINAlternateBold.ttf"/>
+            </FrameLayout>
+        </FrameLayout>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

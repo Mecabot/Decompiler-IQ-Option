@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_deposit_0" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <include android:id="@+id/depositToolbar" layout="@g/layout_deposit_toolbar"/>
+    <FrameLayout android:id="@+id/depositProgress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" style="?android:attr/progressBarStyleLarge"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/sp20" android:textColor="@color/grey_blue_70" android:gravity="center" android:layout_gravity="center" android:id="@+id/depositError" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@h/no_available"/>
+    <include android:id="@+id/depositContent" layout="@g/layout_deposit_content"/>
+</LinearLayout>

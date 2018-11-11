@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <string name="ga_appName">IQ Option
+    </string>
+    <string name="ga_appVersion">1.7.5
+    </string>
+    <integer name="ga_dispatchPeriod">1800
+    </integer>
+    <bool name="ga_dryRun">false
+    </bool>
+    <string name="ga_trackingId">UA-44367767-4
+    </string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <gradient android:startColor="@color/login_screen_button_bg_start_color" android:endColor="@color/login_screen_button_bg_end_color" android:angle="0" android:type="linear"/>
+            <corners android:radius="@dimen/dp12"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/dp1" android:top="@dimen/dp1" android:right="@dimen/dp1" android:bottom="@dimen/dp1">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bg_second_level"/>
+            <corners android:radius="@dimen/dp12"/>
+        </shape>
+    </item>
+</layer-list>

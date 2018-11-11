@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="388" android:versionName="5.5.1" android:installLocation="auto" package="com.iqoption.x">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="26" android:installLocation="preferExternal"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.iqoption.x.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.iqoption.x.permission.C2D_MESSAGE"/>
+    <application android:theme="@style/IQTheme" android:label="@h/app_name" android:icon="@drawable/ic_launcher" android:name="com.iqoption.app.IQApp" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="false" android:resizeableActivity="false">
+        <meta-data android:name="CHANNEL" android:value="install"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode, face"/>
+        <activity android:theme="@style/IQTheme" android:label="@h/app_name" android:name="com.iqoption.launcher.LauncherActivity" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustPan" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http" android:host="iqoption"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="iqoption"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="iqoption.com" android:path="/verification"/>
+                <data android:scheme="https" android:host="iqoption.com" android:path="/verify-bank-cards"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/IQTheme" android:label="@h/app_name" android:name="com.iqoption.activity.TradeRoomActivity" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustPan" android:parentActivityName="com.iqoption.launcher.LauncherActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".launcher.LauncherActivity"/>
+        </activity>
+        <activity android:theme="@style/IQTheme.Welcome" android:name="com.iqoption.welcomeonboarding.WelcomeOnboardingActivity" android:windowSoftInputMode="adjustResize" android:parentActivityName="com.iqoption.launcher.LauncherActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".launcher.LauncherActivity"/>
+        </activity>
+        <activity android:theme="@style/IQTheme" android:name="com.iqoption.activity.VideoActivity" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/IQTheme" android:name="com.iqoption.activity.CheckPasscodeActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="sensorPortrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/IQTheme" android:name="com.iqoption.activity.SetPasscodeActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="sensorPortrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/IQTheme" android:name="com.iqoption.activity.LicenseActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/kycTheme" android:name="com.iqoption.kyc.activity.KycActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize" android:parentActivityName="com.iqoption.activity.TradeRoomActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activity.TradeRoomActivity"/>
+        </activity>
+        <activity android:theme="@style/kycTheme" android:name="com.iqoption.kyc.activity.KycReportableErrorActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/kycBlockTheme" android:name="com.iqoption.kyc.activity.KycBlockActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/IQTheme" android:name="com.iqoption.activity.OfflineActivity" android:launchMode="singleInstance" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:parentActivityName="com.iqoption.launcher.LauncherActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".launcher.LauncherActivity"/>
+        </activity>
+        <activity android:theme="@style/IQTheme.Portfolio" android:name="com.iqoption.portfolio.activity.PortfolioActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|screenLayout|screenSize" android:parentActivityName="com.iqoption.activity.TradeRoomActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activity.TradeRoomActivity"/>
+        </activity>
+        <activity android:theme="@style/IQTheme" android:name="com.iqoption.deposit.DepositActivity" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustPan" android:parentActivityName="com.iqoption.launcher.LauncherActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".launcher.LauncherActivity"/>
+        </activity>
+        <activity android:theme="@style/IQTheme" android:name="com.iqoption.withdrawal.crypto.barcode.BarcodeActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/IQTheme.Withdraw" android:name="com.iqoption.withdrawal.common.WithdrawActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/tradingHistoryTheme" android:name="com.iqoption.trading.history.TradingHistoryActivity" android:screenOrientation="sensor" android:windowSoftInputMode="adjustResize" android:parentActivityName="com.iqoption.activity.TradeRoomActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activity.TradeRoomActivity"/>
+        </activity>
+        <receiver android:name="com.appsflyer.SingleInstallBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_notification"/>
+        <service android:name="com.iqoption.system.IQFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.iqoption.system.IQFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.facebook.FacebookContentProvider" android:exported="true" android:authorities="@string/facebookContentProvider"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@h/app_name"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/applicationId"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="89c81a6db2933b490417d208e33f6a750dd158e4"/>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.iqoption.x.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:theme="@style/Theme_Bam" android:name="com.jumio.bam.BamActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/KycJumioTheme.Netverify" android:name="com.jumio.nv.NetverifyActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/KycJumioTheme.MultiDocument" android:name="com.jumio.dv.DocumentVerificationActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <activity android:theme="@style/IQTheme.Chats" android:name="com.iqoption.chat.ChatActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|screenLayout|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.iqoption.chat.service.SendFileMessageService"/>
+        <activity android:theme="@style/IQTheme.Feed" android:name="com.iqoption.feed.FeedWebViewActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|screenLayout|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/IQTheme.VerifyCards" android:name="com.iqoption.verify.VerifyCardsActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/IQTheme.Feed" android:name="com.iqoption.feed.FeedPortraitActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|screenLayout|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/IQTheme.Operations" android:name="com.iqoption.operations.OperationHistoryActivity" android:screenOrientation="sensor" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/IQTheme.Sessions" android:name="com.iqoption.sessions.ActiveSessionsActivity" android:screenOrientation="sensor" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/IQTheme.ProTraderWeb" android:name="com.iqoption.protrader.web.ProTraderWebActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/IQTheme.PendingRemoval" android:name="com.iqoption.gdpr.removal.PendingRemovalActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@style/IQTheme.DarkDeposit" android:name="com.iqoption.deposit.dark.DarkDepositActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize" android:parentActivityName="com.iqoption.launcher.LauncherActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".launcher.LauncherActivity"/>
+        </activity>
+        <activity android:theme="@style/IQTheme.LightDeposit" android:name="com.iqoption.deposit.light.LightDepositActivity" android:screenOrientation="sensor" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" android:parentActivityName="com.iqoption.launcher.LauncherActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".launcher.LauncherActivity"/>
+        </activity>
+        <activity android:theme="@style/IQTheme.Templates" android:name="com.iqoption.templates.TemplateActivity" android:screenOrientation="sensor" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme" android:name="com.iqoption.quiz.QuizActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="io.card.payment.DataEntryActivity"/>
+        <activity android:theme="@g/com_facebook_activity_theme" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:name="com.facebook.CustomTabActivity"/>
+        <provider android:name="com.crashlytics.android.CrashlyticsInitProvider" android:exported="false" android:authorities="com.iqoption.x.crashlyticsinitprovider" android:initOrder="100"/>
+        <service android:name="androidx.work.impl.background.firebase.FirebaseJobService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="androidx.work.impl.background.firebase.FirebaseDelayedJobAlarmReceiver" android:exported="true"/>
+        <provider android:name="androidx.work.impl.WorkManagerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.iqoption.x.workmanager-init"/>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.iqoption.x.lifecycle-trojan"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="android.nfc.action.TECH_DISCOVERED" android:resource="@xml/nfc_tech_filter"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.iqoption.x"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.iqoption.x.firebaseinitprovider" android:initOrder="100"/>
+        <provider android:name="com.facebook.marketing.internal.MarketingInitProvider" android:exported="false" android:authorities="com.iqoption.x.MarketingInitProvider"/>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.iqoption.x.FacebookInitProvider"/>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

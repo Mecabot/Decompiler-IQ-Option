@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:id="@a/descr" android:paddingLeft="@dimen/dp12" android:paddingRight="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/each_trader_will_get_a_special_tournament_balance" android:maxLines="8"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_33" android:gravity="bottom" android:layout_gravity="bottom" android:id="@a/time_start_title" android:paddingLeft="@dimen/dp32" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/kick_off" android:layout_weight="1" android:textAllCaps="true"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:id="@a/time_start" android:paddingLeft="@dimen/dp32" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp12">
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_33" android:gravity="bottom" android:layout_gravity="bottom" android:paddingLeft="@dimen/dp32" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/participation" android:layout_weight="1" android:textAllCaps="true"/>
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_33" android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/duration" android:layout_weight="1" android:textAllCaps="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:id="@a/cost" android:paddingLeft="@dimen/dp32" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:id="@a/duration" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp12">
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_33" android:gravity="bottom" android:layout_gravity="bottom" android:paddingLeft="@dimen/dp32" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/rebuy_cost" android:layout_weight="1" android:textAllCaps="true"/>
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_33" android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/participants" android:layout_weight="1" android:textAllCaps="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:id="@a/rebuy_cost" android:paddingLeft="@dimen/dp32" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:id="@a/count_members" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp12">
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_33" android:gravity="bottom" android:layout_gravity="bottom" android:paddingLeft="@dimen/dp32" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/number_of_rebuys" android:layout_weight="1" android:textAllCaps="true"/>
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_33" android:gravity="bottom" android:layout_width="0dp" android:layout_height="match_parent" android:text="@h/prize_fund" android:layout_weight="1" android:textAllCaps="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:id="@a/count_rebuy" android:paddingLeft="@dimen/dp32" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:id="@a/prize_fund" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp10" android:textColor="@color/orange" android:id="@a/terms" android:padding="@dimen/dp12" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/prize_fund_distribution"/>
+</LinearLayout>

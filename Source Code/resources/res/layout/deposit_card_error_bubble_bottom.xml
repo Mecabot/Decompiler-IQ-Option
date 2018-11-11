@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_width="@a/deposit_card_error_bubble_width" android:layout_height="@a/deposit_card_item_height">
+    <FrameLayout android:id="@a/cnErrorIconFrame" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:layout_alignLeft="@a/ic_deposit_error_text" android:layout_alignRight="@a/ic_deposit_error_text" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@a/cnErrorIcon" android:layout_width="match_parent" android:layout_height="wrap_content" android:rotation="90" app:srcCompat="@drawable/ic_deposit_error_bubble"/>
+    </FrameLayout>
+    <com.iqoption.view.RobotoTextView android:textSize="12sp" android:textColor="#fafafa" android:gravity="center_vertical" android:id="@a/ic_deposit_error_text" android:background="@drawable/deposit_card_error_frame" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-5dp" android:minHeight="34dp" android:text="@string/error" android:layout_below="@a/cnErrorIconFrame" android:fontFamily="sans-serif-medium"/>
+</RelativeLayout>

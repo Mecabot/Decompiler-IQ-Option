@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/popup_window_otn_leader_board_select_country_0" android:background="@drawable/left_board_fragment_popup_window_bg" android:paddingBottom="@dimen/dp4" android:layout_width="@dimen/dp210" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#93a8c2" android:padding="@dimen/dp10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/choose_country" android:fontFamily="sans-serif" android:letterSpacing="0.01"/>
+    <android.support.v7.widget.RecyclerView android:id="@a/countryList" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

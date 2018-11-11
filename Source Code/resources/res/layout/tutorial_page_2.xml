@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp20" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/if_right" app:customFont="DINAlternateBold.ttf"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="8dp" android:layout_weight="1">
+        <ImageView android:background="@null" android:drawingCacheQuality="low" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/tutorial2" android:scaleType="fitCenter" android:adjustViewBounds="false"/>
+    </FrameLayout>
+</LinearLayout>

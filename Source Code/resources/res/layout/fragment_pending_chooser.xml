@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_pending_chooser_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@a/contentLayout" android:background="@drawable/bg_card_view" android:layout_width="@dimen/dp182" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp50" android:layout_marginRight="@dimen/dp130" android:layout_marginBottom="@dimen/dp42">
+        <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:gravity="center" android:id="@+id/main_title" android:background="@color/black_10" android:padding="@dimen/dp6" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/purchase_price" android:maxLines="1" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@a/editContainer" android:layout_width="match_parent" android:layout_height="@dimen/dp54">
+                <com.iqoption.view.RobotoEditText android:theme="@style/GreenAccentColorView" android:textSize="@dimen/sp18" android:textColor="@android:color/white" android:textColorHint="@color/grey_blur_50" android:gravity="center" android:id="@a/value" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="numberDecimal"/>
+                <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:id="@a/marketTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market" android:textAllCaps="true" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@a/buttonContainer" android:paddingBottom="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@a/minusButton" android:background="@drawable/right_rect_gray_blur_5" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp30" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_minus_keyboard"/>
+                <ImageView android:id="@a/cancelButtom" android:tag="binding_1" android:background="@drawable/circle_stroke_greay_blur_5" android:padding="@dimen/dp30" android:visibility="gone" android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:scaleType="center" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_close_10"/>
+                <ImageView android:id="@a/plusButton" android:background="@drawable/left_rect_gray_blur_5" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp30" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_plus_keyboard"/>
+            </RelativeLayout>
+            <com.iqoption.widget.SmallNumPad android:id="@a/numPad" android:layout_width="match_parent" android:layout_height="match_parent" app:smallTypeCustomButton="2"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

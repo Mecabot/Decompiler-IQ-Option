@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/right_panel_closed_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/black_10_rounded_rect" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp8" android:layout_marginTop="@dimen/dp8" android:layout_marginRight="@dimen/dp8" android:layout_marginBottom="@dimen/dp8">
+        <ImageView android:id="@a/activeImage" android:layout_width="@dimen/dp40" android:layout_height="@dimen/dp40" android:layout_marginTop="@dimen/dp20" android:alpha="0.7"/>
+        <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp15" android:textColor="@color/white" android:gravity="center" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:text="@string/asset_closed" app:capitalize="words" app:textLines="2"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:id="@a/activeOpenTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:drawablePadding="@dimen/dp5" app:drawableLeftCompat="@drawable/ic_clock_white_10dp"/>
+    </LinearLayout>
+</FrameLayout>

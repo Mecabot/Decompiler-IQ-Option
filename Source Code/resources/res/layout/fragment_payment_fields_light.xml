@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_payment_fields_light_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/paymentContentContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/sp14" android:textColor="@c/deposit_dark_grey" android:paddingTop="@dimen/dp24" android:paddingBottom="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp1" android:layout_marginBottom="@dimen/dp1" android:minHeight="@dimen/dp54" android:text="@h/payment_info" android:fontFamily="@font/medium" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/paymentFieldsContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp12" android:textColor="@c/deposit_dark_grey" android:gravity="center" android:layout_gravity="center" android:id="@+id/paymentFieldsNoInput" android:paddingTop="@dimen/dp28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sp2" android:fontFamily="@font/medium" android:paddingStart="@dimen/dp12" android:paddingEnd="@dimen/dp12"/>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/mainParent" android:background="@color/bg_side_bar" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <FrameLayout android:id="@a/fragmentRootFrame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@a/fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@a/other_fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@a/tradeRoomVeil" android:background="@color/black_66" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout android:id="@a/leftMenuFrame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <fragment android:name="com.iqoption.fragment.leftmenu.LeftMenuFragment" android:layout_gravity="start" android:id="@a/leftSlide" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.iqoption.view.SplashView android:id="@a/splashView" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

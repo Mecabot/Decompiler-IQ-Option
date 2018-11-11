@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_trading_history_search_setting_0" android:background="@color/dark_blue" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="@dimen/actionBarHeight">
+        <include android:id="@+id/back" layout="@layout/back_arrow"/>
+        <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp18" android:textStyle="normal" android:textColor="@color/white" android:id="@+id/title" android:text="@string/trading_history" android:fontFamily="@font/medium" app:capitalize="sentences" style="@style/tradingHistoryTitleLayoutStyle"/>
+        <TextView android:textSize="@dimen/sp16" android:textColor="@color/green" android:layout_gravity="end" android:id="@a/search" android:paddingLeft="@dimen/dp15" android:paddingRight="@dimen/dp15" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/search" style="@style/IQButton.Transparent"/>
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:fillViewport="true" style="@style/tradingHistoryContentLayoutStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:background="@drawable/grey_blur_05_top_rounded_4_rect" android:text="@string/basic" style="@style/tradingHistoryItemGroupSingleTitleStyle"/>
+            <LinearLayout android:orientation="vertical" android:id="@a/optionTypeLayout" android:tag="binding_2" android:background="@drawable/grey_blur_05_rect" android:layout_marginBottom="@dimen/dp1" style="@style/tradingHistorySearchItemLayoutStyle">
+                <TextView android:text="@string/instrument_type" style="@style/tradingHistorySearchItemTitleStyle"/>
+                <TextView android:id="@a/optionTypeValue" style="@style/tradingHistorySearchItemValueStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@a/accountTypeLayout" android:tag="binding_3" android:background="@drawable/grey_blur_05_rect" android:layout_marginBottom="@dimen/dp1" style="@style/tradingHistorySearchItemLayoutStyle">
+                <TextView android:text="@string/balance" style="@style/tradingHistorySearchItemTitleStyle"/>
+                <TextView android:id="@a/accountTypeValue" style="@style/tradingHistorySearchItemValueStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@a/assetLayout" android:tag="binding_4" android:background="@drawable/grey_blur_05_rect" android:layout_marginBottom="@dimen/dp1" style="@style/tradingHistorySearchItemLayoutStyle">
+                <TextView android:text="@string/assets" style="@style/tradingHistorySearchItemTitleStyle"/>
+                <TextView android:ellipsize="end" android:id="@a/assetValue" style="@style/tradingHistorySearchItemValueStyle"/>
+            </LinearLayout>
+            <TextView android:background="@drawable/grey_blur_05_top_rounded_4_rect" android:layout_marginTop="@dimen/dp28" android:text="@i/period" style="@style/tradingHistoryItemGroupSingleTitleStyle"/>
+            <LinearLayout android:orientation="vertical" android:id="@a/dateLayout" android:tag="binding_5" android:background="@drawable/grey_blur_05_bottom_rounded_4_rect" android:layout_marginBottom="@dimen/dp28" style="@style/tradingHistorySearchItemLayoutStyle">
+                <TextView android:text="@string/date" style="@style/tradingHistorySearchItemTitleStyle"/>
+                <TextView android:id="@a/dateValue" style="@style/tradingHistorySearchItemValueStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

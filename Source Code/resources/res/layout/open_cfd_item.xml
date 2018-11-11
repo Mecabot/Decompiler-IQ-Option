@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@a/openPositionRoot" android:tag="layout/open_cfd_item_0" android:background="@color/grey_blur_05" android:paddingLeft="@dimen/dp40" android:paddingTop="@dimen/dp8" android:paddingRight="@dimen/dp8" android:paddingBottom="@dimen/dp8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp40" android:paddingEnd="@dimen/dp8">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/invest" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="right" android:id="@a/investValue" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/mult" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="right" android:id="@a/multiplyValue" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/total" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="right" android:id="@a/totalValue" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/profit" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="right" android:id="@a/profitValue" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/open_price" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="right" android:id="@a/openPrice" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/current_price" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="right" android:id="@a/currentPrice" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@a/takeProfitLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/take_profit" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="right" android:id="@a/takeProfit" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@a/stopLossLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/stop_loss" android:layout_weight="1" android:textAllCaps="true"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp9" android:textColor="@color/white" android:gravity="right" android:id="@a/stopLoss" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp30" android:layout_marginTop="@dimen/dp6">
+        <FrameLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp6" android:layout_weight="1">
+            <TextView android:textSize="@dimen/sp10" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@a/sellButton" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/close" android:textAllCaps="true" android:fontFamily="sans-serif" style="@style/IQButton.Gray"/>
+            <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@a/buybackOptionProgress" android:visibility="gone" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" style="?android:attr/progressBarStyleLarge"/>
+        </FrameLayout>
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@a/editButton" android:visibility="visible" android:layout_width="@dimen/dp36" android:layout_height="match_parent" android:src="@drawable/setting_tpsl" style="@style/IQButton.Gray.Border"/>
+    </LinearLayout>
+</LinearLayout>

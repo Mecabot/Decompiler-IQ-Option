@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/depositScroll" android:tag="layout/layout_deposit_content_0" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.IQTextInputLayout android:theme="@style/IQTextLabel" android:id="@+id/depositAmountInput" android:paddingTop="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@h/amount" android:paddingStart="@dimen/dp12" android:paddingEnd="@dimen/dp12" app:errorEnabled="true">
+                <android.support.design.widget.TextInputEditText android:textSize="@dimen/sp16" android:textColor="@color/white" android:textColorHint="@color/grey_blue_70" android:id="@+id/depositAmountEdit" android:nextFocusDown="@+id/depositFields" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="true" android:maxLines="1" android:maxLength="@integer/max_currency_input_length" android:inputType="phone" android:imeOptions="actionUnspecified|actionGo|actionSend|actionDone|flagNoExtractUi"/>
+            </android.support.design.widget.IQTextInputLayout>
+            <include android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/currencySelector" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@g/layout_currency_selector"/>
+        </FrameLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/depositPresetsList" android:paddingTop="@dimen/dp6" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp16"/>
+        <include android:id="@+id/payMethodSelector" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@g/layout_pay_method_selector"/>
+        <FrameLayout android:id="@+id/depositFields" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/bottomFocusableView" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <include layout="@g/layout_deposit_protected"/>
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blue_70" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/depositTerms" android:paddingTop="@dimen/dp8" android:paddingBottom="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sp4" android:paddingStart="@dimen/dp36" android:paddingEnd="@dimen/dp36"/>
+        <include android:id="@+id/depositBottomButtonBinding" layout="@g/layout_deposit_button"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@color/bg_menu_screens" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:gravity="center_vertical" android:background="@color/headerbar" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/backButton" android:background="@drawable/back_button_state" android:padding="@dimen/dp5" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" android:layout_marginLeft="@dimen/dp8" android:scaleType="fitCenter"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp22" android:textColor="@android:color/white" android:layout_gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_company" android:textAllCaps="true" app:customFont="DINAlternateBold.ttf"/>
+    </FrameLayout>
+    <include android:layout_width="match_parent" android:layout_height="348dp" layout="@layout/about_page_1"/>
+    <include android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/dp16" android:layout_weight="1" layout="@layout/about_page_2"/>
+</LinearLayout>

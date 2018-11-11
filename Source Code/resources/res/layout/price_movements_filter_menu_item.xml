@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iqoption.view.CheckedFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/price_movements_filter_menu_item_0" android:paddingLeft="@dimen/dp15" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@a/checkmark" android:paddingTop="@dimen/dp5" android:paddingRight="@dimen/dp15" android:paddingBottom="@dimen/dp5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/checkmark_white"/>
+        <TextView android:textSize="@dimen/sp12" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+</com.iqoption.view.CheckedFrameLayout>

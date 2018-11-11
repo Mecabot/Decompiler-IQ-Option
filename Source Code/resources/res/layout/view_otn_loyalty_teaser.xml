@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ImageView android:layout_gravity="center_vertical" android:id="@a/btc" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" app:srcCompat="@drawable/ic_btc_32"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@a/dsh" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" app:srcCompat="@drawable/ic_dash_32"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@a/ltc" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" app:srcCompat="@drawable/ic_ltc_32"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@a/otn" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" app:srcCompat="@drawable/ic_otn_with_bg_32"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp72" android:text="@string/trade_any_crypto_and_get_loyalty_reward_in_otn_tokens" android:maxLines="2" android:lineSpacingExtra="@dimen/sp6" android:fontFamily="sans-serif-medium" android:layout_marginStart="@dimen/dp72"/>
+</merge>

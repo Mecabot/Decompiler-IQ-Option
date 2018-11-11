@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_welcome_onboarding_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@a/introStub" android:background="@color/bg_second_level" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:gravity="center" android:orientation="horizontal" android:id="@a/ic_cysec" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp20" android:src="@drawable/ic_cysec"/>
+            <TextView android:textSize="@dimen/sp12" android:textColor="#59ffffff" android:gravity="center" android:layout_gravity="center_vertical" android:padding="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/splash_info"/>
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@a/introLogo" android:visibility="gone" android:layout_width="@dimen/dp100" android:layout_height="@dimen/dp100"/>
+</FrameLayout>

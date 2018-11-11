@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <gradient android:startColor="#ffffff" android:endColor="#ffffff" android:angle="90" android:type="linear"/>
+                    <stroke android:width="0.33dp" android:color="#0fb1fa"/>
+                    <corners android:radius="0dp"/>
+                    <padding android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp"/>
+                </shape>
+            </item>
+            <item android:right="5dp">
+                <bitmap android:gravity="right|center_vertical|center_horizontal|center" android:src="@drawable/settings_hate_menu_arrow_up"/>
+            </item>
+        </layer-list>
+    </item>
+</selector>

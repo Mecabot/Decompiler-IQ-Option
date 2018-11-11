@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/upload_component_container" android:paddingLeft="70dp" android:paddingRight="70dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/doctype_container" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="25dp" android:layout_weight="0.5"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+        <View android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/dv_upload_title_text" android:textColor="?attr/dv_submissionProgressSuccessTitle" android:id="@+id/upload_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <View android:id="@+id/upload_separator" android:background="?attr/dv_submissionProgressSuccessSeperator" android:layout_width="wrap_content" android:layout_height="@dimen/dv_separator_height" android:layout_marginTop="@dimen/dv_separator_margin_top" android:layout_marginBottom="@dimen/dv_separator_margin_bottom"/>
+        <TextView android:textSize="@dimen/dv_upload_description_text" android:textColor="?attr/dv_submissionProgressSuccessDescription" android:gravity="left" android:id="@+id/upload_description" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Button android:theme="@style/DocumentVerification_Error_Button" android:textSize="@dimen/dv_upload_retry_button_landscape_text" android:layout_gravity="center_horizontal" android:id="@+id/upload_retry" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:drawablePadding="10dp" android:filterTouchesWhenObscured="true"/>
+        <TextView android:textSize="12sp" android:gravity="center_vertical" android:id="@+id/helpview_tap_to_continue" android:layout_width="wrap_content" android:layout_height="0dp" android:text=" " android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

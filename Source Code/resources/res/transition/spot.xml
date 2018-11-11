@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <transitionSet>
+        <fade android:fadingMode="fade_out"/>
+        <changeBounds/>
+        <fade android:fadingMode="fade_in"/>
+    </transitionSet>
+    <transitionSet>
+        <targets>
+            <target android:targetId="@a/callProfitPercent"/>
+        </targets>
+        <transition app:scalePivotY="0dp" class="com.iqoption.core.ui.transition.TextScaleResize"/>
+    </transitionSet>
+    <transitionSet>
+        <targets>
+            <target android:targetId="@a/callProfitValue"/>
+        </targets>
+        <transition app:scalePivotX="0dp" app:scalePivotY="0dp" class="com.iqoption.core.ui.transition.TextScaleResize"/>
+    </transitionSet>
+</transitionSet>

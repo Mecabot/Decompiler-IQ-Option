@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/IQTextLabel" android:id="@+id/constructorPaymentInput" android:tag="layout/constructor_text_edit_field_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp36" app:errorEnabled="false">
+    <android.support.design.widget.TextInputEditText android:textSize="@dimen/sp16" android:textColor="@color/white" android:textColorHint="@color/grey_blue_70" android:id="@+id/constructorPaymentEdit" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</android.support.design.widget.TextInputLayout>

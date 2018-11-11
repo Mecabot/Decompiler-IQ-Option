@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/portfolio_balances_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@a/btnExpandBalances" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="match_parent" android:layout_height="@dimen/dp38" android:layout_marginTop="@dimen/dp16" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/title">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp20" android:textColor="@color/white" android:id="@a/balancesTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/balances" android:includeFontPadding="false" app:robotoStyle="1"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@a/totalBalance" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:robotoStyle="1"/>
+    </LinearLayout>
+    <include android:id="@a/cash" android:layout_width="match_parent" android:layout_height="@dimen/dp72" layout="@layout/portfolio_balance_cash"/>
+    <include android:id="@a/otn" android:layout_width="match_parent" android:layout_height="@dimen/dp72" layout="@layout/portfolio_balance_otn"/>
+</LinearLayout>

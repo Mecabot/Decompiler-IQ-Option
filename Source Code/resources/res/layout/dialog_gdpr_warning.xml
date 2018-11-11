@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/everything" android:tag="layout/dialog_gdpr_warning_0" android:background="@color/black_66" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@a/gdprContainer" android:background="@color/dark_blue" android:padding="@dimen/dp16" android:focusable="true" android:clickable="true" android:layout_width="@dimen/dp360" android:layout_height="match_parent" android:minHeight="@dimen/dp260">
+        <Space android:id="@a/gdprSpaceTop" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:id="@a/gdprWarningIcon" android:layout_width="@dimen/dp64" android:layout_height="@dimen/dp64" android:layout_marginTop="@dimen/dp16" android:layout_marginBottom="@dimen/dp16" android:layout_marginStart="@dimen/dp22" android:layout_marginEnd="@dimen/dp22" app:srcCompat="@drawable/ic_logo"/>
+        <Space android:id="@a/gdprSpaceMiddle" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/sp20" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@a/gdprWarningTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_of_terms" android:fontFamily="@font/medium"/>
+        <TextView android:textSize="@dimen/sp12" android:textColor="@color/grey_blur" android:gravity="center" android:id="@a/gdprWarningText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp12" android:lineSpacingExtra="@dimen/sp5"/>
+        <Space android:id="@a/gdprSpaceBottom" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp15">
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:gravity="center" android:id="@a/gdprConfirm" android:background="@drawable/btn_green_radius_3_background" android:padding="@dimen/dp14" android:paddingTop="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp174" android:text="@h/continue_" android:textAllCaps="true" android:fontFamily="@font/medium"/>
+            <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@a/gdprConfirmProgress" android:padding="@dimen/dp5" android:visibility="invisible" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" style="?android:attr/progressBarStyleLarge"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

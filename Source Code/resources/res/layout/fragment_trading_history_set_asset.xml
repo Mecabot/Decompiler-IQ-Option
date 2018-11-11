@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_trading_history_set_asset_0" android:background="@color/dark_blue" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@a/actionBar" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="@dimen/actionBarHeight">
+        <include android:id="@+id/back" layout="@layout/back_arrow"/>
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_vertical" android:id="@a/btnSearch" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" android:layout_marginLeft="@dimen/searchDrawablePadding" android:scaleType="fitCenter" app:lottie_colorFilter="@color/white" app:lottie_fileName="lottie/switcher/search_clear.json" style="@style/IQActionButton"/>
+        <EditText android:textSize="@dimen/sp20" android:textColor="@color/white" android:textColorHint="@color/grey_blur" android:gravity="left|center_vertical|center_horizontal|center" android:id="@a/searchEdit" android:background="@null" android:padding="0dp" android:hint="@string/search" android:maxLines="1" android:includeFontPadding="false" android:inputType="text" android:imeOptions="actionUnspecified|actionGo|actionSend|actionDone|flagNoExtractUi" android:fontFamily="@font/medium" style="@style/tradingHistoryTitleLayoutStyle"/>
+        <TextView android:textSize="@dimen/sp16" android:textColor="@color/grey_blur" android:layout_gravity="end" android:id="@a/clear" android:paddingLeft="@dimen/dp15" android:paddingRight="@dimen/dp15" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/clear_all" android:includeFontPadding="false" android:fontFamily="@font/medium" style="@style/IQButton.Transparent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" style="@style/tradingHistoryContentLayoutStyle">
+        <TextView android:id="@a/titleAsset" android:background="@drawable/grey_blur_05_top_rounded_4_rect" android:text="@string/active" style="@style/tradingHistoryItemGroupSingleTitleStyle"/>
+        <android.support.v7.widget.RecyclerView android:id="@a/assets" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

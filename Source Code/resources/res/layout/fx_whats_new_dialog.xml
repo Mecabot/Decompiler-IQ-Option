@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:orientation="vertical" android:tag="layout/fx_whats_new_dialog_0" android:background="@color/closed_deals_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/grey_blur_10" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+        <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp19" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@a/whatsNewTittle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_instrument" android:maxLines="1" android:fontFamily="@font/medium" app:capitalize="7"/>
+        <FrameLayout android:layout_gravity="end" android:padding="@dimen/dp2" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@a/whatsNewClose" android:tag="binding_1" android:paddingLeft="@dimen/dp20" android:paddingRight="@dimen/dp20" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/close_popup_content_description" app:srcCompat="@drawable/ic_close_selector"/>
+        </FrameLayout>
+    </FrameLayout>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fx_option_whats_new"/>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp19" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fx" android:maxLines="1" android:fontFamily="@font/medium" app:capitalize="7"/>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/sp14" android:textColor="@color/grey_blur" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp60" android:layout_marginLeft="@dimen/dp20" android:layout_marginRight="@dimen/dp20" android:text="@string/unlimited_profitability_on_the_new_options_trading_instrument" android:lineSpacingExtra="@dimen/dp6" android:fontFamily="@font/regular"/>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/sp14" android:layout_gravity="center" android:id="@a/tradeNow" android:layout_width="@dimen/dp195" android:layout_height="@dimen/dp42" android:layout_marginLeft="@dimen/dp15" android:layout_marginTop="@dimen/dp13" android:layout_marginRight="@dimen/dp15" android:layout_marginBottom="@dimen/dp15" android:text="@string/try_now" style="@style/IQButton.Green"/>
+</LinearLayout>

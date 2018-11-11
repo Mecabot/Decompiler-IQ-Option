@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp100" android:layout_height="@dimen/dp100" android:src="@drawable/about_3" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="@color/orange" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/over_70_assets"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@android:color/black" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp12" android:text="@string/forex_indexes_commodities" app:customFont="DINAlternateBold.ttf"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="#25000000" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/dp12" android:layout_marginRight="@dimen/dp12"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginRight="@dimen/dp8" android:src="@drawable/about_assets" android:adjustViewBounds="true"/>
+    </FrameLayout>
+</LinearLayout>

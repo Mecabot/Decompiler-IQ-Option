@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/dp60" android:paddingTop="@dimen/dp8" android:paddingRight="@dimen/dp60" android:paddingBottom="@dimen/dp8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/dp4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.75"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur_50" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp8" android:text="@i/period" android:maxLines="1" android:layout_weight="1.5" android:textAllCaps="true"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.75"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp32" android:layout_marginBottom="@dimen/dp8">
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.75"/>
+        <EditText android:textSize="@dimen/sp17" android:textColor="@android:color/white" android:gravity="center" android:id="@a/periodEdit" android:background="@drawable/edittext_instrument_background" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp8" android:text="34" android:layout_weight="1.5" android:inputType="numberSigned" android:imeOptions="actionUnspecified|actionGo|actionSend|actionDone|flagNoExtractUi"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.75"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/listview_header_rounded" android:paddingLeft="@dimen/dp10" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" android:layout_marginLeft="@dimen/dp32" android:layout_marginTop="@dimen/dp8" android:layout_marginRight="@dimen/dp32">
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur" android:gravity="left" android:text="@string/date_and_time" android:textAllCaps="true" style="@style/PaymentHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur" android:text="@string/operation" android:textAllCaps="true" style="@style/PaymentHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur" android:text="@h/payment_method" android:textAllCaps="true" style="@style/PaymentHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur" android:text="@h/amount" android:textAllCaps="true" style="@style/PaymentHistoryText"/>
+    <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp10" android:textColor="@color/grey_blur" android:text="@string/status" android:textAllCaps="true" style="@style/PaymentHistoryText"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/screen" android:tag="layout/dialog_commision_info_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@a/contentLayout" android:background="@drawable/bg_card_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp130">
+        <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur" android:id="@a/textCommission" android:padding="@dimen/dp8" android:layout_width="@dimen/dp160" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/sp5"/>
+    </FrameLayout>
+</FrameLayout>

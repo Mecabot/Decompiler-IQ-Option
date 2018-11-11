@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/active_sessions_fragment_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@a/sessions_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dp56" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/toolbar" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="@dimen/dp56" app:layout_constraintTop_toTopOf="0">
+        <include android:id="@+id/back" layout="@layout/back_arrow"/>
+        <TextView android:textSize="@dimen/sp20" android:textStyle="normal" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/active_sessions" android:layout_weight="1" android:fontFamily="sans-serif-medium" android:paddingEnd="@dimen/dp16"/>
+    </LinearLayout>
+    <FrameLayout android:id="@a/progress_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" style="?android:attr/progressBarStyleLarge"/>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

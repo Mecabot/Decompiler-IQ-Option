@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@a/kyc_block_action_contact_support" android:orderInCategory="0" android:title="@h/contact_support" app:showAsAction="never|always|withText"/>
+</menu>

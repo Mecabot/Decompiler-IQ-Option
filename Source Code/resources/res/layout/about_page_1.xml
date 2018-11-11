@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:background="#f1f4f7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp76">
+        <include layout="@layout/about_page_1_1"/>
+        <View android:background="#25000000" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <include layout="@layout/about_page_1_2"/>
+        <View android:background="#25000000" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <include layout="@layout/about_page_1_3"/>
+        <View android:background="#25000000" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <include layout="@layout/about_page_1_4"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@a/peopleChoose" android:background="@color/orange" android:layout_width="wrap_content" android:layout_height="@dimen/dp48">
+        <TextView android:textSize="@dimen/sp34" android:textColor="#ccffffff" android:layout_gravity="center_vertical" android:id="@a/triangle1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp14" android:layout_marginRight="@dimen/dp8" android:text="▼"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp18" android:textColor="@android:color/white" android:gravity="center" android:id="@a/peopleChooseText" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/why_people_choose_iqoption" android:textAllCaps="true"/>
+        <TextView android:textSize="@dimen/sp34" android:textColor="#ccffffff" android:layout_gravity="center_vertical" android:id="@a/triangle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginRight="@dimen/dp14" android:text="▼"/>
+    </LinearLayout>
+</FrameLayout>

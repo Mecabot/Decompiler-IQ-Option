@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="215dp" android:width="326dp" android:viewportWidth="326" android:viewportHeight="215">
+    <path android:name="horizontalLines" android:fillColor="?attr/netverify_helpImage" android:pathData="M27,3.998 A2,2,0,0,1,27,-0.002 L298,0.002 A2,2,0,0,1,298,4.002 L27,3.998 Z M27,214.998 A2,2,0,1,1,27,210.998 L298,211.002 A2,2,0,1,1,298,215.002 L27,214.998 Z"/>
+</vector>

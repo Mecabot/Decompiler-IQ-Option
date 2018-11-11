@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="28dp" android:width="28dp" android:viewportWidth="28" android:viewportHeight="28">
+    <path android:fillColor="@drawable/$ic_trx_28__0" android:pathData="M14,14m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+    <path android:fillColor="@drawable/$ic_trx_28__1" android:pathData="M12.983,25.94l11.55,-15.165l-3.162,-3.54l-16.609,-2.347z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+    <path android:fillColor="@drawable/$ic_trx_28__2" android:pathData="M12.983,25.94l11.55,-15.165l-10.324,3.47l-2.281,8.994z" android:strokeColor="@drawable/$ic_trx_28__3" android:strokeWidth="1.7143" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillType="1"/>
+    <path android:fillColor="@drawable/$ic_trx_28__4" android:pathData="M24.868,10.687l-3.171,-3.879l-7.343,7.156z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+    <path android:fillColor="@drawable/$ic_trx_28__5" android:pathData="M12.983,25.94l1.602,-12.204l-9.823,-8.848z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+</vector>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/ic_withdrawal_scanner_selectable" android:insetLeft="@dimen/dp6" android:insetRight="@dimen/dp6" android:insetTop="@dimen/dp6" android:insetBottom="@dimen/dp6"/>

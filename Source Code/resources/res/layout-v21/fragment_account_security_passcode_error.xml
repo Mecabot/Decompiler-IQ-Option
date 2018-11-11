@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/pageRoot" android:tag="layout/fragment_account_security_passcode_error_0" android:background="@drawable/iq_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@a/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:tag="binding_1" android:padding="13dp" android:focusable="true" android:clickable="true" android:layout_width="@dimen/dp56" android:layout_height="@dimen/dp56" android:src="@drawable/cross_lines_selector" android:scaleType="centerCrop"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="64"/>
+        <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="180" app:srcCompat="@drawable/ic_iq_security_error"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="64"/>
+        <TextView android:textSize="@dimen/sp19" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@a/passcodeErrorText" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginRight="@dimen/dp5" android:minWidth="@dimen/dp100" android:text="@string/input_password_not_equal" android:layout_weight="68" android:fontFamily="sans-serif-light" android:layout_marginEnd="@dimen/dp5"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="60"/>
+        <TextView android:textSize="@dimen/sp18" android:textColor="@color/selectable_green_account_security" android:gravity="center" android:layout_gravity="center" android:id="@a/tryPassAgainButton" android:tag="binding_2" android:background="@drawable/bg_security_resend_email_selector" android:paddingLeft="@dimen/dp20" android:paddingRight="@dimen/dp20" android:visibility="visible" android:clickable="true" android:layout_width="@dimen/dp220" android:layout_height="@dimen/dp50" android:text="@h/try_again" android:fontFamily="sans-serif-light" android:translationZ="3dp" android:elevation="3dp"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="168"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@a/topLayout" android:background="@color/black_50" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <com.iqoption.withdrawal.crypto.barcode.camera.CameraSourcePreview android:layout_gravity="center" android:id="@a/preview" android:layout_width="match_parent" android:layout_height="match_parent"/>&gt;
+</FrameLayout>

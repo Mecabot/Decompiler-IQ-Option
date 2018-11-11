@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@null" android:padding="@dimen/dp12" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp14" android:textColor="#93a8c2" android:id="@a/supportSubject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="#93a8c2" android:paddingLeft="@dimen/dp4" android:paddingRight="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="●"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="#93a8c2" android:id="@a/supportTime" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/sp14" android:textColor="#f58220" android:gravity="right" android:id="@a/rateLink" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textAllCaps="true"/>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@a/containerStar" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@a/star1" android:layout_width="@dimen/dp15" android:layout_height="match_parent" android:src="@drawable/rate_star_off"/>
+            <ImageView android:id="@a/star2" android:layout_width="@dimen/dp15" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+            <ImageView android:id="@a/star3" android:layout_width="@dimen/dp15" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+            <ImageView android:id="@a/star4" android:layout_width="@dimen/dp15" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+            <ImageView android:id="@a/star5" android:layout_width="@dimen/dp15" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:src="@drawable/rate_star_off"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:enabled="true" android:textSize="@dimen/sp18" android:textColor="@color/gray_color" android:autoLink="all" android:linksClickable="true" android:id="@a/supportText" android:background="@drawable/text_bubble" android:focusable="true" android:longClickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true"/>
+</LinearLayout>

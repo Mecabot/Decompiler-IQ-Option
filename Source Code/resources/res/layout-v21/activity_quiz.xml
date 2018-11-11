@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_quiz_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout android:id="@+id/root" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+        <ScrollView android:id="@+id/scroll" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <com.iqoption.quiz.widget.CustomVideoView android:id="@+id/videoView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@+id/topControl" android:background="#88000000" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <TextView android:textSize="10sp" android:id="@+id/debug_text_view" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/controls_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <include android:id="@+id/onlineAndLifeCounterLayout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp28" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" layout="@e/online_and_life_counter_layout"/>
+        <android.support.constraint.Guideline android:orientation="horizontal" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.5"/>
+        <FrameLayout android:id="@+id/primaryContent" android:tag="binding_2" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="@dimen/dp88" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <include android:id="@+id/winnersLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp88" layout="@e/winners_layout"/>
+            <include android:id="@+id/questionLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@e/question_layout"/>
+            <include android:id="@+id/answerResultLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@e/answer_result_layout"/>
+        </FrameLayout>
+        <com.iqoption.quiz.widget.maxsize.MaxSizeFrameLayout android:id="@+id/chatFrame" android:tag="binding_3" android:fitsSystemWindows="true" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/primaryContent" app:layout_goneMarginTop="@dimen/dp88" app:maxSizeHeight="@dimen/dp234">
+            <include android:layout_gravity="bottom" android:id="@+id/chatLayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@e/chat_layout"/>
+        </com.iqoption.quiz.widget.maxsize.MaxSizeFrameLayout>
+    </android.support.constraint.ConstraintLayout>
+    <FrameLayout android:id="@+id/dialogContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:id="@+id/quizRules" android:visibility="gone" layout="@e/quiz_rules_layout"/>
+    <include android:id="@+id/questionLanguage" android:visibility="gone" layout="@e/quiz_question_language"/>
+    <include android:id="@+id/splashLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@e/splash_layout"/>
+    <TextView android:textSize="@dimen/sp12" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/badConnection" android:background="#df591d" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp26" android:text="@h/bad_connection" android:includeFontPadding="false" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:letterSpacing="0.04" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:textSize="@dimen/sp12" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/connectionLost" android:background="#ff0000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp26" android:text="@h/internet_connection_lost" android:includeFontPadding="false" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:letterSpacing="0.04" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <include android:id="@+id/emailLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" layout="@e/email_layout"/>
+    <View android:id="@+id/veil" android:background="#33ffffff" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:id="@+id/errorLayout" android:visibility="gone" layout="@e/error_layout"/>
+</FrameLayout>

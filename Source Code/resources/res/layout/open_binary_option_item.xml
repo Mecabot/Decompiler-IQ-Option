@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/openPositionSubitemRoot" android:tag="layout/open_binary_option_item_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="end" android:id="@a/buyBackFrame" android:background="@color/buyback_background" android:visibility="gone" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@a/buyBackLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp11" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@a/confirmSellingText" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirm_selling_for" android:maxLines="2" android:overScrollMode="always" android:textAllCaps="true" android:fontFamily="sans-serif-light" app:textLines="2"/>
+                <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@a/buybackOptionProgress" android:visibility="gone" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" style="?android:attr/progressBarStyleLarge"/>
+            </FrameLayout>
+            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@a/buyBackValue" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@i/n_a" android:textAllCaps="true"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@a/positionLayout" android:padding="@dimen/dp8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TableLayout android:id="@a/positionItem" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="0">
+            <TableRow>
+                <LinearLayout android:orientation="horizontal">
+                    <TextView android:textSize="@dimen/sp13" android:textColor="@color/white" android:gravity="start" android:id="@a/itemValue" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+                    <ImageView android:gravity="center" android:id="@a/directionImage" android:padding="@dimen/dp2" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="1dp" app:srcCompat="@drawable/ic_up"/>
+                </LinearLayout>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp13" android:textColor="@color/grey_blur_50" android:gravity="right|center_vertical|center_horizontal|center" android:id="@a/itemWinAmount" android:text="$2100" android:fontFamily="sans-serif"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:gravity="start" android:id="@a/itemTimeStamp" android:text="15:30:12 12.21.2014" android:fontFamily="sans-serif"/>
+                <TextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:gravity="right" android:id="@a/itemAmount" android:text="$2100" android:fontFamily="sans-serif"/>
+            </TableRow>
+            <TableRow android:id="@a/sellingPriceLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp2">
+                <LinearLayout android:orientation="horizontal" android:layout_span="2">
+                    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_selling_price" android:paddingLeft="@dimen/dp4" android:paddingTop="@dimen/dp1" android:paddingRight="@dimen/dp4" android:paddingBottom="@dimen/dp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2" android:layout_marginRight="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                            <TextView android:textSize="@dimen/sp11" android:textColor="@color/grey_blur_50" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@a/sellingPriceText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selling_price" android:fontFamily="sans-serif"/>
+                            <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp11" android:textColor="@color/na_price" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@a/sellingPriceValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp6" android:text="@i/n_a"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@a/platformIcon" android:background="@drawable/bg_selling_price" android:paddingLeft="@dimen/dp2" android:paddingRight="@dimen/dp2" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp4" android:layout_marginTop="@dimen/dp2" android:layout_marginBottom="@dimen/dp1" android:scaleType="centerInside" android:layout_marginStart="@dimen/dp4" app:srcCompat="@drawable/ic_ios"/>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@drawable/line_divider_black33" android:layout_width="match_parent" android:layout_height="@dimen/dp1"/>
+</FrameLayout>

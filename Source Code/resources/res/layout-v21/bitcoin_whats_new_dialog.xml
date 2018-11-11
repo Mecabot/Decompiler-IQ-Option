@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:orientation="vertical" android:tag="layout/bitcoin_whats_new_dialog_0" android:background="@color/closed_deals_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/grey_blur_10" android:layout_width="match_parent" android:layout_height="@dimen/dp48">
+        <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp19" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@a/whatsNewTittle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/whats_new" android:maxLines="1" android:fontFamily="@font/medium" app:capitalize="7"/>
+        <FrameLayout android:layout_gravity="end" android:padding="@dimen/dp2" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@a/whatsNewClose" android:tag="binding_1" android:paddingLeft="@dimen/dp20" android:paddingRight="@dimen/dp20" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/close_popup_content_description" app:srcCompat="@drawable/ic_close_selector"/>
+        </FrameLayout>
+    </FrameLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitcoin_whatsnew"/>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/sp20" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bitcoin X100" android:maxLines="1" android:fontFamily="@font/medium"/>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/sp14" android:textColor="@color/grey_blur" android:gravity="center_horizontal" android:id="@+id/info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp20" android:layout_marginRight="@dimen/dp20" android:lineSpacingExtra="@dimen/sp5" android:fontFamily="@font/regular"/>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/sp14" android:textColor="@color/green" android:layout_gravity="center" android:id="@a/tradeNow" android:layout_width="@dimen/dp175" android:layout_height="@dimen/dp36" android:layout_marginLeft="@dimen/dp15" android:layout_marginTop="@dimen/dp13" android:layout_marginRight="@dimen/dp15" android:layout_marginBottom="@dimen/dp15" android:text="TRADE BITCOIN X100" android:letterSpacing="0.04" style="@style/IQButton.DarkGray"/>
+</LinearLayout>

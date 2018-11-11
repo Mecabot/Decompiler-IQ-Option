@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/fragment_balance_bar_0" android:background="@color/black_15" android:paddingLeft="@dimen/dp8" android:paddingRight="@dimen/dp8" android:layout_width="match_parent" android:layout_height="@dimen/dp24">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:baselineAligned="true" android:layout_weight="1">
+        <TextView android:textSize="@dimen/sp13" android:textColor="@color/white" android:id="@a/amountLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp13" android:gravity="center_vertical" android:id="@a/amountValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp4" app:robotoStyle="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp13" android:textColor="@color/green" android:gravity="center_vertical" android:id="@a/btnDeposit" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deposit" android:drawablePadding="@dimen/dp6" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+</LinearLayout>

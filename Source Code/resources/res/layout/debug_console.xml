@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#808080" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:gravity="center_vertical" android:background="@color/headerbar" android:layout_width="match_parent" android:layout_height="@dimen/dp60">
+        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp22" android:textColor="@android:color/white" android:layout_gravity="top|center_vertical|center_horizontal|center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:text="Debug Console" android:textAllCaps="true"/>
+        <TextView android:textSize="@dimen/sp12" android:textColor="#ffffff" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@a/buildVersion" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <com.iqoption.view.SmoothViewPager android:id="@a/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp28">
+        <android.support.v4.view.PagerTabStrip android:textColor="@color/orange" android:layout_gravity="top" android:id="@a/pagerTitleStrip" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.iqoption.view.SmoothViewPager>
+    <ImageView android:layout_gravity="top" android:id="@+id/backButton" android:padding="@dimen/dp6" android:layout_width="@dimen/dp56" android:layout_height="@dimen/dp56" android:layout_marginLeft="@dimen/dp12" android:src="@drawable/back_button_state" android:scaleType="fitCenter"/>
+    <FrameLayout android:id="@a/topFrame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

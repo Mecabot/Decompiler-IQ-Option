@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingTop="@dimen/dp4" android:paddingBottom="@dimen/dp4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iqoption.view.RobotoTextView android:textSize="10sp" android:textColor="#93989f" android:gravity="left" android:id="@a/dateTime" android:paddingLeft="@dimen/dp6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textAllCaps="true"/>
+    <com.iqoption.view.RobotoTextView android:textSize="10sp" android:textColor="#93989f" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp30" android:text="@string/investment" android:textAllCaps="true"/>
+    <com.iqoption.view.RobotoTextView android:textSize="10sp" android:textColor="#93989f" android:gravity="center_horizontal" android:paddingRight="@dimen/dp6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp8" android:text="@string/income" android:textAllCaps="true"/>
+</LinearLayout>

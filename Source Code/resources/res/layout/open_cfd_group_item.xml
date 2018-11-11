@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@a/openPositionRoot" android:tag="layout/open_cfd_group_item_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@a/openGroupItemLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="end" android:id="@a/buyBackGroupFrame" android:background="@color/buyback_background" android:visibility="gone" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@a/buyBackGroupLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp11" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@a/confirmGroupSellingText" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirm_selling_for" android:maxLines="2" android:overScrollMode="always" android:textAllCaps="true" android:fontFamily="sans-serif-light" app:textLines="2"/>
+                    <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@a/groupProgress" android:visibility="gone" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" style="?android:attr/progressBarStyleLarge"/>
+                </FrameLayout>
+                <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp12" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@a/buyBackGroupValue" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@i/n_a" android:textAllCaps="true"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@a/openGroupInfoLayout" android:background="@color/grey_blur_05" android:padding="@dimen/dp8" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@a/activeIcon" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginStart="@dimen/dp8">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/sp13" android:textColor="@color/white" android:gravity="bottom|left|center_vertical|center_horizontal|center|start" android:id="@+id/active" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="sans-serif"/>
+                        <com.iqoption.view.RobotoTextView android:textSize="@dimen/sp13" android:textColor="@color/white" android:gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@a/winAmount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@a/menuIcon" android:layout_width="@dimen/dp9" android:layout_height="@dimen/dp9" android:layout_marginTop="@dimen/dp1" android:rotation="180" app:srcCompat="@drawable/ic_arrow_down"/>
+                        </FrameLayout>
+                        <com.iqoption.view.text.FormattedTextView android:textSize="@dimen/sp9" android:textColor="@color/grey_blur_50" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@a/instrumentType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp2" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dp2" app:capitalize="sentences"/>
+                        <TextView android:textSize="@dimen/sp10" android:textColor="@color/green" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@a/buySell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp2" android:textAllCaps="true" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dp2"/>
+                        <TextView android:textSize="@dimen/sp9" android:textColor="@color/green" android:gravity="top|right|center_vertical|center_horizontal|center" android:id="@a/winAmountPercent" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TableLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:stretchColumns="2" android:layout_marginStart="@dimen/dp8"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:id="@a/dividerShort" android:background="@drawable/line_divider_black10" android:layout_width="match_parent" android:layout_height="@dimen/dp1" android:layout_marginLeft="@dimen/dp40"/>
+    </FrameLayout>
+    <View android:id="@a/space" android:background="@color/grey_blur_05" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp6"/>
+    <View android:id="@a/dividerLong" android:background="@drawable/line_divider_black10" android:layout_width="match_parent" android:layout_height="@dimen/dp1"/>
+</LinearLayout>

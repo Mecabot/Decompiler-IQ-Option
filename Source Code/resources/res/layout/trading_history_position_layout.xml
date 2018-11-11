@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/positionInfo" android:background="@color/grey_blur_05" android:rowCount="3" android:columnCount="2" style="@style/tradingHistoryPositionLayoutStyle">
+    <TextView android:id="@a/assetTitle" android:text="Asset" style="@style/tradingHistoryItemTitleStyle"/>
+    <TextView android:id="@a/assetName" style="@style/tradingHistoryItemValueStyle"/>
+    <TextView android:id="@a/closeTimeTitle" android:text="Close time" style="@style/tradingHistoryItemTitleStyle"/>
+    <TextView android:id="@a/closeTimeValue" style="@style/tradingHistoryItemValueStyle"/>
+    <TextView android:id="@a/profitTitle2" android:text="Profit" style="@style/tradingHistoryItemTitleStyle"/>
+    <TextView android:id="@a/profitValue2" style="@style/tradingHistoryItemValueStyle"/>
+</GridLayout>

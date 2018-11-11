@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fragment_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbarContainer" android:importantForAccessibility="no"/>
+    <View android:id="@+id/loadingBackground" android:background="?attr/dv_scanOptionsLoadingBackground" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:id="@+id/toolbarContainer" android:background="?attr/colorPrimary" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:filterTouchesWhenObscured="true" app:theme="?attr/jumio_toolbarStyle"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/spinnerContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="45dp" android:layout_marginTop="116dp" android:layout_marginRight="45dp" android:layout_marginBottom="20dp" android:alpha="0"/>
+</RelativeLayout>

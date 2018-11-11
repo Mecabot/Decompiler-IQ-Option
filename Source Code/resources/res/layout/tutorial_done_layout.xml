@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/tutorialIconDone" android:paddingLeft="@dimen/dp12" android:paddingTop="@dimen/dp16" android:paddingRight="@dimen/dp12" android:paddingBottom="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_done"/>

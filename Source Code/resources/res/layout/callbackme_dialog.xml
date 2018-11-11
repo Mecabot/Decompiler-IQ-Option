@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@a/emptyView" android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp320" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp16" android:textColor="@android:color/white" android:gravity="center" android:id="@a/dialogTitle" android:background="@drawable/dark_dialog_title_background" android:layout_width="match_parent" android:layout_height="@dimen/dp48" android:text="@string/return_call" android:textAllCaps="true"/>
+        <View android:background="@drawable/dark_dialog_horizontal_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="vertical" android:id="@a/dialogContent" android:background="@drawable/dark_dialog_body_background" android:paddingLeft="@dimen/dp20" android:paddingTop="@dimen/dp20" android:paddingRight="@dimen/dp20" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/callback_me_dialog_base_text_color" android:gravity="center_horizontal" android:id="@a/baseText" android:paddingBottom="@dimen/dp5" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAllCaps="true"/>
+            <TextView android:textSize="@dimen/sp14" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@a/vipManagerName" android:paddingBottom="@dimen/dp5" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/sp14" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@a/vipManagerPhone" android:paddingBottom="@dimen/dp10" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <Button android:textSize="@dimen/sp14" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@a/callbackButton" android:background="@drawable/callback_button_selector" android:padding="@dimen/dp10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_a_call" android:textAllCaps="true"/>
+        </LinearLayout>
+        <View android:background="@drawable/dark_callback_dialog_bottom_background" android:layout_width="match_parent" android:layout_height="@dimen/dp24"/>
+    </LinearLayout>
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+</LinearLayout>

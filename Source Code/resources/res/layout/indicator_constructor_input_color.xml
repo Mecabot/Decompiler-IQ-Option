@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/content" android:tag="layout/indicator_constructor_input_color_0" android:background="@c/grey_blue_05" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp52" android:paddingStart="@dimen/dp16" android:paddingEnd="@dimen/dp10">
+    <TextView android:id="@+id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:maxLines="1" style="@style/InputLabel"/>
+    <ImageView android:id="@+id/arrow" android:layout_width="@dimen/dp14" android:layout_height="@dimen/dp14" android:layout_marginTop="@dimen/dp19" android:layout_marginStart="@dimen/dp3" app:srcCompat="@e/ic_arrow_down_grey_blue_50_14dp"/>
+    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    <com.iqoption.charttools.constructor.widget.ColorPicker android:id="@+id/picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp5" android:layout_marginBottom="@dimen/dp5"/>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:id="@a/twoStepAuthLayout" android:background="@drawable/welcome_blur_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@a/contentSignin" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp28" android:layout_marginBottom="@dimen/dp28">
+            <ImageButton android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@a/twoStepAuthBackButton" android:background="@drawable/back_button_state_welcome" android:padding="@dimen/dp5" android:clickable="true" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" android:layout_marginLeft="@dimen/dp12" android:scaleType="fitCenter" android:layout_marginStart="@dimen/dp12"/>
+            <TextView android:textSize="@dimen/sp21" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@a/twoStepAuthText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp18" android:layout_marginRight="@dimen/dp18" android:text="@string/two_factor_text" android:textAllCaps="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@a/twoStepAuthFields" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View style="@style/WelcomeMenuHorizontalDivider"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/dark_blur_33" android:paddingLeft="@a/registration_menu_margin" android:paddingTop="@dimen/dp16" android:paddingRight="@a/registration_menu_margin" android:paddingBottom="@dimen/dp16" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1">
+                <com.iqoption.view.text.FormattedTextView android:id="@a/verificationCodeText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verification_code_has_just_been_sent_to_number2" app:capitalize="sentences" style="@style/VerificationCodeSentText"/>
+                <TextView android:id="@a/verificationPhoneText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="+7 *** ***-**-66" style="@style/VerificationCodeSentText"/>
+            </LinearLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp50">
+                <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@a/passwordEditSigninIcon" android:alpha="0.6" app:srcCompat="@drawable/ic_sharp" style="@style/RegistrationMenuItemIcon"/>
+                <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <EditText android:layout_gravity="center" android:id="@a/verificationCodeEdit" android:layout_marginLeft="@dimen/dp22" android:layout_marginRight="@dimen/dp22" android:hint="@string/enter_the_verification_code" style="@style/VerificationCodeEditText"/>
+                </FrameLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="@a/registration_menu_item_height">
+                <Button android:textSize="@dimen/sp14" android:textColor="@drawable/welcome_continue_btn_text_color" android:id="@a/loginTwoStepAuthButton" android:background="@drawable/welcome_continue_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/login" android:textAllCaps="true"/>
+                <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@a/twoStepAuthProgress" android:visibility="invisible" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" style="?android:attr/progressBarStyleLarge"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/white_60" android:gravity="center" android:id="@a/verificationCodeInfoText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp26" android:text="@string/haven_t_received_the_code_yet" android:singleLine="true" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/resend_auth_code" android:gravity="center" android:layout_gravity="center_vertical" android:id="@a/resendVerificationCode" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/resend_code" android:singleLine="true" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/white_60" android:gravity="center" android:id="@a/verificationCodeTimerText" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="00:00" android:singleLine="true" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

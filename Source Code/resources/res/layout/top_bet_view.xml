@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/topbet_background" android:padding="@dimen/dp4" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/sp10" android:textStyle="bold" android:textColor="@color/yellow" android:id="@a/topBetAsset" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/congratulations" android:singleLine="true" android:textAllCaps="true"/>
+    <ListView android:id="@a/topBetListView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dp8" android:divider="@null" android:dividerHeight="@dimen/dp2" android:layout_weight="1"/>
+</LinearLayout>

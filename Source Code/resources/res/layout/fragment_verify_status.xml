@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@a/verifyStatusContainer" android:tag="layout/fragment_verify_status_0" android:background="@color/bg_second_level" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/verify_toolbar_layout"/>
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <com.airbnb.lottie.LottieAnimationView android:id="@a/verifyStatusImageView" android:layout_width="@dimen/dp118" android:layout_height="@dimen/dp90" android:layout_marginTop="@dimen/dp16"/>
+                <TextView android:textSize="@dimen/sp26" android:textColor="@color/white" android:id="@a/verifyStatusTitle" android:paddingTop="@dimen/dp26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium"/>
+                <TextView android:textSize="@dimen/sp18" android:textColor="@color/grey_blur" android:id="@a/verifyStatusCard" android:paddingTop="@dimen/dp14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium"/>
+                <TextView android:textSize="@dimen/sp14" android:textColor="@color/grey_blur" android:gravity="center" android:id="@a/verifyStatusDescription" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sp6" android:paddingStart="@dimen/dp30" android:paddingEnd="@dimen/dp30"/>
+                <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <FrameLayout android:id="@a/verifyStatusFooter" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@a/verifyStatusOther" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>
